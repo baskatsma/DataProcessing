@@ -1,0 +1,1 @@
+It is a movable pointer to commits. By default, master is the branch name. The master branch moves forward whenever you commit and always points to the last commit.
