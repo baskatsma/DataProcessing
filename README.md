@@ -1,5 +1,5 @@
 ## GitHub Pages link:
-[baskatsma's Pages](https://baskatsma.github.io/DataProcessing)
+[baskatsma's GitHub Pages](https://baskatsma.github.io/DataProcessing)
 
 
 
