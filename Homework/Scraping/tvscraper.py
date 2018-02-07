@@ -54,11 +54,11 @@ def extract_tvseries(dom):
         showGenre = show.find("span", "genre")
         print(showGenre.text.replace(" ", ""))
 
-        showPeople = show.find_all("p")
-        print(showPeople)
-        for clown in showPeople[2]:
-            #name = clown.href
-            print(clown)
+        showPeople = show.find_all("p", "")
+        print("showPeople[2]: ", end="")
+        new = showPeople.find_all("a")
+        print(showPeople[2].a.text)
+        print(new.a.text)
         print("")
 
     # ADD YOUR CODE HERE TO EXTRACT THE ABOVE INFORMATION ABOUT THE
