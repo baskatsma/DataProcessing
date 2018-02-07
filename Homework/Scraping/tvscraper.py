@@ -6,6 +6,7 @@ This script scrapes IMDB and outputs a CSV file with highest rated tv series.
 """
 
 import csv
+import re
 from requests import get
 from requests.exceptions import RequestException
 from contextlib import closing
@@ -49,25 +50,28 @@ def extract_tvseries(dom):
         # get the correct fields from each container
         showTitle = show.h3.a.text
         print(showTitle)
+        
         showRating = show.strong.text
         print(float(showRating))
+
         showGenre = show.find("span", "genre")
         print(showGenre.text.replace(" ", ""))
 
-        showPeople = show.find_all("p", "")
-        print("showPeople[2]: ", end="")
-        new = showPeople.find_all("a")
-        print(showPeople[2].a.text)
-        print(new.a.text)
+        showPeople = show.find_all("a")
+        i = 0
+        for person in showPeople[13:17]:
+            if i < 3:
+                print(person.text + ",", end="")
+            else:
+                print(person.text, end="")
+            i += 1
         print("")
 
-    # ADD YOUR CODE HERE TO EXTRACT THE ABOVE INFORMATION ABOUT THE
-    # HIGHEST RATED TV-SERIES
-    # NOTE: FOR THIS EXERCISE YOU ARE ALLOWED (BUT NOT REQUIRED) TO IGNORE
-    # UNICODE CHARACTERS AND SIMPLY LEAVE THEM OUT OF THE OUTPUT.
+        # grab numbers from string
+        showRuntime = re.findall('\d+', str(show.find("span", "runtime")))
+        print(int(showRuntime[0]))
 
     return []   # REPLACE THIS LINE AS WELL AS APPROPRIATE
-
 
 def save_csv(outfile, tvseries):
     """
