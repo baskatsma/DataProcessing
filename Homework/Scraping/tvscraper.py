@@ -27,6 +27,40 @@ def extract_tvseries(dom):
     - Runtime (only a number!)
     """
 
+    # create lists to store data
+    tvTitles = []
+    tvRating = []
+    tvGenres = []
+    tvPeople = []
+    tvRuntime = []
+
+    # get amount of results per page
+    pageLimit = dom.find("span", "lister-current-last-item")
+
+    # get correct html containers for each listed show
+    tvContainer = dom.find_all("div", "lister-item mode-advanced")
+
+    # loop through all results on the page
+    for result in range(int(pageLimit.text)):
+
+        # get the correct container for each show
+        show = tvContainer[result]
+
+        # get the correct fields from each container
+        showTitle = show.h3.a.text
+        print(showTitle)
+        showRating = show.strong.text
+        print(float(showRating))
+        showGenre = show.find("span", "genre")
+        print(showGenre.text.replace(" ", ""))
+
+        showPeople = show.find_all("p")
+        print(showPeople)
+        for clown in showPeople[2]:
+            #name = clown.href
+            print(clown)
+        print("")
+
     # ADD YOUR CODE HERE TO EXTRACT THE ABOVE INFORMATION ABOUT THE
     # HIGHEST RATED TV-SERIES
     # NOTE: FOR THIS EXERCISE YOU ARE ALLOWED (BUT NOT REQUIRED) TO IGNORE
