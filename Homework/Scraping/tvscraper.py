@@ -29,16 +29,16 @@ def extract_tvseries(dom):
     """
 
     # create lists to store data
-    tvTitles = []
+    tvTitle = []
     tvRating = []
-    tvGenres = []
+    tvGenre = []
     tvPeople = []
     tvRuntime = []
 
     # get amount of results per page
     pageLimit = dom.find("span", "lister-current-last-item")
 
-    # get correct html containers for each listed show
+    # get correct containers for each listed show
     tvContainer = dom.find_all("div", "lister-item mode-advanced")
 
     # loop through all results on the page
@@ -49,37 +49,76 @@ def extract_tvseries(dom):
 
         # get the correct fields from each container
         showTitle = show.h3.a.text
-        print(showTitle)
-        
+        #print(showTitle)
+        tvTitle.append(showTitle)
+
         showRating = show.strong.text
-        print(float(showRating))
+        #print(float(showRating))
+        tvRating.append(float(showRating))
 
         showGenre = show.find("span", "genre")
-        print(showGenre.text.replace(" ", ""))
+        #print(showGenre.text.replace(" ", ""))
+        tvGenre.append(showGenre.text.rstrip().lstrip())
 
         showPeople = show.find_all("a")
-        i = 0
+        tempList = []
+        #i = 0
         for person in showPeople[13:17]:
-            if i < 3:
-                print(person.text + ",", end="")
-            else:
-                print(person.text, end="")
-            i += 1
-        print("")
+            #if i < 3:
+                #print(person.text + ",", end="")
+                #tempList.append(person.text)
+            #else:
+                #print(person.text, end="")
+                #tempList.append(person.text)
+            #i += 1
+            tempList.append(person.text.rstrip().lstrip())
+        tvPeople.append(tempList)
 
         # grab numbers from string
         showRuntime = re.findall('\d+', str(show.find("span", "runtime")))
-        print(int(showRuntime[0]))
+        #print(int(showRuntime[0]))
+        tvRuntime.append(int(showRuntime[0].rstrip().lstrip()))
 
-    return []   # REPLACE THIS LINE AS WELL AS APPROPRIATE
+    print(tvTitle)
+    print(tvRating)
+    print(tvGenre)
+    print(tvPeople)
+    print(tvRuntime)
+    return [tvTitle, tvRating, tvGenre, tvPeople, tvRuntime]
 
 def save_csv(outfile, tvseries):
     """
     Output a CSV file containing highest rated TV-series.
     """
-    writer = csv.writer(outfile)
+    writer = csv.writer(outfile, delimiter=',')
     writer.writerow(['Title', 'Rating', 'Genre', 'Actors', 'Runtime'])
+    ## 0 = title
+    ## 1 = rating
+    ## 2 = genre
+    ## 3 = people
+    ## 4 = runtime
+    print("PRINTING tvseries[0]...")
+    print(tvseries[0])
+    print("PRINTING tvseries[1]...")
+    print(tvseries[1])
 
+    #for show in range(50):
+        #for category in range(show):
+            #writer.writerow(tvseries[category][show])
+            #print(tvseries[category][show])
+            #category += 1
+        #show += 1
+
+    tvshow = 0
+    category = 0
+    for tvshow in range(50):
+        writer.writerow([tvseries[category][tvshow]])
+        tvshow += 1
+
+    #writer.writerow([tvseries[0][0]])
+    #writer.writerow([tvseries[0][1]])
+    #writer.writerow([tvseries[1][0]])
+    #writer.writerow([tvseries[1][1]])
     # ADD SOME CODE OF YOURSELF HERE TO WRITE THE TV-SERIES TO DISK
 
 
