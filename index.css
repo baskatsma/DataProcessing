@@ -15,3 +15,8 @@
 .jumbotron {
     background-color: transparent !important;
 }
+
+.animation-delay {
+  animation-delay: 0.15s;
+  -webkit-animation-delay: 0.15s;
+}
