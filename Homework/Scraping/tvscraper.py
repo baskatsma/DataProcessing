@@ -6,7 +6,6 @@ This script scrapes IMDB and outputs a CSV file with highest rated tv series.
 """
 
 import csv
-import re
 from requests import get
 from requests.exceptions import RequestException
 from contextlib import closing
@@ -15,7 +14,6 @@ from bs4 import BeautifulSoup
 TARGET_URL = "http://www.imdb.com/search/title?num_votes=5000,&sort=user_rating,desc&start=1&title_type=tv_series"
 BACKUP_HTML = 'tvseries.html'
 OUTPUT_CSV = 'tvseries.csv'
-
 
 def extract_tvseries(dom):
     """
@@ -28,12 +26,8 @@ def extract_tvseries(dom):
     - Runtime (only a number!)
     """
 
-    # create lists to store data
-    tvTitle = []
-    tvRating = []
-    tvGenre = []
-    tvPeople = []
-    tvRuntime = []
+    # create list to store data
+    tvShows = []
 
     # get amount of results per page
     pageLimit = dom.find("span", "lister-current-last-item")
@@ -44,83 +38,50 @@ def extract_tvseries(dom):
     # loop through all results on the page
     for result in range(int(pageLimit.text)):
 
+        # create temp
+        temp = []
+
         # get the correct container for each show
         show = tvContainer[result]
 
-        # get the correct fields from each container
+        # get title and add to temp list
         showTitle = show.h3.a.text
-        #print(showTitle)
-        tvTitle.append(showTitle)
+        temp.append(showTitle)
 
+        # get rating and add to temp list
         showRating = show.strong.text
-        #print(float(showRating))
-        tvRating.append(float(showRating))
+        temp.append(float(showRating))
 
+        # get genre, remove all mark-up and add to temp list
         showGenre = show.find("span", "genre")
-        #print(showGenre.text.replace(" ", ""))
-        tvGenre.append(showGenre.text.rstrip().lstrip())
+        fixedGenre = showGenre.text.strip().replace(" ", "").split(',')
+        for genre in range(len(fixedGenre)):
+            temp.append(fixedGenre[genre])
 
+        # get all listed (4) actors/actresses and add to temp list
         showPeople = show.find_all("a")
-        tempList = []
-        #i = 0
         for person in showPeople[13:17]:
-            #if i < 3:
-                #print(person.text + ",", end="")
-                #tempList.append(person.text)
-            #else:
-                #print(person.text, end="")
-                #tempList.append(person.text)
-            #i += 1
-            tempList.append(person.text.rstrip().lstrip())
-        tvPeople.append(tempList)
+            temp.append(person.text.strip())
 
-        # grab numbers from string
-        showRuntime = re.findall('\d+', str(show.find("span", "runtime")))
-        #print(int(showRuntime[0]))
-        tvRuntime.append(int(showRuntime[0].rstrip().lstrip()))
+        # get numbers from runtime
+        showRuntime = show.find("span", "runtime")
+        fixedRuntime = showRuntime.text.split()
+        temp.append(int(fixedRuntime[0]))
 
-    print(tvTitle)
-    print(tvRating)
-    print(tvGenre)
-    print(tvPeople)
-    print(tvRuntime)
-    return [tvTitle, tvRating, tvGenre, tvPeople, tvRuntime]
+        # add each temp list to the tvShows list
+        tvShows.append(temp)
+
+    return tvShows
 
 def save_csv(outfile, tvseries):
     """
     Output a CSV file containing highest rated TV-series.
     """
-    writer = csv.writer(outfile, delimiter=',')
+    writer = csv.writer(outfile)
     writer.writerow(['Title', 'Rating', 'Genre', 'Actors', 'Runtime'])
-    ## 0 = title
-    ## 1 = rating
-    ## 2 = genre
-    ## 3 = people
-    ## 4 = runtime
-    print("PRINTING tvseries[0]...")
-    print(tvseries[0])
-    print("PRINTING tvseries[1]...")
-    print(tvseries[1])
 
-    #for show in range(50):
-        #for category in range(show):
-            #writer.writerow(tvseries[category][show])
-            #print(tvseries[category][show])
-            #category += 1
-        #show += 1
-
-    tvshow = 0
-    category = 0
-    for tvshow in range(50):
-        writer.writerow([tvseries[category][tvshow]])
-        tvshow += 1
-
-    #writer.writerow([tvseries[0][0]])
-    #writer.writerow([tvseries[0][1]])
-    #writer.writerow([tvseries[1][0]])
-    #writer.writerow([tvseries[1][1]])
-    # ADD SOME CODE OF YOURSELF HERE TO WRITE THE TV-SERIES TO DISK
-
+    for show in range(len(tvseries)):
+        writer.writerow(tvseries[show])
 
 def simple_get(url):
     """
