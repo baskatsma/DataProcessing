@@ -35,7 +35,7 @@ def extract_tvseries(dom):
     # get correct containers for each listed show
     tvContainer = dom.find_all("div", "lister-item mode-advanced")
 
-    # loop through all results on the page
+    # loop through all shows on the page
     for result in range(int(pageLimit.text)):
 
         # create temp
