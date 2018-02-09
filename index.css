@@ -3,6 +3,15 @@
     padding-left: 70px;
 }
 
+.row {
+    padding-right: 160px;
+    padding-left: 160px;
+}
+
+.padding-deck {
+    padding-top: 90px;
+}
+
 .jumbotron {
     background-color: transparent !important;
 }
