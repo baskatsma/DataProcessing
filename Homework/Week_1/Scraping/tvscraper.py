@@ -80,7 +80,10 @@ def save_csv(outfile, tvseries):
     writer = csv.writer(outfile)
     writer.writerow(['Title', 'Rating', 'Genre', 'Actors', 'Runtime'])
 
+    # go through each show in the main list
     for show in range(len(tvseries)):
+
+        # write the line
         writer.writerow(tvseries[show])
 
 def simple_get(url):
