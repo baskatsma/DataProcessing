@@ -1,6 +1,16 @@
+html,
+body {
+  background-color: #333;
+}
+
+card-title,
+card-text {
+
+}
+
 .container {
-    padding-right: 70px;
-    padding-left: 70px;
+    padding-right: 180px;
+    padding-left: 180px;
 }
 
 .row {
@@ -8,15 +18,45 @@
     padding-left: 160px;
 }
 
-.padding-deck {
-    padding-top: 90px;
+.padding-middle {
+    padding-top: 180px;
 }
 
-.jumbotron {
+.padding-bottom {
+    padding-top: 180px;
+}
+
+#jumbotron {
+    color: #fff;
     background-color: transparent !important;
+    animation-duration: 0.85s;
+    -webkit-animation-duration: 0.85s;
+    -moz-animation-duration: 0.85s;
+    -ms-transition-animation-duration: 0.85s;
 }
 
-.animation-delay {
-  animation-delay: 0.15s;
-  -webkit-animation-delay: 0.15s;
+#deck1 {
+    animation-duration: 0.85s;
+    -webkit-animation-duration: 0.85s;
+    -moz-animation-duration: 0.85s;
+    -ms-transition-animation-duration: 0.85s;
+    animation-delay: 0.15s;
+    -webkit-animation-delay: 0.15s;
+    -moz-animation-delay: 0.15s;
+    -ms-transition-animation-delay: 0.15s;
+}
+
+#deck2 {
+    animation-duration: 0.85s;
+    -webkit-animation-duration: 0.85s;
+    -moz-animation-duration: 0.85s;
+    -ms-transition-animation-duration: 0.85s;
+    animation-delay: 0.30s;
+    -webkit-animation-delay: 0.30s;
+    -moz-animation-delay: 0.30s;
+    -ms-transition-animation-delay: 0.30s;
+}
+
+#week2, #week3, #week4, #week5, #week6, #week7, #week8 {
+  visibility: hidden;
 }
