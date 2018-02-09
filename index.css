@@ -3,11 +3,6 @@ body {
   background-color: #333;
 }
 
-card-title,
-card-text {
-
-}
-
 .container {
     padding-right: 180px;
     padding-left: 180px;
@@ -57,6 +52,6 @@ card-text {
     -ms-transition-animation-delay: 0.30s;
 }
 
-#week2, #week3, #week4, #week5, #week6, #week7, #week8 {
+#week2, #week3, #week4, #week5, #week6, #week7 {
   visibility: hidden;
 }
