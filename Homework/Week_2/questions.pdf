@@ -1,0 +1,21 @@
+Explain the difference between the == operator and the === operator.
+>>>   == checks whether a value is equal to the other
+>>>   === checks whether a value is precisely equal to the other. It is used to prevent unexpected type conversions
+
+Explain what a closure is. (Note that JavaScript programs use closures very often.)
+
+Explain what higher order functions are.
+
+Explain what a query selector is and give an example line of JavaScript that uses a query selector.
+
+
+Piece of code for Homework
+__________________________________________________________________________
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+    if (this.readystate == 4 & this.status == 200) {
+        document.getElementById("rawdata").innerHtml = xhttp.responsText,
+    }
+}
+xhttp.open("get", "data.csv", true),
+xhttp.send(),
