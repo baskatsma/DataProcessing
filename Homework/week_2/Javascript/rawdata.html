@@ -371,6 +371,8 @@
 20171231,  106
 20180101,   68
 </textarea>
+<br></br>
+<canvas id="avgTempPerDay" width="800" height="350"></canvas>
 <script>
 // Remove all whitespace from rawdata and split at enters
 var yearlyData = [];
@@ -413,6 +415,8 @@ console.log(typeof fixedDateOnly[1]);
 console.log(fixedDateOnly[1]);
 console.log(typeof fixedTempOnly[1]);
 console.log(fixedTempOnly[1]);
+
+var ctx = document.getElementById('avgTempPerDay').getContext('2d');
 
 </script>
 </body>
