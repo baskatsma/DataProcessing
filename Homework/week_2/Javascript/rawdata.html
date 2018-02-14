@@ -372,28 +372,47 @@
 20180101,   68
 </textarea>
 <script>
+// Remove all whitespace from rawdata and split at enters
 var yearlyData = [];
 yearlyData = document.getElementById("rawdata").value.toString();
 var yearlyDataCleaned = yearlyData.split(' ').join('');
 var yearlyDataSplitted = yearlyDataCleaned.split("\n");
 
+// Create array containing only the dates
 var dateLength = 8;
-var dayOnly = [];
+var dateOnly = [];
 for (var day in yearlyDataSplitted) {
-  dayOnly.push(yearlyDataSplitted[day].substring(0, dateLength));
+  dateOnly.push(yearlyDataSplitted[day].substring(0, dateLength));
 }
 
+// Create array containing only the temperatures
 var maxTempLength = 3;
 var tempOnly = [];
 for (var temp in yearlyDataSplitted) {
   tempOnly.push(yearlyDataSplitted[temp].substring(9, 9 + maxTempLength));
 }
 
-console.log(dayOnly);
-console.log(tempOnly);
+// Convert dateString to valid JavaScript date
+var fixedDateOnly = [];
+for (var dateString in dateOnly) {
+  var year = dateOnly[dateString].substring(0, 4);
+  var month = dateOnly[dateString].substring(4, 6);
+  var day = dateOnly[dateString].substring(6, 8);
+  var date = new Date(year, month-1, day);
+  fixedDateOnly.push(date);
+}
 
-//for (var dayKNMI = 1; dayKNMI < 366; dayKNMI++)
-//console.log(yearlyData.split(","));
+// Convert numbers to valid JavaScript numbers
+var fixedTempOnly = [];
+for (var number in tempOnly) {
+  var number = Number(tempOnly[number]);
+  fixedTempOnly.push(number);
+}
+
+console.log(typeof fixedDateOnly[1]);
+console.log(fixedDateOnly[1]);
+console.log(typeof fixedTempOnly[1]);
+console.log(fixedTempOnly[1]);
 
 </script>
 </body>
