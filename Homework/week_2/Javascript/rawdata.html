@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <body>
+# date, maxtemp
+<br></br>
 <textarea id="rawdata">
-#date,maxtemp
 20170101,    5
 20170102,   30
 20170103,   50
@@ -372,11 +373,27 @@
 </textarea>
 <script>
 var yearlyData = [];
-yearlyData = document.getElementById("rawdata");
-console.log(yearlyData);
+yearlyData = document.getElementById("rawdata").value.toString();
+var yearlyDataCleaned = yearlyData.split(' ').join('');
+var yearlyDataSplitted = yearlyDataCleaned.split("\n");
 
-for (var dayKNMI = 1; dayKNMI < 366; dayKNMI++)
-  console.log(dayKNMI);
+var dateLength = 8;
+var dayOnly = [];
+for (var day in yearlyDataSplitted) {
+  dayOnly.push(yearlyDataSplitted[day].substring(0, dateLength));
+}
+
+var maxTempLength = 3;
+var tempOnly = [];
+for (var temp in yearlyDataSplitted) {
+  tempOnly.push(yearlyDataSplitted[temp].substring(9, 9 + maxTempLength));
+}
+
+console.log(dayOnly);
+console.log(tempOnly);
+
+//for (var dayKNMI = 1; dayKNMI < 366; dayKNMI++)
+//console.log(yearlyData.split(","));
 
 </script>
 </body>
