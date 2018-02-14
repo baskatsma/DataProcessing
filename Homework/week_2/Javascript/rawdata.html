@@ -372,7 +372,7 @@
 20180101,   68
 </textarea>
 <br></br>
-<canvas id="avgTempPerDay" width="800" height="350"></canvas>
+<canvas id="avgTempPerDay" width="600" height="300"></canvas>
 <script>
 // Remove all whitespace from rawdata and split at enters
 var yearlyData = [];
@@ -409,6 +409,13 @@ var fixedTempOnly = [];
 for (var number in tempOnly) {
   var number = Number(tempOnly[number]);
   fixedTempOnly.push(number);
+}
+
+// Create new list with .getTime() output to use for transformations
+var calculationsDate = [];
+for (var date in fixedDateOnly) {
+  var newDate = fixedDateOnly[date].getTime();
+  calculationsDate.push(newDate);
 }
 
 console.log(typeof fixedDateOnly[1]);
