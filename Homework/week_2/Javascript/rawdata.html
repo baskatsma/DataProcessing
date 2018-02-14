@@ -384,7 +384,7 @@ var yearlyDataSplitted = yearlyDataCleaned.split("\n");
 var dateLength = 8;
 var dateOnly = [];
 for (var day in yearlyDataSplitted) {
-  if (day <= 365) {
+  if (day <= 365) { // Fix weird array length (367 entries)
     dateOnly.push(yearlyDataSplitted[day].substring(0, dateLength));
   }
 }
@@ -393,17 +393,17 @@ for (var day in yearlyDataSplitted) {
 var maxTempLength = 3;
 var tempOnly = [];
 for (var temp in yearlyDataSplitted) {
-  if (temp <= 365) {
-    tempOnly.push(yearlyDataSplitted[temp].substring(9, 9 + maxTempLength));
+  if (temp <= 365) { // Fix weird array length (367 entries)
+    tempOnly.push(yearlyDataSplitted[temp].substring(9, 9 + maxTempLength)); // Temperatures values start after 9 characters
   }
 }
 
 // Convert dateString to valid JavaScript date
 var fixedDateOnly = [];
 for (var dateString in dateOnly) {
-  var year = dateOnly[dateString].substring(0, 4);
-  var month = dateOnly[dateString].substring(4, 6);
-  var day = dateOnly[dateString].substring(6, 8);
+  var year = dateOnly[dateString].substring(0, 4); // First 4 char are YYYY
+  var month = dateOnly[dateString].substring(4, 6); // Following 2 are MM
+  var day = dateOnly[dateString].substring(6, 8); // Last 2 are DD
   var date = new Date(year, month-1, day);
   fixedDateOnly.push(date);
 }
@@ -432,7 +432,6 @@ var dateRange = [minDate, maxDate];
 var tempRange = [minTemp, maxTemp];
 console.log(dateRange);
 console.log(tempRange);
-
 
 var ctx = document.getElementById('avgTempPerDay').getContext('2d');
 
