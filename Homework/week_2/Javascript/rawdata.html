@@ -384,14 +384,18 @@ var yearlyDataSplitted = yearlyDataCleaned.split("\n");
 var dateLength = 8;
 var dateOnly = [];
 for (var day in yearlyDataSplitted) {
-  dateOnly.push(yearlyDataSplitted[day].substring(0, dateLength));
+  if (day <= 365) {
+    dateOnly.push(yearlyDataSplitted[day].substring(0, dateLength));
+  }
 }
 
 // Create array containing only the temperatures
 var maxTempLength = 3;
 var tempOnly = [];
 for (var temp in yearlyDataSplitted) {
-  tempOnly.push(yearlyDataSplitted[temp].substring(9, 9 + maxTempLength));
+  if (temp <= 365) {
+    tempOnly.push(yearlyDataSplitted[temp].substring(9, 9 + maxTempLength));
+  }
 }
 
 // Convert dateString to valid JavaScript date
@@ -418,10 +422,17 @@ for (var date in fixedDateOnly) {
   calculationsDate.push(newDate);
 }
 
-console.log(typeof fixedDateOnly[1]);
-console.log(fixedDateOnly[1]);
-console.log(typeof fixedTempOnly[1]);
-console.log(fixedTempOnly[1]);
+// Find min and max of date and temperatures
+var maxDate = Math.max.apply(null, calculationsDate);
+var minDate = Math.min.apply(null, calculationsDate);
+var maxTemp = Math.max.apply(null, fixedTempOnly);
+var minTemp = Math.min.apply(null, fixedTempOnly);
+
+var dateRange = [minDate, maxDate];
+var tempRange = [minTemp, maxTemp];
+console.log(dateRange);
+console.log(tempRange);
+
 
 var ctx = document.getElementById('avgTempPerDay').getContext('2d');
 
