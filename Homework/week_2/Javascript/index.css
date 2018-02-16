@@ -19,3 +19,15 @@
     bottom: 50px;
     left: 365px;
 }
+
+#xLines {
+    position: absolute;
+    bottom: 50px;
+    left: 355px;
+}
+
+#yLines {
+    position: absolute;
+    bottom: 40px;
+    left: 380px;
+}

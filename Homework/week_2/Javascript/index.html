@@ -378,7 +378,9 @@
 <div id="title">
 Temperatures in De Bilt (Netherlands) throughout 2016
 </div>
+<canvas id="xLines" width="10" height="300"></canvas>
 <canvas id="avgTempPerDay" width="600" height="300"></canvas>
+<canvas id="yLines" width="585" height="10"></canvas>
 <script>
 // Remove all whitespace from rawdata and split at enters
 var yearlyData = [];
@@ -441,7 +443,12 @@ var minDate = Math.min.apply(null, calculationsDate);
 var maxTemp = Math.max.apply(null, fixedTempOnly);
 var minTemp = Math.min.apply(null, fixedTempOnly);
 
+console.log(maxTemp);
+console.log(minTemp);
+
 var ctx = document.getElementById('avgTempPerDay').getContext('2d');
+var ctXLines = document.getElementById('xLines').getContext('2d');
+var ctYLines = document.getElementById('yLines').getContext('2d');
 
 function createTransform(domain, range){
 	// domain is a two-element array of the data bounds [domain_min, domain_max]
@@ -468,7 +475,7 @@ function createTransform(domain, range){
 
 var dateRange = [minDate, maxDate];
 var tempRange = [minTemp, maxTemp];
-var xRange = [600, 0];
+var xRange = [585, 0];
 var yRange = [300, 0];
 
 xScale = createTransform(dateRange, xRange);
@@ -489,14 +496,18 @@ for (var temperature in fixedTempOnly) {
 
 var canvasWidth = 600;
 var canvasHeight = 300;
+var canvasWidthXLines = 20;
+var canvasHeightXLines = 300;
+var canvasWidthYLines = 585;
+var canvasHeightYLines = 20;
 
 var year = 366;
 ctx.beginPath();
 for (i = 0; i <= year; i++) {
   ctx.strokeStyle = 'black';
   ctx.lineWidth=0.05;
-  ctx.moveTo(xScaled[i], yScaled[i]);
-  ctx.lineTo(xScaled[i+1], yScaled[i+1]);
+  ctx.moveTo(15 + xScaled[i], yScaled[i]);
+  ctx.lineTo(15 + xScaled[i+1], yScaled[i+1]);
   ctx.stroke();
 }
 ctx.closePath();
@@ -505,8 +516,8 @@ ctx.closePath();
 ctx.beginPath();
 ctx.strokeStyle = 'black';
 ctx.lineWidth=2;
-ctx.moveTo(0, canvasHeight);
-ctx.lineTo(canvasWidth, canvasHeight);
+ctx.moveTo(15, canvasHeight);
+ctx.lineTo((canvasWidth), canvasHeight);
 ctx.stroke();
 ctx.closePath();
 
@@ -519,8 +530,33 @@ ctx.lineTo(0, 0);
 ctx.stroke();
 ctx.closePath();
 
-// Draw title
+// Draw x-axis lines
+var stepsX = 9;
+ctXLines.beginPath();
+ctXLines.strokeStyle = 'black';
+ctXLines.lineWidth=1.5;
+ctXLines.moveTo(0, canvasHeightXLines);
+ctXLines.lineTo(canvasWidthXLines, canvasHeightXLines);
+for (i = 1; i <= stepsX; i++) {
+  ctXLines.moveTo(0, (canvasHeightXLines - ((canvasHeightXLines / stepsX) * i)));
+  ctXLines.lineTo(canvasWidthXLines, (canvasHeightXLines - ((canvasHeightXLines / stepsX) * i)));
+  ctXLines.stroke();
+}
+ctXLines.closePath();
 
+// Draw y-axis lines
+var stepsY = 12;
+ctYLines.beginPath();
+ctYLines.strokeStyle = 'black';
+ctYLines.lineWidth=1.5;
+ctYLines.moveTo(0, 0);
+ctYLines.lineTo(0, canvasHeightYLines);
+for (i = 1; i <= stepsY; i++) {
+  ctYLines.moveTo(0 + ((canvasWidthYLines / stepsY) * i), 0);
+  ctYLines.lineTo(0 + ((canvasWidthYLines / stepsY) * i), canvasHeightYLines);
+  ctYLines.stroke();
+}
+ctYLines.closePath();
 
 </script>
 </body>
