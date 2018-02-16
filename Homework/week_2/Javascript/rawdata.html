@@ -402,7 +402,7 @@ for (var temp in yearlyDataSplitted) {
 var fixedDateOnly = [];
 for (var dateString in dateOnly) {
   var year = dateOnly[dateString].substring(0, 4); // First 4 char are YYYY
-  var month = dateOnly[dateString].substring(4, 6); // Following 2 are MM
+  var month = dateOnly[dateString].substring(4, 6); // Next 2 are MM
   var day = dateOnly[dateString].substring(6, 8); // Last 2 are DD
   var date = new Date(year, month-1, day);
   fixedDateOnly.push(date);
@@ -415,12 +415,19 @@ for (var number in tempOnly) {
   fixedTempOnly.push(number);
 }
 
+console.log(fixedTempOnly);
+
 // Create new list with .getTime() output to use for transformations
 var calculationsDate = [];
 for (var date in fixedDateOnly) {
-  var newDate = fixedDateOnly[date].getTime();
-  calculationsDate.push(newDate);
+  var newDateInMilliseconds = fixedDateOnly[date].getTime();
+  var millisecondsSinceEpochToStartDataSet = 1483225200000;
+  var newDateInDays = ((newDateInMilliseconds - millisecondsSinceEpochToStartDataSet) + 86400000) / 86400000;
+  var roundedNewDateInDays = Math.round(newDateInDays);
+  calculationsDate.push(roundedNewDateInDays);
 }
+
+console.log(calculationsDate);
 
 // Find min and max of date and temperatures
 var maxDate = Math.max.apply(null, calculationsDate);
@@ -428,12 +435,80 @@ var minDate = Math.min.apply(null, calculationsDate);
 var maxTemp = Math.max.apply(null, fixedTempOnly);
 var minTemp = Math.min.apply(null, fixedTempOnly);
 
+var ctx = document.getElementById('avgTempPerDay').getContext('2d');
+
+function createTransform(domain, range){
+	// domain is a two-element array of the data bounds [domain_min, domain_max]
+	// range is a two-element array of the screen bounds [range_min, range_max]
+	// this gives you two equations to solve:
+	// range_min = alpha * domain_min + beta
+	// range_max = alpha * domain_max + beta
+ 		// a solution would be:
+
+    var domain_min = domain[0]
+    var domain_max = domain[1]
+    var range_min = range[0]
+    var range_max = range[1]
+
+    // formulas to calculate the alpha and the beta
+   	var alpha = (range_max - range_min) / (domain_max - domain_min)
+    var beta = range_max - alpha * domain_max
+
+    // returns the function for the linear transformation (y= a * x + b)
+    return function(x){
+      return alpha * x + beta;
+    }
+}
+
 var dateRange = [minDate, maxDate];
 var tempRange = [minTemp, maxTemp];
-console.log(dateRange);
-console.log(tempRange);
+var xRange = [600, 0];
+var yRange = [300, 0];
 
-var ctx = document.getElementById('avgTempPerDay').getContext('2d');
+xScale = createTransform(dateRange, xRange);
+yScale = createTransform(tempRange, yRange);
+
+var xScaled = [];
+var yScaled = [];
+
+for (var date in calculationsDate) {
+  var transformedDate = Math.round(xScale(calculationsDate[date]));
+  xScaled.push(transformedDate);
+}
+
+for (var temperature in fixedTempOnly) {
+  var transformedTemperature = yScale(fixedTempOnly[temperature]);
+  yScaled.push(transformedTemperature);
+}
+
+var year = 366;
+ctx.beginPath();
+for (i = 0; i <= year; i++) {
+  ctx.strokeStyle = 'black';
+  ctx.lineWidth=0.05;
+  ctx.moveTo(xScaled[i], yScaled[i]);
+  ctx.lineTo(xScaled[i+1], yScaled[i+1]);
+  ctx.stroke();
+}
+ctx.closePath();
+
+// Draw x-axis
+ctx.beginPath();
+ctx.strokeStyle = 'black';
+ctx.lineWidth=3;
+ctx.moveTo(0, 300);
+ctx.lineTo(600, 300);
+ctx.stroke();
+ctx.closePath();
+
+// Draw y-axis
+ctx.beginPath();
+ctx.strokeStyle = 'black';
+ctx.lineWidth=3;
+ctx.moveTo(0, 300);
+ctx.lineTo(0, 0);
+ctx.stroke();
+ctx.closePath();
 
 </script>
 </body>
