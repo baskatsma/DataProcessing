@@ -1,7 +1,7 @@
 #title {
     position: absolute;
     font: 20px Arial, serif;
-    bottom: 370px;
+    bottom: 570px;
     left: 415px;
     width: 800px;
 }
@@ -16,18 +16,30 @@
 
 #avgTempPerDay {
     position: absolute;
-    bottom: 50px;
+    bottom: 250px;
     left: 365px;
 }
 
 #xLines {
     position: absolute;
-    bottom: 50px;
+    bottom: 250px;
     left: 355px;
+}
+
+#xText {
+    position: absolute;
+    bottom: 250px;
+    left: 305px;
 }
 
 #yLines {
     position: absolute;
-    bottom: 40px;
+    bottom: 240px;
     left: 380px;
+}
+
+#yText {
+    position: absolute;
+    bottom: 190px;
+    left: 370px;
 }

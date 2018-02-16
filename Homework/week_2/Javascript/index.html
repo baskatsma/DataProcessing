@@ -379,8 +379,10 @@
 Temperatures in De Bilt (Netherlands) throughout 2016
 </div>
 <canvas id="xLines" width="10" height="300"></canvas>
+<canvas id="xText" width="50" height="300"></canvas>
 <canvas id="avgTempPerDay" width="600" height="300"></canvas>
 <canvas id="yLines" width="585" height="10"></canvas>
+<canvas id="yText" width="615" height="50"></canvas>
 <script>
 // Remove all whitespace from rawdata and split at enters
 var yearlyData = [];
@@ -435,20 +437,18 @@ for (var date in fixedDateOnly) {
   calculationsDate.push(roundedNewDateInDays);
 }
 
-console.log(calculationsDate);
-
 // Find min and max of date and temperatures
 var maxDate = Math.max.apply(null, calculationsDate);
 var minDate = Math.min.apply(null, calculationsDate);
 var maxTemp = Math.max.apply(null, fixedTempOnly);
 var minTemp = Math.min.apply(null, fixedTempOnly);
 
-console.log(maxTemp);
-console.log(minTemp);
-
+// Create multiple canvasses to quickly add elements to the plot
 var ctx = document.getElementById('avgTempPerDay').getContext('2d');
 var ctXLines = document.getElementById('xLines').getContext('2d');
 var ctYLines = document.getElementById('yLines').getContext('2d');
+var ctXText = document.getElementById('xText').getContext('2d');
+var ctYText = document.getElementById('yText').getContext('2d');
 
 function createTransform(domain, range){
 	// domain is a two-element array of the data bounds [domain_min, domain_max]
@@ -480,7 +480,6 @@ var yRange = [300, 0];
 
 xScale = createTransform(dateRange, xRange);
 yScale = createTransform(tempRange, yRange);
-
 var xScaled = [];
 var yScaled = [];
 
@@ -494,13 +493,19 @@ for (var temperature in fixedTempOnly) {
   yScaled.push(transformedTemperature);
 }
 
+// Define measurements
 var canvasWidth = 600;
 var canvasHeight = 300;
 var canvasWidthXLines = 20;
+var canvasWidthXText = 50;
 var canvasHeightXLines = 300;
+var canvasHeightXText = 335;
 var canvasWidthYLines = 585;
+var canvasWidthYText = 615;
 var canvasHeightYLines = 20;
+var canvasHeightYText = 50;
 
+// Draw data points into a line graph
 var year = 366;
 ctx.beginPath();
 for (i = 0; i <= year; i++) {
@@ -512,7 +517,7 @@ for (i = 0; i <= year; i++) {
 }
 ctx.closePath();
 
-// Draw x-axis
+// Draw Y-axis
 ctx.beginPath();
 ctx.strokeStyle = 'black';
 ctx.lineWidth=2;
@@ -521,7 +526,7 @@ ctx.lineTo((canvasWidth), canvasHeight);
 ctx.stroke();
 ctx.closePath();
 
-// Draw y-axis
+// Draw X-axis
 ctx.beginPath();
 ctx.strokeStyle = 'black';
 ctx.lineWidth=2;
@@ -530,33 +535,64 @@ ctx.lineTo(0, 0);
 ctx.stroke();
 ctx.closePath();
 
-// Draw x-axis lines
-var stepsX = 9;
+// Draw Y-axis lines
+var stepsY = 6;
 ctXLines.beginPath();
 ctXLines.strokeStyle = 'black';
 ctXLines.lineWidth=1.5;
 ctXLines.moveTo(0, canvasHeightXLines);
 ctXLines.lineTo(canvasWidthXLines, canvasHeightXLines);
-for (i = 1; i <= stepsX; i++) {
-  ctXLines.moveTo(0, (canvasHeightXLines - ((canvasHeightXLines / stepsX) * i)));
-  ctXLines.lineTo(canvasWidthXLines, (canvasHeightXLines - ((canvasHeightXLines / stepsX) * i)));
+for (i = 1; i <= stepsY; i++) {
+  ctXLines.moveTo(0, (canvasHeightXLines - ((canvasHeightXLines / stepsY) * i)));
+  ctXLines.lineTo(canvasWidthXLines, (canvasHeightXLines - ((canvasHeightXLines / stepsY) * i)));
   ctXLines.stroke();
 }
 ctXLines.closePath();
 
-// Draw y-axis lines
-var stepsY = 12;
+// Draw X-axis lines
+var stepsX = 11;
 ctYLines.beginPath();
 ctYLines.strokeStyle = 'black';
 ctYLines.lineWidth=1.5;
 ctYLines.moveTo(0, 0);
 ctYLines.lineTo(0, canvasHeightYLines);
-for (i = 1; i <= stepsY; i++) {
-  ctYLines.moveTo(0 + ((canvasWidthYLines / stepsY) * i), 0);
-  ctYLines.lineTo(0 + ((canvasWidthYLines / stepsY) * i), canvasHeightYLines);
+for (i = 1; i <= stepsX; i++) {
+  ctYLines.moveTo(0 + ((canvasWidthYLines / stepsX) * i), 0);
+  ctYLines.lineTo(0 + ((canvasWidthYLines / stepsX) * i), canvasHeightYLines);
   ctYLines.stroke();
 }
 ctYLines.closePath();
+
+// Initialize months
+var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+
+// Draw text for each month, evenly spaced out throughout the canvas
+ctYText.font = "13px Arial";
+var counterX = 1;
+for (var month in months) {
+  ctYText.fillText(months[month], ((canvasWidthYText / months.length) * counterX) - 43, (canvasHeightYText - 35));
+  counterX++;
+}
+
+// Draw X-axis label
+ctYText.font = "16px Arial";
+ctYText.fillText("Months", (canvasWidthYText / 2) - 30, canvasHeightYText - 5);
+
+// Initialize temps
+var temps = ["-5", "0", "5", "10", "15", "20", "25"];
+
+// Draw text for each temperature label, evenly spaced out throughout the canvas
+ctXText.font = "13px Arial";
+var counterY = 1;
+for (var temp in temps) {
+  ctXText.fillText(temps[temp], (canvasWidthXText - 20), (canvasHeightXText + 10) - (canvasHeightXText / temps.length) * counterY);
+  counterY++;
+}
+
+// Draw Y-axis label
+ctXText.rotate(270 * Math.PI / 180);
+ctXText.font = "16px Arial";
+ctXText.fillText("Temperature in degrees Celsius", (-canvasHeightXText + 70), 12);
 
 </script>
 </body>
