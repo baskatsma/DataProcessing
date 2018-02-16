@@ -1,0 +1,21 @@
+#title {
+    position: absolute;
+    font: 20px Arial, serif;
+    bottom: 370px;
+    left: 415px;
+    width: 800px;
+}
+
+#rawdata {
+    display: none;
+}
+
+#abbrev {
+    display: none;
+}
+
+#avgTempPerDay {
+    position: absolute;
+    bottom: 50px;
+    left: 365px;
+}

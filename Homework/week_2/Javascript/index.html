@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+<link rel="stylesheet" type="text/css" href="index.css">
 <body>
+<textarea id="abbrev">
 # date, maxtemp
+</textarea>
 <br></br>
 <textarea id="rawdata">
 20170101,    5
@@ -372,6 +375,9 @@
 20180101,   68
 </textarea>
 <br></br>
+<div id="title">
+Temperatures in De Bilt (Netherlands) throughout 2016
+</div>
 <canvas id="avgTempPerDay" width="600" height="300"></canvas>
 <script>
 // Remove all whitespace from rawdata and split at enters
@@ -481,6 +487,9 @@ for (var temperature in fixedTempOnly) {
   yScaled.push(transformedTemperature);
 }
 
+var canvasWidth = 600;
+var canvasHeight = 300;
+
 var year = 366;
 ctx.beginPath();
 for (i = 0; i <= year; i++) {
@@ -495,20 +504,23 @@ ctx.closePath();
 // Draw x-axis
 ctx.beginPath();
 ctx.strokeStyle = 'black';
-ctx.lineWidth=3;
-ctx.moveTo(0, 300);
-ctx.lineTo(600, 300);
+ctx.lineWidth=2;
+ctx.moveTo(0, canvasHeight);
+ctx.lineTo(canvasWidth, canvasHeight);
 ctx.stroke();
 ctx.closePath();
 
 // Draw y-axis
 ctx.beginPath();
 ctx.strokeStyle = 'black';
-ctx.lineWidth=3;
-ctx.moveTo(0, 300);
+ctx.lineWidth=2;
+ctx.moveTo(0, canvasHeight);
 ctx.lineTo(0, 0);
 ctx.stroke();
 ctx.closePath();
+
+// Draw title
+
 
 </script>
 </body>
