@@ -5,20 +5,18 @@
  *
  */
 
-// Load JSON dataFile
-d3.json("data.json", function(data) {
-  
-  // Grab dates from JSON and store in separate array
-  var date = [];
-  for (i = 0; i < data.length; i++) {
-    date.push(data[i].date);
-  }
-  console.log(date);
+// Initialize values
+var width = 420,
+    barHeight = 20;
 
-  // Grab precipitation from JSON and store in separate array
-  var precipitation = [];
-  for (i = 0; i < data.length; i++) {
-    precipitation.push(data[i].precipitation);
-  }
-  console.log(precipitation);
+var x = d3.scale.linear()
+    .range([0, width]);
+
+var barchart = d3.select(".barchart")
+    .attr("width", width);
+
+// Load JSON dataFile
+d3.json("data_edited.json", function(data) {
+  console.log(data);
+  console.log(typeof data[1]);
 });
