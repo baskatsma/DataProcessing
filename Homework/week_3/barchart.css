@@ -1,9 +1,22 @@
 .barchart rect {
   fill: steelblue;
+  opacity: 0.25;
 }
 
-.barchart text {
-  fill: white;
-  font: 10px sans-serif;
-  text-anchor: end;
+.axis text {
+  font: 14px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+  stroke: black;
+  stroke-width: 1px;
+}
+
+.axis .ytext,
+.axis .xtext {
+  font: 20px sans-serif;
 }
