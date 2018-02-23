@@ -3,7 +3,7 @@
  *
  *  Bas Katsma
  *  10787690
- *  Week 3:
+ *
  */
 
 // Initialize dimensions and margins
