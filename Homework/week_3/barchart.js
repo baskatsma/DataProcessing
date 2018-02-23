@@ -7,9 +7,16 @@
  */
 
 // Initialize dimensions and margins
-var margin = {top: 30, bottom: 60, left: 80, right: 40},
+var margin = {top: 40, bottom: 60, left: 80, right: 40},
     height = 650 - margin.top - margin.bottom,
     width = 900 - margin.left - margin.right;
+
+var tip = d3.tip()
+    .attr('class', 'd3-tip')
+    .offset([-10, 0])
+    .html(function(d) {
+        return "<strong>Precipitation:</strong> <span style='color:red'>" + d.precipitation + "</span>";
+      })
 
 // Apply dimensions to chart
 var barchart = d3.select(".barchart")
@@ -18,6 +25,8 @@ var barchart = d3.select(".barchart")
   .append("g")
       .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
+barchart.call(tip);
+
 // Create arrays to store data
 var months = [];
 var precipitation = [];
@@ -25,7 +34,7 @@ var precipitation = [];
 // Load JSON dataFile
 d3.json("data_edited.json", function(data) {
 
-  // Split JSON values into separate arrays
+  // Send JSON values into separate arrays
   for (var i = 0, len = data.length; i < len; i++) {
     months.push(data[i].month);
     precipitation.push(Number(data[i].precipitation));
@@ -62,7 +71,7 @@ d3.json("data_edited.json", function(data) {
         .attr("x", width/2)
         .attr("dy", ".71em")
         .style("text-anchor", "end")
-        .text("Months");
+        .text("Months")
 
   barchart.append("g")
       .attr("class", "y axis")
@@ -79,9 +88,11 @@ d3.json("data_edited.json", function(data) {
   barchart.selectAll(".bar")
       .data(data)
     .enter().append("rect")
-      	.attr("class", "bar")
-      	.attr("y", function(d) { return y(d.precipitation); })
-      	.attr("x", function(d) { return x(d.month)})
-      	.attr("width", x.rangeBand())
-      	.attr("height", function(d) {return height - y(d.precipitation)});
+        .attr("class", "bar")
+        .attr("x", function(d) { return x(d.month); })
+        .attr("width", x.rangeBand())
+        .attr("y", function(d) { return y(d.precipitation); })
+        .attr("height", function(d) { return height - y(d.precipitation); })
+        .on('mouseover', tip.show)
+        .on('mouseout', tip.hide)
 });
