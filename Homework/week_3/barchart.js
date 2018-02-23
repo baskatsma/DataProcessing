@@ -11,6 +11,7 @@ var margin = {top: 40, bottom: 60, left: 80, right: 40},
     height = 650 - margin.top - margin.bottom,
     width = 900 - margin.left - margin.right;
 
+// Initialize tip
 var tip = d3.tip()
     .attr('class', 'd3-tip')
     .offset([-10, 0])
@@ -25,13 +26,14 @@ var barchart = d3.select(".barchart")
   .append("g")
       .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
+// Call tip
 barchart.call(tip);
 
 // Create arrays to store data
 var months = [];
 var precipitation = [];
 
-// Load JSON dataFile
+// Load JSON data file
 d3.json("data_edited.json", function(data) {
 
   // Send JSON values into separate arrays
@@ -50,17 +52,17 @@ d3.json("data_edited.json", function(data) {
       .domain([0, d3.max(precipitation)])
       .range([height, 0]);
 
-  // Add x-axis
+  // Initialize x-axis
   var xAxis = d3.svg.axis()
       .scale(x)
       .orient("bottom");
 
-  // Add y-axis
+  // Initialize y-axis
   var yAxis = d3.svg.axis()
       .scale(y)
       .orient("left");
 
-  //
+  // Append x-axis and its label
   barchart.append("g")
       .attr("class", "x axis")
       .attr("transform", "translate(0," + height + ")")
@@ -73,6 +75,7 @@ d3.json("data_edited.json", function(data) {
         .style("text-anchor", "end")
         .text("Months")
 
+  // Append y-axis and its label
   barchart.append("g")
       .attr("class", "y axis")
       .call(yAxis)
@@ -85,6 +88,7 @@ d3.json("data_edited.json", function(data) {
         .style("text-anchor", "end")
         .text("Precipitation (mm)");
 
+  // Append a child rect for each bar with the desired dimensions
   barchart.selectAll(".bar")
       .data(data)
     .enter().append("rect")
