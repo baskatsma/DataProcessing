@@ -27,7 +27,7 @@ if __name__ == "__main__":
             # Match each value with its corresponding key
             data = OrderedDict()
             for key in JSONKeyNames:
-                data[key] = line[key].strip()
+                data[key] = line[key].strip().replace('\ufeff', '')
             dataStorage.append(data)
 
     # Create new JSON file and use .dump to convert
