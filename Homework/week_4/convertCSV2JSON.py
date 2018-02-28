@@ -27,6 +27,8 @@ if __name__ == "__main__":
             # Match each value with its corresponding key
             data = OrderedDict()
             for key in JSONKeyNames:
+                
+                # Remove whitespace and weird character that sometimes appears
                 data[key] = line[key].strip().replace("\ufeff", "")
             dataStorage.append(data)
 
