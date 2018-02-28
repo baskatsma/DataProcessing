@@ -19,7 +19,7 @@ if __name__ == "__main__":
 
     # Read data file
     with open("data_edited.csv", "r") as dataFile:
-        dataReader = csv.DictReader(dataFile, JSONKeyNames, delimiter = ";")
+        dataReader = csv.DictReader(dataFile, JSONKeyNames, delimiter=";")
 
         # Iterate over each line
         for line in dataReader:
@@ -27,7 +27,7 @@ if __name__ == "__main__":
             # Match each value with its corresponding key
             data = OrderedDict()
             for key in JSONKeyNames:
-                
+
                 # Remove whitespace and weird character that sometimes appears
                 data[key] = line[key].strip().replace("\ufeff", "")
             dataStorage.append(data)
