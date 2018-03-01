@@ -7,6 +7,7 @@
  *
  */
 
+// Execute code after loading the DOM
 window.onload = function() {
 
   // Initialize dimensions
@@ -15,11 +16,12 @@ window.onload = function() {
   var legendRectSize = 18;
   var legendSpacing = 4;
 
-  // Add color domain and range
+  // Add color scale
   var color = d3.scale.ordinal()
     .domain(["Licht", "Medium", "Donker"])
     .range(["#ffffb2","#fecc5c","#fd8d3c"])
 
+  // Add the SVG component and set its dimensions
   var svg = d3.select(".legend")
     .append("svg")
     .attr("width", width)
@@ -27,6 +29,7 @@ window.onload = function() {
     .append("g")
     .attr("transform", "translate(140, 40)");
 
+  // Create legend
   var legend = svg.selectAll(".legend")
     .data(color.domain())
     .enter()
@@ -40,12 +43,14 @@ window.onload = function() {
       return "translate(" + horz + "," + vert + ")";
     });
 
+  // Append legend icon and color
   legend.append("rect")
     .attr("width", legendRectSize)
     .attr("height", legendRectSize)
     .style("fill", color)
     .style("stroke", color);
 
+  // Append legend text
   legend.append("text")
     .attr("x", legendRectSize + legendSpacing)
     .attr("y", legendRectSize - legendSpacing)

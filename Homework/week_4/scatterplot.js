@@ -7,6 +7,7 @@
  *
  */
 
+// Execute code after loading the DOM
 window.onload = function() {
 
     // Initialize dimensions and margins
@@ -16,7 +17,7 @@ window.onload = function() {
     var legendRectSize = 20;
     var legendSpacing = 5;
 
-    // Apply dimensions to chart
+    // Add the SVG component and set its dimensions
     var svg = d3.select(".scatterplot")
         .attr("width", width + margin.left + margin.right)
         .attr("height", height + margin.top + margin.bottom)
@@ -100,14 +101,14 @@ window.onload = function() {
             .attr("cy", function(d) { return y(d.wellbeing); })
             .style("fill", function(d) { return color(d.region); });
 
-        // Add legend
+        // Create legend
         var legend = svg.selectAll(".legend")
             .data(color.domain())
           .enter().append("g")
             .attr("class", "legend")
             .attr("transform", function(d, i) { return "translate(725," + i * 30 + ")"; });
 
-        // Append legend color
+        // Append legend icon and color
         legend.append("circle")
               .attr("class", "dot")
               .attr("r", 11)
