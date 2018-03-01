@@ -28,10 +28,10 @@ p {
 }
 
 .axis text {
-  font: 13px sans-serif;
+  font: 14px sans-serif;
 }
 
-.ytext,
-.xtext {
+.axis .ytext,
+.axis .xtext {
   font: 18px sans-serif;
 }

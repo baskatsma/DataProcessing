@@ -51,23 +51,38 @@ window.onload = function() {
         // Note that height goes first due to the weird SVG coordinate system
             .range([height - margin.top - margin.bottom, 0]);
 
-        // we add the axes SVG component. At this point, this is just a placeholder. The actual axis will be added in a bit
-        svg.append("g").attr("class", "x axis").attr("transform", "translate(0," + y.range()[0] + ")");
-        svg.append("g").attr("class", "y axis");
+        var xAxis = d3.svg.axis()
+            .scale(x)
+            .orient("bottom")
+            .tickPadding(2);
 
-        // this is our X axis label. Nothing too special to see here.
-        svg.append("text")
-            .attr("class", "xtext")
-            .attr("x", width / 2)
-            .attr("y", height - 35)
-            .style("text-anchor", "end")
-            .text("Life expectancy (years)");
+        var yAxis = d3.svg.axis()
+            .scale(y)
+            .orient("left")
+            .tickPadding(2);
 
-        var xAxis = d3.svg.axis().scale(x).orient("bottom").tickPadding(2);
-        var yAxis = d3.svg.axis().scale(y).orient("left").tickPadding(2);
+        svg.append("g")
+            .attr("class", "x axis")
+            .attr("transform", "translate(0," + y.range()[0] + ")")
+            .call(xAxis)
+          .append("text")
+              .attr("class", "xtext")
+              .attr("x", width/2)
+              .attr("y", margin.bottom/1.5)
+              .attr("dy", ".71em")
+              .style("text-anchor", "end")
+              .text("Life expectancy (years)");
 
-        svg.selectAll("g.y.axis").call(yAxis);
-        svg.selectAll("g.x.axis").call(xAxis);
+        svg.append("g")
+            .attr("class", "y axis")
+            .call(yAxis)
+          .append("text")
+              .attr("class", "ytext")
+              .attr("transform", "rotate(-90)")
+              .attr("y", -margin.left/2)
+              .attr("x", -height/4)
+              .style("text-anchor", "end")
+              .text("Wellbeing (1-10)");
 
         });
 };
