@@ -1,6 +1,9 @@
 #!/usr/bin/env python
-# Name: Bas Katsma
-# Student number: 10787690
+#
+#  Name: Bas Katsma
+#  Student 10787690
+#  Homework - Week 4
+#
 """
 This script converts CSV to JSON.
 """
@@ -28,7 +31,7 @@ if __name__ == "__main__":
             data = OrderedDict()
             for key in JSONKeyNames:
 
-                # Remove whitespace and weird character that sometimes appears
+                # Remove whitespace and weird characters
                 data[key] = line[key].strip().replace("\ufeff", "")
             dataStorage.append(data)
 

@@ -2,841 +2,841 @@
     {
         "country": "Afghanistan",
         "region": "Middle East and North Africa",
-        "lifeExpectancy": "59,7",
-        "wellbeing": "3,8"
+        "lifeExpectancy": "59.7",
+        "wellbeing": "3.8"
     },
     {
         "country": "Albania",
         "region": "Post-communist",
-        "lifeExpectancy": "77,3",
-        "wellbeing": "5,5"
+        "lifeExpectancy": "77.3",
+        "wellbeing": "5.5"
     },
     {
         "country": "Algeria",
         "region": "Middle East and North Africa",
-        "lifeExpectancy": "74,3",
-        "wellbeing": "5,6"
+        "lifeExpectancy": "74.3",
+        "wellbeing": "5.6"
     },
     {
         "country": "Argentina",
         "region": "Americas",
-        "lifeExpectancy": "75,9",
-        "wellbeing": "6,5"
+        "lifeExpectancy": "75.9",
+        "wellbeing": "6.5"
     },
     {
         "country": "Armenia",
         "region": "Post-communist",
-        "lifeExpectancy": "74,4",
-        "wellbeing": "4,3"
+        "lifeExpectancy": "74.4",
+        "wellbeing": "4.3"
     },
     {
         "country": "Australia",
         "region": "Asia Pacific",
-        "lifeExpectancy": "82,1",
-        "wellbeing": "7,2"
+        "lifeExpectancy": "82.1",
+        "wellbeing": "7.2"
     },
     {
         "country": "Austria",
         "region": "Europe",
-        "lifeExpectancy": "81,0",
-        "wellbeing": "7,4"
+        "lifeExpectancy": "81.0",
+        "wellbeing": "7.4"
     },
     {
         "country": "Bangladesh",
         "region": "Asia Pacific",
-        "lifeExpectancy": "70,8",
-        "wellbeing": "4,7"
+        "lifeExpectancy": "70.8",
+        "wellbeing": "4.7"
     },
     {
         "country": "Belarus",
         "region": "Post-communist",
-        "lifeExpectancy": "70,9",
-        "wellbeing": "5,7"
+        "lifeExpectancy": "70.9",
+        "wellbeing": "5.7"
     },
     {
         "country": "Belgium",
         "region": "Europe",
-        "lifeExpectancy": "80,4",
-        "wellbeing": "6,9"
+        "lifeExpectancy": "80.4",
+        "wellbeing": "6.9"
     },
     {
         "country": "Belize",
         "region": "Americas",
-        "lifeExpectancy": "69,8",
-        "wellbeing": "6,1"
+        "lifeExpectancy": "69.8",
+        "wellbeing": "6.1"
     },
     {
         "country": "Benin",
         "region": "Sub Saharan Africa",
-        "lifeExpectancy": "59,2",
-        "wellbeing": "3,2"
+        "lifeExpectancy": "59.2",
+        "wellbeing": "3.2"
     },
     {
         "country": "Bhutan",
         "region": "Asia Pacific",
-        "lifeExpectancy": "68,7",
-        "wellbeing": "5,6"
+        "lifeExpectancy": "68.7",
+        "wellbeing": "5.6"
     },
     {
         "country": "Bolivia",
         "region": "Americas",
-        "lifeExpectancy": "67,5",
-        "wellbeing": "6,0"
+        "lifeExpectancy": "67.5",
+        "wellbeing": "6.0"
     },
     {
         "country": "Bosnia and Herzegovina",
         "region": "Post-communist",
-        "lifeExpectancy": "76,2",
-        "wellbeing": "4,8"
+        "lifeExpectancy": "76.2",
+        "wellbeing": "4.8"
     },
     {
         "country": "Botswana",
         "region": "Sub Saharan Africa",
-        "lifeExpectancy": "64,2",
-        "wellbeing": "4,8"
+        "lifeExpectancy": "64.2",
+        "wellbeing": "4.8"
     },
     {
         "country": "Brazil",
         "region": "Americas",
-        "lifeExpectancy": "73,9",
-        "wellbeing": "6,9"
+        "lifeExpectancy": "73.9",
+        "wellbeing": "6.9"
     },
     {
         "country": "Bulgaria",
         "region": "Post-communist",
-        "lifeExpectancy": "73,9",
-        "wellbeing": "4,2"
+        "lifeExpectancy": "73.9",
+        "wellbeing": "4.2"
     },
     {
         "country": "Burkina Faso",
         "region": "Sub Saharan Africa",
-        "lifeExpectancy": "58,0",
-        "wellbeing": "4,0"
+        "lifeExpectancy": "58.0",
+        "wellbeing": "4.0"
     },
     {
         "country": "Burundi",
         "region": "Sub Saharan Africa",
-        "lifeExpectancy": "55,8",
-        "wellbeing": "3,4"
+        "lifeExpectancy": "55.8",
+        "wellbeing": "3.4"
     },
     {
         "country": "Cambodia",
         "region": "Asia Pacific",
-        "lifeExpectancy": "67,5",
-        "wellbeing": "3,9"
+        "lifeExpectancy": "67.5",
+        "wellbeing": "3.9"
     },
     {
         "country": "Cameroon",
         "region": "Sub Saharan Africa",
-        "lifeExpectancy": "54,6",
-        "wellbeing": "4,2"
+        "lifeExpectancy": "54.6",
+        "wellbeing": "4.2"
     },
     {
         "country": "Canada",
         "region": "Americas",
-        "lifeExpectancy": "81,7",
-        "wellbeing": "7,4"
+        "lifeExpectancy": "81.7",
+        "wellbeing": "7.4"
     },
     {
         "country": "Chad",
         "region": "Sub Saharan Africa",
-        "lifeExpectancy": "50,8",
-        "wellbeing": "4,0"
+        "lifeExpectancy": "50.8",
+        "wellbeing": "4.0"
     },
     {
         "country": "Chile",
         "region": "Americas",
-        "lifeExpectancy": "81,1",
-        "wellbeing": "6,6"
+        "lifeExpectancy": "81.1",
+        "wellbeing": "6.6"
     },
     {
         "country": "China",
         "region": "Asia Pacific",
-        "lifeExpectancy": "75,4",
-        "wellbeing": "5,1"
+        "lifeExpectancy": "75.4",
+        "wellbeing": "5.1"
     },
     {
         "country": "Colombia",
         "region": "Americas",
-        "lifeExpectancy": "73,7",
-        "wellbeing": "6,4"
+        "lifeExpectancy": "73.7",
+        "wellbeing": "6.4"
     },
     {
         "country": "Comoros",
         "region": "Sub Saharan Africa",
-        "lifeExpectancy": "62,6",
-        "wellbeing": "4,0"
+        "lifeExpectancy": "62.6",
+        "wellbeing": "4.0"
     },
     {
         "country": "Costa Rica",
         "region": "Americas",
-        "lifeExpectancy": "79,1",
-        "wellbeing": "7,3"
+        "lifeExpectancy": "79.1",
+        "wellbeing": "7.3"
     },
     {
         "country": "Cote d'Ivoire",
         "region": "Sub Saharan Africa",
-        "lifeExpectancy": "50,8",
-        "wellbeing": "3,8"
+        "lifeExpectancy": "50.8",
+        "wellbeing": "3.8"
     },
     {
         "country": "Croatia",
         "region": "Post-communist",
-        "lifeExpectancy": "77,0",
-        "wellbeing": "6,0"
+        "lifeExpectancy": "77.0",
+        "wellbeing": "6.0"
     },
     {
         "country": "Cyprus",
         "region": "Europe",
-        "lifeExpectancy": "79,8",
-        "wellbeing": "6,2"
+        "lifeExpectancy": "79.8",
+        "wellbeing": "6.2"
     },
     {
         "country": "Czech Republic",
         "region": "Post-communist",
-        "lifeExpectancy": "78,2",
-        "wellbeing": "6,3"
+        "lifeExpectancy": "78.2",
+        "wellbeing": "6.3"
     },
     {
         "country": "Denmark",
         "region": "Europe",
-        "lifeExpectancy": "79,8",
-        "wellbeing": "7,5"
+        "lifeExpectancy": "79.8",
+        "wellbeing": "7.5"
     },
     {
         "country": "Djibouti",
         "region": "Sub Saharan Africa",
-        "lifeExpectancy": "61,3",
-        "wellbeing": "4,4"
+        "lifeExpectancy": "61.3",
+        "wellbeing": "4.4"
     },
     {
         "country": "Dominican Republic",
         "region": "Americas",
-        "lifeExpectancy": "73,1",
-        "wellbeing": "4,8"
+        "lifeExpectancy": "73.1",
+        "wellbeing": "4.8"
     },
     {
         "country": "Ecuador",
         "region": "Americas",
-        "lifeExpectancy": "75,4",
-        "wellbeing": "6,0"
+        "lifeExpectancy": "75.4",
+        "wellbeing": "6.0"
     },
     {
         "country": "Egypt",
         "region": "Middle East and North Africa",
-        "lifeExpectancy": "70,7",
-        "wellbeing": "4,2"
+        "lifeExpectancy": "70.7",
+        "wellbeing": "4.2"
     },
     {
         "country": "El Salvador",
         "region": "Americas",
-        "lifeExpectancy": "72,5",
-        "wellbeing": "5,9"
+        "lifeExpectancy": "72.5",
+        "wellbeing": "5.9"
     },
     {
         "country": "Estonia",
         "region": "Post-communist",
-        "lifeExpectancy": "76,2",
-        "wellbeing": "5,4"
+        "lifeExpectancy": "76.2",
+        "wellbeing": "5.4"
     },
     {
         "country": "Ethiopia",
         "region": "Sub Saharan Africa",
-        "lifeExpectancy": "62,8",
-        "wellbeing": "4,6"
+        "lifeExpectancy": "62.8",
+        "wellbeing": "4.6"
     },
     {
         "country": "Finland",
         "region": "Europe",
-        "lifeExpectancy": "80,4",
-        "wellbeing": "7,4"
+        "lifeExpectancy": "80.4",
+        "wellbeing": "7.4"
     },
     {
         "country": "France",
         "region": "Europe",
-        "lifeExpectancy": "81,8",
-        "wellbeing": "6,6"
+        "lifeExpectancy": "81.8",
+        "wellbeing": "6.6"
     },
     {
         "country": "Gabon",
         "region": "Sub Saharan Africa",
-        "lifeExpectancy": "63,3",
-        "wellbeing": "4,0"
+        "lifeExpectancy": "63.3",
+        "wellbeing": "4.0"
     },
     {
         "country": "Georgia",
         "region": "Post-communist",
-        "lifeExpectancy": "74,6",
-        "wellbeing": "4,3"
+        "lifeExpectancy": "74.6",
+        "wellbeing": "4.3"
     },
     {
         "country": "Germany",
         "region": "Europe",
-        "lifeExpectancy": "80,6",
-        "wellbeing": "6,7"
+        "lifeExpectancy": "80.6",
+        "wellbeing": "6.7"
     },
     {
         "country": "Ghana",
         "region": "Sub Saharan Africa",
-        "lifeExpectancy": "61,0",
-        "wellbeing": "5,1"
+        "lifeExpectancy": "61.0",
+        "wellbeing": "5.1"
     },
     {
         "country": "Greece",
         "region": "Europe",
-        "lifeExpectancy": "80,5",
-        "wellbeing": "5,1"
+        "lifeExpectancy": "80.5",
+        "wellbeing": "5.1"
     },
     {
         "country": "Guatemala",
         "region": "Americas",
-        "lifeExpectancy": "71,4",
-        "wellbeing": "5,9"
+        "lifeExpectancy": "71.4",
+        "wellbeing": "5.9"
     },
     {
         "country": "Guinea",
         "region": "Sub Saharan Africa",
-        "lifeExpectancy": "57,7",
-        "wellbeing": "3,7"
+        "lifeExpectancy": "57.7",
+        "wellbeing": "3.7"
     },
     {
         "country": "Haiti",
         "region": "Americas",
-        "lifeExpectancy": "62,1",
-        "wellbeing": "4,4"
+        "lifeExpectancy": "62.1",
+        "wellbeing": "4.4"
     },
     {
         "country": "Honduras",
         "region": "Americas",
-        "lifeExpectancy": "72,8",
-        "wellbeing": "4,6"
+        "lifeExpectancy": "72.8",
+        "wellbeing": "4.6"
     },
     {
         "country": "Hong Kong",
         "region": "Asia Pacific",
-        "lifeExpectancy": "83,6",
-        "wellbeing": "5,5"
+        "lifeExpectancy": "83.6",
+        "wellbeing": "5.5"
     },
     {
         "country": "Hungary",
         "region": "Post-communist",
-        "lifeExpectancy": "74,9",
-        "wellbeing": "4,7"
+        "lifeExpectancy": "74.9",
+        "wellbeing": "4.7"
     },
     {
         "country": "Iceland",
         "region": "Europe",
-        "lifeExpectancy": "82,2",
-        "wellbeing": "7,6"
+        "lifeExpectancy": "82.2",
+        "wellbeing": "7.6"
     },
     {
         "country": "India",
         "region": "Asia Pacific",
-        "lifeExpectancy": "67,3",
-        "wellbeing": "4,6"
+        "lifeExpectancy": "67.3",
+        "wellbeing": "4.6"
     },
     {
         "country": "Indonesia",
         "region": "Asia Pacific",
-        "lifeExpectancy": "68,5",
-        "wellbeing": "5,4"
+        "lifeExpectancy": "68.5",
+        "wellbeing": "5.4"
     },
     {
         "country": "Iran",
         "region": "Middle East and North Africa",
-        "lifeExpectancy": "74,8",
-        "wellbeing": "4,6"
+        "lifeExpectancy": "74.8",
+        "wellbeing": "4.6"
     },
     {
         "country": "Iraq",
         "region": "Middle East and North Africa",
-        "lifeExpectancy": "69,0",
-        "wellbeing": "4,7"
+        "lifeExpectancy": "69.0",
+        "wellbeing": "4.7"
     },
     {
         "country": "Ireland",
         "region": "Europe",
-        "lifeExpectancy": "80,5",
-        "wellbeing": "7,0"
+        "lifeExpectancy": "80.5",
+        "wellbeing": "7.0"
     },
     {
         "country": "Israel",
         "region": "Middle East and North Africa",
-        "lifeExpectancy": "81,9",
-        "wellbeing": "7,1"
+        "lifeExpectancy": "81.9",
+        "wellbeing": "7.1"
     },
     {
         "country": "Italy",
         "region": "Europe",
-        "lifeExpectancy": "82,7",
-        "wellbeing": "5,8"
+        "lifeExpectancy": "82.7",
+        "wellbeing": "5.8"
     },
     {
         "country": "Jamaica",
         "region": "Americas",
-        "lifeExpectancy": "75,3",
-        "wellbeing": "5,6"
+        "lifeExpectancy": "75.3",
+        "wellbeing": "5.6"
     },
     {
         "country": "Japan",
         "region": "Asia Pacific",
-        "lifeExpectancy": "83,2",
-        "wellbeing": "6,0"
+        "lifeExpectancy": "83.2",
+        "wellbeing": "6.0"
     },
     {
         "country": "Kazakhstan",
         "region": "Post-communist",
-        "lifeExpectancy": "68,6",
-        "wellbeing": "5,8"
+        "lifeExpectancy": "68.6",
+        "wellbeing": "5.8"
     },
     {
         "country": "Kenya",
         "region": "Sub Saharan Africa",
-        "lifeExpectancy": "60,3",
-        "wellbeing": "4,5"
+        "lifeExpectancy": "60.3",
+        "wellbeing": "4.5"
     },
     {
         "country": "Kyrgyzstan",
         "region": "Post-communist",
-        "lifeExpectancy": "69,7",
-        "wellbeing": "5,2"
+        "lifeExpectancy": "69.7",
+        "wellbeing": "5.2"
     },
     {
         "country": "Latvia",
         "region": "Post-communist",
-        "lifeExpectancy": "73,6",
-        "wellbeing": "5,1"
+        "lifeExpectancy": "73.6",
+        "wellbeing": "5.1"
     },
     {
         "country": "Lebanon",
         "region": "Middle East and North Africa",
-        "lifeExpectancy": "78,8",
-        "wellbeing": "4,6"
+        "lifeExpectancy": "78.8",
+        "wellbeing": "4.6"
     },
     {
         "country": "Lesotho",
         "region": "Sub Saharan Africa",
-        "lifeExpectancy": "48,9",
-        "wellbeing": "4,9"
+        "lifeExpectancy": "48.9",
+        "wellbeing": "4.9"
     },
     {
         "country": "Liberia",
         "region": "Sub Saharan Africa",
-        "lifeExpectancy": "60,2",
-        "wellbeing": "4,4"
+        "lifeExpectancy": "60.2",
+        "wellbeing": "4.4"
     },
     {
         "country": "Lithuania",
         "region": "Post-communist",
-        "lifeExpectancy": "72,8",
-        "wellbeing": "5,8"
+        "lifeExpectancy": "72.8",
+        "wellbeing": "5.8"
     },
     {
         "country": "Luxembourg",
         "region": "Europe",
-        "lifeExpectancy": "81,1",
-        "wellbeing": "7,0"
+        "lifeExpectancy": "81.1",
+        "wellbeing": "7.0"
     },
     {
         "country": "Macedonia",
         "region": "Post-communist",
-        "lifeExpectancy": "75,1",
-        "wellbeing": "4,6"
+        "lifeExpectancy": "75.1",
+        "wellbeing": "4.6"
     },
     {
         "country": "Malawi",
         "region": "Sub Saharan Africa",
-        "lifeExpectancy": "60,1",
-        "wellbeing": "4,3"
+        "lifeExpectancy": "60.1",
+        "wellbeing": "4.3"
     },
     {
         "country": "Malaysia",
         "region": "Asia Pacific",
-        "lifeExpectancy": "74,4",
-        "wellbeing": "5,9"
+        "lifeExpectancy": "74.4",
+        "wellbeing": "5.9"
     },
     {
         "country": "Malta",
         "region": "Europe",
-        "lifeExpectancy": "80,2",
-        "wellbeing": "6,0"
+        "lifeExpectancy": "80.2",
+        "wellbeing": "6.0"
     },
     {
         "country": "Mauritania",
         "region": "Sub Saharan Africa",
-        "lifeExpectancy": "62,6",
-        "wellbeing": "4,7"
+        "lifeExpectancy": "62.6",
+        "wellbeing": "4.7"
     },
     {
         "country": "Mauritius",
         "region": "Sub Saharan Africa",
-        "lifeExpectancy": "74,0",
-        "wellbeing": "5,5"
+        "lifeExpectancy": "74.0",
+        "wellbeing": "5.5"
     },
     {
         "country": "Mexico",
         "region": "Americas",
-        "lifeExpectancy": "76,4",
-        "wellbeing": "7,3"
+        "lifeExpectancy": "76.4",
+        "wellbeing": "7.3"
     },
     {
         "country": "Mongolia",
         "region": "Asia Pacific",
-        "lifeExpectancy": "68,6",
-        "wellbeing": "4,9"
+        "lifeExpectancy": "68.6",
+        "wellbeing": "4.9"
     },
     {
         "country": "Montenegro",
         "region": "Post-communist",
-        "lifeExpectancy": "75,8",
-        "wellbeing": "5,2"
+        "lifeExpectancy": "75.8",
+        "wellbeing": "5.2"
     },
     {
         "country": "Morocco",
         "region": "Middle East and North Africa",
-        "lifeExpectancy": "73,4",
-        "wellbeing": "5,0"
+        "lifeExpectancy": "73.4",
+        "wellbeing": "5.0"
     },
     {
         "country": "Mozambique",
         "region": "Sub Saharan Africa",
-        "lifeExpectancy": "54,3",
-        "wellbeing": "5,0"
+        "lifeExpectancy": "54.3",
+        "wellbeing": "5.0"
     },
     {
         "country": "Myanmar",
         "region": "Asia Pacific",
-        "lifeExpectancy": "65,5",
-        "wellbeing": "4,4"
+        "lifeExpectancy": "65.5",
+        "wellbeing": "4.4"
     },
     {
         "country": "Namibia",
         "region": "Sub Saharan Africa",
-        "lifeExpectancy": "64,0",
-        "wellbeing": "4,7"
+        "lifeExpectancy": "64.0",
+        "wellbeing": "4.7"
     },
     {
         "country": "Nepal",
         "region": "Asia Pacific",
-        "lifeExpectancy": "68,8",
-        "wellbeing": "4,2"
+        "lifeExpectancy": "68.8",
+        "wellbeing": "4.2"
     },
     {
         "country": "Netherlands",
         "region": "Europe",
-        "lifeExpectancy": "81,2",
-        "wellbeing": "7,5"
+        "lifeExpectancy": "81.2",
+        "wellbeing": "7.5"
     },
     {
         "country": "New Zealand",
         "region": "Asia Pacific",
-        "lifeExpectancy": "81,4",
-        "wellbeing": "7,2"
+        "lifeExpectancy": "81.4",
+        "wellbeing": "7.2"
     },
     {
         "country": "Nicaragua",
         "region": "Americas",
-        "lifeExpectancy": "74,3",
-        "wellbeing": "5,4"
+        "lifeExpectancy": "74.3",
+        "wellbeing": "5.4"
     },
     {
         "country": "Niger",
         "region": "Sub Saharan Africa",
-        "lifeExpectancy": "60,0",
-        "wellbeing": "3,8"
+        "lifeExpectancy": "60.0",
+        "wellbeing": "3.8"
     },
     {
         "country": "Nigeria",
         "region": "Sub Saharan Africa",
-        "lifeExpectancy": "52,1",
-        "wellbeing": "5,5"
+        "lifeExpectancy": "52.1",
+        "wellbeing": "5.5"
     },
     {
         "country": "Norway",
         "region": "Europe",
-        "lifeExpectancy": "81,3",
-        "wellbeing": "7,7"
+        "lifeExpectancy": "81.3",
+        "wellbeing": "7.7"
     },
     {
         "country": "Oman",
         "region": "Middle East and North Africa",
-        "lifeExpectancy": "76,3",
-        "wellbeing": "6,9"
+        "lifeExpectancy": "76.3",
+        "wellbeing": "6.9"
     },
     {
         "country": "Pakistan",
         "region": "Asia Pacific",
-        "lifeExpectancy": "65,7",
-        "wellbeing": "5,1"
+        "lifeExpectancy": "65.7",
+        "wellbeing": "5.1"
     },
     {
         "country": "Palestine",
         "region": "Middle East and North Africa",
-        "lifeExpectancy": "72,6",
-        "wellbeing": "4,6"
+        "lifeExpectancy": "72.6",
+        "wellbeing": "4.6"
     },
     {
         "country": "Panama",
         "region": "Americas",
-        "lifeExpectancy": "77,2",
-        "wellbeing": "6,9"
+        "lifeExpectancy": "77.2",
+        "wellbeing": "6.9"
     },
     {
         "country": "Paraguay",
         "region": "Americas",
-        "lifeExpectancy": "72,6",
-        "wellbeing": "5,8"
+        "lifeExpectancy": "72.6",
+        "wellbeing": "5.8"
     },
     {
         "country": "Peru",
         "region": "Americas",
-        "lifeExpectancy": "74,1",
-        "wellbeing": "5,8"
+        "lifeExpectancy": "74.1",
+        "wellbeing": "5.8"
     },
     {
         "country": "Philippines",
         "region": "Asia Pacific",
-        "lifeExpectancy": "67,9",
-        "wellbeing": "5,0"
+        "lifeExpectancy": "67.9",
+        "wellbeing": "5.0"
     },
     {
         "country": "Poland",
         "region": "Post-communist",
-        "lifeExpectancy": "76,9",
-        "wellbeing": "5,9"
+        "lifeExpectancy": "76.9",
+        "wellbeing": "5.9"
     },
     {
         "country": "Portugal",
         "region": "Europe",
-        "lifeExpectancy": "80,3",
-        "wellbeing": "5,0"
+        "lifeExpectancy": "80.3",
+        "wellbeing": "5.0"
     },
     {
         "country": "Republic of Congo",
         "region": "Sub Saharan Africa",
-        "lifeExpectancy": "61,0",
-        "wellbeing": "3,9"
+        "lifeExpectancy": "61.0",
+        "wellbeing": "3.9"
     },
     {
         "country": "Romania",
         "region": "Post-communist",
-        "lifeExpectancy": "74,3",
-        "wellbeing": "5,2"
+        "lifeExpectancy": "74.3",
+        "wellbeing": "5.2"
     },
     {
         "country": "Russia",
         "region": "Post-communist",
-        "lifeExpectancy": "69,5",
-        "wellbeing": "5,6"
+        "lifeExpectancy": "69.5",
+        "wellbeing": "5.6"
     },
     {
         "country": "Rwanda",
         "region": "Sub Saharan Africa",
-        "lifeExpectancy": "63,1",
-        "wellbeing": "3,3"
+        "lifeExpectancy": "63.1",
+        "wellbeing": "3.3"
     },
     {
         "country": "Senegal",
         "region": "Sub Saharan Africa",
-        "lifeExpectancy": "65,4",
-        "wellbeing": "3,7"
+        "lifeExpectancy": "65.4",
+        "wellbeing": "3.7"
     },
     {
         "country": "Serbia",
         "region": "Post-communist",
-        "lifeExpectancy": "74,5",
-        "wellbeing": "5,2"
+        "lifeExpectancy": "74.5",
+        "wellbeing": "5.2"
     },
     {
         "country": "Sierra Leone",
         "region": "Sub Saharan Africa",
-        "lifeExpectancy": "49,8",
-        "wellbeing": "4,5"
+        "lifeExpectancy": "49.8",
+        "wellbeing": "4.5"
     },
     {
         "country": "Slovakia",
         "region": "Post-communist",
-        "lifeExpectancy": "75,9",
-        "wellbeing": "5,9"
+        "lifeExpectancy": "75.9",
+        "wellbeing": "5.9"
     },
     {
         "country": "Slovenia",
         "region": "Post-communist",
-        "lifeExpectancy": "80,0",
-        "wellbeing": "6,1"
+        "lifeExpectancy": "80.0",
+        "wellbeing": "6.1"
     },
     {
         "country": "South Africa",
         "region": "Sub Saharan Africa",
-        "lifeExpectancy": "56,3",
-        "wellbeing": "5,1"
+        "lifeExpectancy": "56.3",
+        "wellbeing": "5.1"
     },
     {
         "country": "South Korea",
         "region": "Asia Pacific",
-        "lifeExpectancy": "81,3",
-        "wellbeing": "6,0"
+        "lifeExpectancy": "81.3",
+        "wellbeing": "6.0"
     },
     {
         "country": "Spain",
         "region": "Europe",
-        "lifeExpectancy": "82,2",
-        "wellbeing": "6,3"
+        "lifeExpectancy": "82.2",
+        "wellbeing": "6.3"
     },
     {
         "country": "Sri Lanka",
         "region": "Asia Pacific",
-        "lifeExpectancy": "74,6",
-        "wellbeing": "4,2"
+        "lifeExpectancy": "74.6",
+        "wellbeing": "4.2"
     },
     {
         "country": "Suriname",
         "region": "Americas",
-        "lifeExpectancy": "70,8",
-        "wellbeing": "6,3"
+        "lifeExpectancy": "70.8",
+        "wellbeing": "6.3"
     },
     {
         "country": "Swaziland",
         "region": "Sub Saharan Africa",
-        "lifeExpectancy": "48,9",
-        "wellbeing": "4,9"
+        "lifeExpectancy": "48.9",
+        "wellbeing": "4.9"
     },
     {
         "country": "Sweden",
         "region": "Europe",
-        "lifeExpectancy": "81,8",
-        "wellbeing": "7,6"
+        "lifeExpectancy": "81.8",
+        "wellbeing": "7.6"
     },
     {
         "country": "Switzerland",
         "region": "Europe",
-        "lifeExpectancy": "82,6",
-        "wellbeing": "7,8"
+        "lifeExpectancy": "82.6",
+        "wellbeing": "7.8"
     },
     {
         "country": "Syria",
         "region": "Middle East and North Africa",
-        "lifeExpectancy": "70,4",
-        "wellbeing": "3,2"
+        "lifeExpectancy": "70.4",
+        "wellbeing": "3.2"
     },
     {
         "country": "Tajikistan",
         "region": "Post-communist",
-        "lifeExpectancy": "69,0",
-        "wellbeing": "4,5"
+        "lifeExpectancy": "69.0",
+        "wellbeing": "4.5"
     },
     {
         "country": "Tanzania",
         "region": "Sub Saharan Africa",
-        "lifeExpectancy": "63,5",
-        "wellbeing": "4,0"
+        "lifeExpectancy": "63.5",
+        "wellbeing": "4.0"
     },
     {
         "country": "Thailand",
         "region": "Asia Pacific",
-        "lifeExpectancy": "74,1",
-        "wellbeing": "6,3"
+        "lifeExpectancy": "74.1",
+        "wellbeing": "6.3"
     },
     {
         "country": "Togo",
         "region": "Sub Saharan Africa",
-        "lifeExpectancy": "58,6",
-        "wellbeing": "2,9"
+        "lifeExpectancy": "58.6",
+        "wellbeing": "2.9"
     },
     {
         "country": "Trinidad and Tobago",
         "region": "Americas",
-        "lifeExpectancy": "70,1",
-        "wellbeing": "6,4"
+        "lifeExpectancy": "70.1",
+        "wellbeing": "6.4"
     },
     {
         "country": "Tunisia",
         "region": "Middle East and North Africa",
-        "lifeExpectancy": "74,6",
-        "wellbeing": "4,5"
+        "lifeExpectancy": "74.6",
+        "wellbeing": "4.5"
     },
     {
         "country": "Turkey",
         "region": "Middle East and North Africa",
-        "lifeExpectancy": "74,7",
-        "wellbeing": "5,3"
+        "lifeExpectancy": "74.7",
+        "wellbeing": "5.3"
     },
     {
         "country": "Turkmenistan",
         "region": "Post-communist",
-        "lifeExpectancy": "65,3",
-        "wellbeing": "5,5"
+        "lifeExpectancy": "65.3",
+        "wellbeing": "5.5"
     },
     {
         "country": "Uganda",
         "region": "Sub Saharan Africa",
-        "lifeExpectancy": "57,1",
-        "wellbeing": "4,3"
+        "lifeExpectancy": "57.1",
+        "wellbeing": "4.3"
     },
     {
         "country": "Ukraine",
         "region": "Post-communist",
-        "lifeExpectancy": "70,3",
-        "wellbeing": "5,0"
+        "lifeExpectancy": "70.3",
+        "wellbeing": "5.0"
     },
     {
         "country": "United Kingdom",
         "region": "Europe",
-        "lifeExpectancy": "80,4",
-        "wellbeing": "6,9"
+        "lifeExpectancy": "80.4",
+        "wellbeing": "6.9"
     },
     {
         "country": "United States of America",
         "region": "Americas",
-        "lifeExpectancy": "78,8",
-        "wellbeing": "7,0"
+        "lifeExpectancy": "78.8",
+        "wellbeing": "7.0"
     },
     {
         "country": "Uruguay",
         "region": "Americas",
-        "lifeExpectancy": "76,9",
-        "wellbeing": "6,4"
+        "lifeExpectancy": "76.9",
+        "wellbeing": "6.4"
     },
     {
         "country": "Uzbekistan",
         "region": "Post-communist",
-        "lifeExpectancy": "68,2",
-        "wellbeing": "6,0"
+        "lifeExpectancy": "68.2",
+        "wellbeing": "6.0"
     },
     {
         "country": "Vanuatu",
         "region": "Asia Pacific",
-        "lifeExpectancy": "71,3",
-        "wellbeing": "6,5"
+        "lifeExpectancy": "71.3",
+        "wellbeing": "6.5"
     },
     {
         "country": "Venezuela",
         "region": "Americas",
-        "lifeExpectancy": "73,9",
-        "wellbeing": "7,1"
+        "lifeExpectancy": "73.9",
+        "wellbeing": "7.1"
     },
     {
         "country": "Vietnam",
         "region": "Asia Pacific",
-        "lifeExpectancy": "75,5",
-        "wellbeing": "5,5"
+        "lifeExpectancy": "75.5",
+        "wellbeing": "5.5"
     },
     {
         "country": "Yemen",
         "region": "Middle East and North Africa",
-        "lifeExpectancy": "63,3",
-        "wellbeing": "4,1"
+        "lifeExpectancy": "63.3",
+        "wellbeing": "4.1"
     },
     {
         "country": "Zambia",
         "region": "Sub Saharan Africa",
-        "lifeExpectancy": "58,4",
-        "wellbeing": "5,0"
+        "lifeExpectancy": "58.4",
+        "wellbeing": "5.0"
     },
     {
         "country": "Zimbabwe",
         "region": "Sub Saharan Africa",
-        "lifeExpectancy": "53,7",
-        "wellbeing": "5,0"
+        "lifeExpectancy": "53.7",
+        "wellbeing": "5.0"
     }
 ]
