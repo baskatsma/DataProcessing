@@ -1,8 +1,9 @@
 /*
  *  scatterplot.css
  *
- *  Bas Katsma
- *  10787690
+ *  Name: Bas Katsma
+ *  Student 10787690
+ *  Homework - Week 4
  *
  */
 
@@ -15,4 +16,22 @@ h1 {
 p {
   margin-left: 40px;
   font: 13px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #eee;
+  shape-rendering: crispEdges;
+  stroke: black;
+  stroke-width: 1px;
+}
+
+.axis text {
+  font: 13px sans-serif;
+}
+
+.ytext,
+.xtext {
+  font: 18px sans-serif;
 }
