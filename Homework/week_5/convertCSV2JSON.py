@@ -2,7 +2,7 @@
 #
 #  Name: Bas Katsma
 #  Student 10787690
-#  Homework - Week 4
+#  Homework - Week 5
 #
 """
 This script converts CSV to JSON.
