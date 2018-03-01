@@ -130,7 +130,7 @@ window.onload = function() {
         var legendText = svg.select(".legend")
         legendText.append("text")
               .attr("class", "ltext")
-              .attr("x", legendRectSize * 4.1)
+              .attr("x", legendRectSize * 4)
               .attr("y", -legendRectSize * 1.35)
               .style("text-anchor", "end")
               .text("Region");
