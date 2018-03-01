@@ -18,6 +18,16 @@ p {
   font: 13px sans-serif;
 }
 
+.d3-tip {
+  line-height: 1;
+  font: 14px sans-serif;
+  font-weight: bold;
+  padding: 12px;
+  background: rgba(0, 0, 0, 1);
+  color: #fff;
+  border-radius: 10px;
+}
+
 .axis path,
 .axis line {
   fill: none;

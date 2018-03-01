@@ -36,6 +36,17 @@ window.onload = function() {
             d.wellbeing = Math.round(d.wellbeing * 100) / 100;
         });
 
+        // Initialize tip and the pop-up content
+        var tip = d3.tip()
+          .attr("class", "d3-tip")
+          .offset([-10, 0])
+          .html(function(d) {
+              return "<strong>Country:</strong> <span style='color:red'>" + d.country + "</span>" + "<br>" + "<strong>Region:</strong> <span style='color:red'>" + d.region + "</span>" + "<br>" + "<strong>Life expectancy:</strong> <span style='color:red'>" + d.lifeExpectancy + "</span>" + "<br>" + "<strong>Wellbeing:</strong> <span style='color:red'>" + d.wellbeing + "</span>";
+          });
+
+        // Start the tip
+        svg.call(tip);
+
         // Initialize color scale
         var color = d3.scale.category10();
 
@@ -100,6 +111,8 @@ window.onload = function() {
             .attr("cx", function(d) { return x(d.lifeExpectancy); })
             .attr("cy", function(d) { return y(d.wellbeing); })
             .style("fill", function(d) { return color(d.region); })
+            .on("mouseover", tip.show)
+            .on("mouseout", tip.hide)
             // Add fancy animation
             .style("opacity", 0)
             .transition()
