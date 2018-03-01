@@ -28,9 +28,3 @@ window.onload = function() {
         });
     });
 };
-
-// # FG       = Etmaalgemiddelde windsnelheid (in 0.1 m/s);
-// # FHX      = Hoogste uurgemiddelde windsnelheid (in 0.1 m/s);
-// # FHN      = Laagste uurgemiddelde windsnelheid (in 0.1 m/s);
-// #
-// # STN,YYYYMMDD,   FG,  FHX,  FHN

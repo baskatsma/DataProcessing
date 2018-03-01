@@ -1,74 +1,74 @@
 [
     {
         "month": "Jan",
-        "avgWind": "29.1",
-        "highestWind": "42.3",
-        "lowestWind": "12.9"
+        "avgWind": "10.48",
+        "highestWind": "15.23",
+        "lowestWind": "4.64"
     },
     {
         "month": "Feb",
-        "avgWind": "41.8",
-        "highestWind": "57.5",
-        "lowestWind": "25.0"
+        "avgWind": "15.05",
+        "highestWind": "20.70",
+        "lowestWind": "9.00"
     },
     {
         "month": "Mar",
-        "avgWind": "37.4",
-        "highestWind": "58.1",
-        "lowestWind": "17.7"
+        "avgWind": "13.46",
+        "highestWind": "20.92",
+        "lowestWind": "6.37"
     },
     {
         "month": "Apr",
-        "avgWind": "30.2",
-        "highestWind": "47.7",
-        "lowestWind": "12.7"
+        "avgWind": "10.87",
+        "highestWind": "17.17",
+        "lowestWind": "4.57"
     },
     {
         "month": "May",
-        "avgWind": "30.8",
-        "highestWind": "51.6",
-        "lowestWind": "12.3"
+        "avgWind": "11.09",
+        "highestWind": "18.58",
+        "lowestWind": "4.43"
     },
     {
         "month": "Jun",
-        "avgWind": "33.0",
-        "highestWind": "50.3",
-        "lowestWind": "14.7"
+        "avgWind": "11.88",
+        "highestWind": "18.11",
+        "lowestWind": "5.29"
     },
     {
         "month": "Jul",
-        "avgWind": "29.0",
-        "highestWind": "49.4",
-        "lowestWind": "10.3"
+        "avgWind": "10.44",
+        "highestWind": "17.78",
+        "lowestWind": "3.71"
     },
     {
         "month": "Aug",
-        "avgWind": "24.9",
-        "highestWind": "41.9",
-        "lowestWind": "10.3"
+        "avgWind": "8.96",
+        "highestWind": "15.08",
+        "lowestWind": "3.71"
     },
     {
         "month": "Sep",
-        "avgWind": "27.8",
-        "highestWind": "43.7",
-        "lowestWind": "13.7"
+        "avgWind": "10.01",
+        "highestWind": "15.73",
+        "lowestWind": "4.93"
     },
     {
         "month": "Oct",
-        "avgWind": "37.2",
-        "highestWind": "55.8",
-        "lowestWind": "19.7"
+        "avgWind": "13.39",
+        "highestWind": "20.09",
+        "lowestWind": "7.09"
     },
     {
         "month": "Nov",
-        "avgWind": "30.7",
-        "highestWind": "47.0",
-        "lowestWind": "15.0"
+        "avgWind": "11.05",
+        "highestWind": "16.92",
+        "lowestWind": "5.40"
     },
     {
         "month": "Dec",
-        "avgWind": "38.4",
-        "highestWind": "56.5",
-        "lowestWind": "20.3"
+        "avgWind": "13.82",
+        "highestWind": "20.34",
+        "lowestWind": "7.31"
     }
 ]
