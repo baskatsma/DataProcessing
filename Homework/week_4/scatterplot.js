@@ -106,12 +106,12 @@ window.onload = function() {
             .data(color.domain())
           .enter().append("g")
             .attr("class", "legend")
-            .attr("transform", function(d, i) { return "translate(725," + i * 30 + ")"; });
+            .attr("transform", function(d, i) { return "translate(725," + (margin.top + i * 30) + ")"; });
 
         // Append legend icon and color
         legend.append("circle")
               .attr("class", "dot")
-              .attr("r", 11)
+              .attr("r", 10)
               .style("fill", color)
               .style("stroke", color);
 
@@ -119,6 +119,15 @@ window.onload = function() {
         legend.append("text")
               .attr("x", legendRectSize)
               .attr("y", legendRectSize - (legendSpacing / 0.35))
-              .text(function(d) { return d; });
+              .text(function(d) { return d; })
+
+        // Add legend description
+        var legendText = svg.select(".legend")
+        legendText.append("text")
+              .attr("class", "ltext")
+              .attr("x", legendRectSize * 4.1)
+              .attr("y", -legendRectSize * 1.35)
+              .style("text-anchor", "end")
+              .text("Region");
         });
 };

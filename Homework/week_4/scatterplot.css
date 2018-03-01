@@ -39,3 +39,8 @@ p {
 .legend text {
   font: 15px sans-serif;
 }
+
+.legend .ltext {
+  font: 18px sans-serif;
+  font-weight: 520;
+}
