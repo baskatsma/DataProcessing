@@ -1,0 +1,37 @@
+/*
+ *  d3line.css
+ *
+ *  Name: Bas Katsma
+ *  Student 10787690
+ *  Homework - Week 5
+ *
+ */
+
+h1 {
+  margin-top: 30px;
+  margin-left: 190px;
+  font: 30px sans-serif;
+}
+
+p {
+  margin-left: 40px;
+  font: 13px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #eee;
+  shape-rendering: crispEdges;
+  stroke: black;
+  stroke-width: 1px;
+}
+
+.axis text {
+  font: 14px sans-serif;
+}
+
+.axis .ytext,
+.axis .xtext {
+  font: 18px sans-serif;
+}
