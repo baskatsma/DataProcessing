@@ -31,36 +31,45 @@ window.onload = function() {
 
         // Convert string to a number with 2 decimals
         data.forEach(function(d) {
-          d.lifeExpectancy = Math.round(d.lifeExpectancy * 100) / 100;
-          d.wellbeing = Math.round(d.wellbeing * 100) / 100;
+            d.lifeExpectancy = Math.round(d.lifeExpectancy * 100) / 100;
+            d.wellbeing = Math.round(d.wellbeing * 100) / 100;
         });
 
+        // Initialize color scale
         var color = d3.scale.category10();
 
+        // Encode linear x-axis data
         var x = d3.scale.linear()
+            // Get min and max using .extent
             .domain(d3.extent(data, function (d) {
             return d.lifeExpectancy;
         }))
             .range([0, width - margin.left - margin.right]);
 
+        // Encode linear y-axis data
         var y = d3.scale.linear()
+            // Get min and max using .extent
             .domain(d3.extent(data, function (d) {
             return d.wellbeing;
         }))
             .range([height - margin.top - margin.bottom, 0]);
 
+        // Initialize x-axis
         var xAxis = d3.svg.axis()
             .scale(x)
             .orient("bottom");
 
+        // Initialize y-axis
         var yAxis = d3.svg.axis()
             .scale(y)
             .orient("left");
 
+        // Append and call the x-axis
         svg.append("g")
             .attr("class", "x axis")
             .attr("transform", "translate(0," + y.range()[0] + ")")
             .call(xAxis)
+          // Create and position x-axis label
           .append("text")
             .attr("class", "xtext")
             .attr("x", width / 2)
@@ -68,9 +77,11 @@ window.onload = function() {
             .style("text-anchor", "end")
             .text("Life Expectancy (years)");
 
+        // Append and call the y-axis
         svg.append("g")
             .attr("class", "y axis")
             .call(yAxis)
+          // Create and position y-axis label
           .append("text")
             .attr("class", "ytext")
             .attr("transform", "rotate(-90)")
@@ -79,6 +90,7 @@ window.onload = function() {
             .style("text-anchor", "end")
             .text("Wellbeing (1-10)");
 
+        // Append a child dot with the correct dimensions for each data point
         svg.selectAll(".dot")
             .data(data)
           .enter().append("circle")
@@ -88,21 +100,24 @@ window.onload = function() {
             .attr("cy", function(d) { return y(d.wellbeing); })
             .style("fill", function(d) { return color(d.region); });
 
-          var legend = svg.selectAll(".legend")
-              .data(color.domain())
-            .enter().append("g")
-              .attr("class", "legend")
-              .attr("transform", function(d, i) { return "translate(725," + i * 30 + ")"; });
+        // Add legend
+        var legend = svg.selectAll(".legend")
+            .data(color.domain())
+          .enter().append("g")
+            .attr("class", "legend")
+            .attr("transform", function(d, i) { return "translate(725," + i * 30 + ")"; });
 
-          legend.append("rect")
-                .attr("width", legendRectSize)
-                .attr("height", legendRectSize)
-                .style("fill", color)
-                .style("stroke", color);
+        // Append legend color
+        legend.append("circle")
+              .attr("class", "dot")
+              .attr("r", 11)
+              .style("fill", color)
+              .style("stroke", color);
 
-          legend.append("text")
-                .attr("x", legendRectSize + (legendSpacing * 2))
-                .attr("y", legendRectSize - legendSpacing)
-                .text(function(d) { return d; });
+        // Append legend text
+        legend.append("text")
+              .attr("x", legendRectSize)
+              .attr("y", legendRectSize - (legendSpacing / 0.35))
+              .text(function(d) { return d; });
         });
 };
