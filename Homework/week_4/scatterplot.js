@@ -87,7 +87,7 @@ window.onload = function() {
             .attr("class", "ytext")
             .attr("transform", "rotate(-90)")
             .attr("y", -margin.left / 2)
-            .attr("x", -height / 4)
+            .attr("x", -height / 3)
             .style("text-anchor", "end")
             .text("Wellbeing (1-10)");
 

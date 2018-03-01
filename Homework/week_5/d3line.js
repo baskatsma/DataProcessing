@@ -16,15 +16,8 @@ window.onload = function() {
         width = 1100 - margin.left - margin.right;
 
     // Load JSON data file
-    d3.json("data_edited.json", function(error, data) {
-
-        // Catch any errors
-        if (error) throw error;
-
-        // Convert string to a number with 2 decimals
-        data.forEach(function(d) {
-            d.lifeExpectancy = Math.round(d.lifeExpectancy * 100) / 100;
-            d.wellbeing = Math.round(d.wellbeing * 100) / 100;
-        });
-    });
+    d3.queue()
+        .defer(d3.json, 'data_edited_2016.json')
+        .defer(d3.json, 'data_edited_2017.json')
+        .await(function(error, file2016, file2017) { console.log(file2016, file2017); });
 };
