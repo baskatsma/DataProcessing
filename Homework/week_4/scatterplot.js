@@ -99,7 +99,12 @@ window.onload = function() {
             .attr("r", 3.5)
             .attr("cx", function(d) { return x(d.lifeExpectancy); })
             .attr("cy", function(d) { return y(d.wellbeing); })
-            .style("fill", function(d) { return color(d.region); });
+            .style("fill", function(d) { return color(d.region); })
+            // Add fancy animation
+            .style("opacity", 0)
+            .transition()
+            .delay(function(d, i) { return i * 15; })
+            .style("opacity", 1);
 
         // Create legend
         var legend = svg.selectAll(".legend")
