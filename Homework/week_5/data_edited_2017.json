@@ -1,74 +1,2192 @@
 [
     {
-        "month": "Jan",
-        "avgWind": "10.48",
-        "highestWind": "15.23",
-        "lowestWind": "4.64"
+        "date": "20170101",
+        "avgTemp": "5",
+        "lowestTemp": "-8",
+        "highestTemp": "19"
     },
     {
-        "month": "Feb",
-        "avgWind": "15.05",
-        "highestWind": "20.70",
-        "lowestWind": "9.00"
+        "date": "20170102",
+        "avgTemp": "30",
+        "lowestTemp": "-3",
+        "highestTemp": "68"
     },
     {
-        "month": "Mar",
-        "avgWind": "13.46",
-        "highestWind": "20.92",
-        "lowestWind": "6.37"
+        "date": "20170103",
+        "avgTemp": "50",
+        "lowestTemp": "15",
+        "highestTemp": "71"
     },
     {
-        "month": "Apr",
-        "avgWind": "10.87",
-        "highestWind": "17.17",
-        "lowestWind": "4.57"
+        "date": "20170104",
+        "avgTemp": "58",
+        "lowestTemp": "26",
+        "highestTemp": "73"
     },
     {
-        "month": "May",
-        "avgWind": "11.09",
-        "highestWind": "18.58",
-        "lowestWind": "4.43"
+        "date": "20170105",
+        "avgTemp": "0",
+        "lowestTemp": "-59",
+        "highestTemp": "33"
     },
     {
-        "month": "Jun",
-        "avgWind": "11.88",
-        "highestWind": "18.11",
-        "lowestWind": "5.29"
+        "date": "20170106",
+        "avgTemp": "-30",
+        "lowestTemp": "-65",
+        "highestTemp": "-3"
     },
     {
-        "month": "Jul",
-        "avgWind": "10.44",
-        "highestWind": "17.78",
-        "lowestWind": "3.71"
+        "date": "20170107",
+        "avgTemp": "-2",
+        "lowestTemp": "-21",
+        "highestTemp": "34"
     },
     {
-        "month": "Aug",
-        "avgWind": "8.96",
-        "highestWind": "15.08",
-        "lowestWind": "3.71"
+        "date": "20170108",
+        "avgTemp": "43",
+        "lowestTemp": "28",
+        "highestTemp": "61"
     },
     {
-        "month": "Sep",
-        "avgWind": "10.01",
-        "highestWind": "15.73",
-        "lowestWind": "4.93"
+        "date": "20170109",
+        "avgTemp": "48",
+        "lowestTemp": "33",
+        "highestTemp": "59"
     },
     {
-        "month": "Oct",
-        "avgWind": "13.39",
-        "highestWind": "20.09",
-        "lowestWind": "7.09"
+        "date": "20170110",
+        "avgTemp": "53",
+        "lowestTemp": "29",
+        "highestTemp": "66"
     },
     {
-        "month": "Nov",
-        "avgWind": "11.05",
-        "highestWind": "16.92",
-        "lowestWind": "5.40"
+        "date": "20170111",
+        "avgTemp": "72",
+        "lowestTemp": "57",
+        "highestTemp": "104"
     },
     {
-        "month": "Dec",
-        "avgWind": "13.82",
-        "highestWind": "20.34",
-        "lowestWind": "7.31"
+        "date": "20170112",
+        "avgTemp": "52",
+        "lowestTemp": "2",
+        "highestTemp": "74"
+    },
+    {
+        "date": "20170113",
+        "avgTemp": "31",
+        "lowestTemp": "2",
+        "highestTemp": "56"
+    },
+    {
+        "date": "20170114",
+        "avgTemp": "18",
+        "lowestTemp": "1",
+        "highestTemp": "48"
+    },
+    {
+        "date": "20170115",
+        "avgTemp": "7",
+        "lowestTemp": "-18",
+        "highestTemp": "48"
+    },
+    {
+        "date": "20170116",
+        "avgTemp": "-16",
+        "lowestTemp": "-44",
+        "highestTemp": "12"
+    },
+    {
+        "date": "20170117",
+        "avgTemp": "-34",
+        "lowestTemp": "-50",
+        "highestTemp": "13"
+    },
+    {
+        "date": "20170118",
+        "avgTemp": "-38",
+        "lowestTemp": "-53",
+        "highestTemp": "-19"
+    },
+    {
+        "date": "20170119",
+        "avgTemp": "-20",
+        "lowestTemp": "-56",
+        "highestTemp": "31"
+    },
+    {
+        "date": "20170120",
+        "avgTemp": "-3",
+        "lowestTemp": "-52",
+        "highestTemp": "51"
+    },
+    {
+        "date": "20170121",
+        "avgTemp": "-2",
+        "lowestTemp": "-52",
+        "highestTemp": "50"
+    },
+    {
+        "date": "20170122",
+        "avgTemp": "-17",
+        "lowestTemp": "-74",
+        "highestTemp": "37"
+    },
+    {
+        "date": "20170123",
+        "avgTemp": "16",
+        "lowestTemp": "-3",
+        "highestTemp": "31"
+    },
+    {
+        "date": "20170124",
+        "avgTemp": "8",
+        "lowestTemp": "0",
+        "highestTemp": "21"
+    },
+    {
+        "date": "20170125",
+        "avgTemp": "-11",
+        "lowestTemp": "-43",
+        "highestTemp": "6"
+    },
+    {
+        "date": "20170126",
+        "avgTemp": "-28",
+        "lowestTemp": "-53",
+        "highestTemp": "6"
+    },
+    {
+        "date": "20170127",
+        "avgTemp": "8",
+        "lowestTemp": "-70",
+        "highestTemp": "51"
+    },
+    {
+        "date": "20170128",
+        "avgTemp": "54",
+        "lowestTemp": "20",
+        "highestTemp": "81"
+    },
+    {
+        "date": "20170129",
+        "avgTemp": "47",
+        "lowestTemp": "31",
+        "highestTemp": "65"
+    },
+    {
+        "date": "20170130",
+        "avgTemp": "49",
+        "lowestTemp": "28",
+        "highestTemp": "72"
+    },
+    {
+        "date": "20170131",
+        "avgTemp": "37",
+        "lowestTemp": "26",
+        "highestTemp": "61"
+    },
+    {
+        "date": "20170201",
+        "avgTemp": "34",
+        "lowestTemp": "5",
+        "highestTemp": "54"
+    },
+    {
+        "date": "20170202",
+        "avgTemp": "86",
+        "lowestTemp": "52",
+        "highestTemp": "125"
+    },
+    {
+        "date": "20170203",
+        "avgTemp": "86",
+        "lowestTemp": "63",
+        "highestTemp": "119"
+    },
+    {
+        "date": "20170204",
+        "avgTemp": "57",
+        "lowestTemp": "26",
+        "highestTemp": "74"
+    },
+    {
+        "date": "20170205",
+        "avgTemp": "44",
+        "lowestTemp": "-11",
+        "highestTemp": "77"
+    },
+    {
+        "date": "20170206",
+        "avgTemp": "43",
+        "lowestTemp": "-10",
+        "highestTemp": "66"
+    },
+    {
+        "date": "20170207",
+        "avgTemp": "24",
+        "lowestTemp": "9",
+        "highestTemp": "39"
+    },
+    {
+        "date": "20170208",
+        "avgTemp": "0",
+        "lowestTemp": "-11",
+        "highestTemp": "9"
+    },
+    {
+        "date": "20170209",
+        "avgTemp": "-16",
+        "lowestTemp": "-30",
+        "highestTemp": "-10"
+    },
+    {
+        "date": "20170210",
+        "avgTemp": "-23",
+        "lowestTemp": "-45",
+        "highestTemp": "-13"
+    },
+    {
+        "date": "20170211",
+        "avgTemp": "-4",
+        "lowestTemp": "-17",
+        "highestTemp": "10"
+    },
+    {
+        "date": "20170212",
+        "avgTemp": "7",
+        "lowestTemp": "-6",
+        "highestTemp": "25"
+    },
+    {
+        "date": "20170213",
+        "avgTemp": "22",
+        "lowestTemp": "-14",
+        "highestTemp": "71"
+    },
+    {
+        "date": "20170214",
+        "avgTemp": "38",
+        "lowestTemp": "-5",
+        "highestTemp": "94"
+    },
+    {
+        "date": "20170215",
+        "avgTemp": "74",
+        "lowestTemp": "3",
+        "highestTemp": "135"
+    },
+    {
+        "date": "20170216",
+        "avgTemp": "68",
+        "lowestTemp": "55",
+        "highestTemp": "99"
+    },
+    {
+        "date": "20170217",
+        "avgTemp": "70",
+        "lowestTemp": "52",
+        "highestTemp": "86"
+    },
+    {
+        "date": "20170218",
+        "avgTemp": "56",
+        "lowestTemp": "32",
+        "highestTemp": "103"
+    },
+    {
+        "date": "20170219",
+        "avgTemp": "62",
+        "lowestTemp": "32",
+        "highestTemp": "92"
+    },
+    {
+        "date": "20170220",
+        "avgTemp": "91",
+        "lowestTemp": "72",
+        "highestTemp": "109"
+    },
+    {
+        "date": "20170221",
+        "avgTemp": "96",
+        "lowestTemp": "86",
+        "highestTemp": "111"
+    },
+    {
+        "date": "20170222",
+        "avgTemp": "95",
+        "lowestTemp": "78",
+        "highestTemp": "108"
+    },
+    {
+        "date": "20170223",
+        "avgTemp": "80",
+        "lowestTemp": "42",
+        "highestTemp": "105"
+    },
+    {
+        "date": "20170224",
+        "avgTemp": "45",
+        "lowestTemp": "-6",
+        "highestTemp": "87"
+    },
+    {
+        "date": "20170225",
+        "avgTemp": "58",
+        "lowestTemp": "18",
+        "highestTemp": "89"
+    },
+    {
+        "date": "20170226",
+        "avgTemp": "87",
+        "lowestTemp": "67",
+        "highestTemp": "106"
+    },
+    {
+        "date": "20170227",
+        "avgTemp": "87",
+        "lowestTemp": "43",
+        "highestTemp": "106"
+    },
+    {
+        "date": "20170228",
+        "avgTemp": "47",
+        "lowestTemp": "32",
+        "highestTemp": "65"
+    },
+    {
+        "date": "20170301",
+        "avgTemp": "63",
+        "lowestTemp": "32",
+        "highestTemp": "94"
+    },
+    {
+        "date": "20170302",
+        "avgTemp": "66",
+        "lowestTemp": "42",
+        "highestTemp": "82"
+    },
+    {
+        "date": "20170303",
+        "avgTemp": "59",
+        "lowestTemp": "12",
+        "highestTemp": "88"
+    },
+    {
+        "date": "20170304",
+        "avgTemp": "92",
+        "lowestTemp": "62",
+        "highestTemp": "132"
+    },
+    {
+        "date": "20170305",
+        "avgTemp": "69",
+        "lowestTemp": "38",
+        "highestTemp": "106"
+    },
+    {
+        "date": "20170306",
+        "avgTemp": "60",
+        "lowestTemp": "32",
+        "highestTemp": "95"
+    },
+    {
+        "date": "20170307",
+        "avgTemp": "67",
+        "lowestTemp": "45",
+        "highestTemp": "94"
+    },
+    {
+        "date": "20170308",
+        "avgTemp": "59",
+        "lowestTemp": "8",
+        "highestTemp": "106"
+    },
+    {
+        "date": "20170309",
+        "avgTemp": "77",
+        "lowestTemp": "7",
+        "highestTemp": "128"
+    },
+    {
+        "date": "20170310",
+        "avgTemp": "65",
+        "lowestTemp": "-9",
+        "highestTemp": "112"
+    },
+    {
+        "date": "20170311",
+        "avgTemp": "73",
+        "lowestTemp": "15",
+        "highestTemp": "130"
+    },
+    {
+        "date": "20170312",
+        "avgTemp": "79",
+        "lowestTemp": "14",
+        "highestTemp": "148"
+    },
+    {
+        "date": "20170313",
+        "avgTemp": "65",
+        "lowestTemp": "-5",
+        "highestTemp": "137"
+    },
+    {
+        "date": "20170314",
+        "avgTemp": "88",
+        "lowestTemp": "32",
+        "highestTemp": "149"
+    },
+    {
+        "date": "20170315",
+        "avgTemp": "90",
+        "lowestTemp": "16",
+        "highestTemp": "139"
+    },
+    {
+        "date": "20170316",
+        "avgTemp": "94",
+        "lowestTemp": "11",
+        "highestTemp": "168"
+    },
+    {
+        "date": "20170317",
+        "avgTemp": "83",
+        "lowestTemp": "67",
+        "highestTemp": "103"
+    },
+    {
+        "date": "20170318",
+        "avgTemp": "97",
+        "lowestTemp": "74",
+        "highestTemp": "127"
+    },
+    {
+        "date": "20170319",
+        "avgTemp": "113",
+        "lowestTemp": "98",
+        "highestTemp": "127"
+    },
+    {
+        "date": "20170320",
+        "avgTemp": "103",
+        "lowestTemp": "88",
+        "highestTemp": "115"
+    },
+    {
+        "date": "20170321",
+        "avgTemp": "75",
+        "lowestTemp": "13",
+        "highestTemp": "98"
+    },
+    {
+        "date": "20170322",
+        "avgTemp": "63",
+        "lowestTemp": "-3",
+        "highestTemp": "124"
+    },
+    {
+        "date": "20170323",
+        "avgTemp": "82",
+        "lowestTemp": "19",
+        "highestTemp": "140"
+    },
+    {
+        "date": "20170324",
+        "avgTemp": "84",
+        "lowestTemp": "31",
+        "highestTemp": "142"
+    },
+    {
+        "date": "20170325",
+        "avgTemp": "85",
+        "lowestTemp": "21",
+        "highestTemp": "143"
+    },
+    {
+        "date": "20170326",
+        "avgTemp": "80",
+        "lowestTemp": "33",
+        "highestTemp": "130"
+    },
+    {
+        "date": "20170327",
+        "avgTemp": "92",
+        "lowestTemp": "18",
+        "highestTemp": "174"
+    },
+    {
+        "date": "20170328",
+        "avgTemp": "113",
+        "lowestTemp": "6",
+        "highestTemp": "197"
+    },
+    {
+        "date": "20170329",
+        "avgTemp": "126",
+        "lowestTemp": "103",
+        "highestTemp": "147"
+    },
+    {
+        "date": "20170330",
+        "avgTemp": "157",
+        "lowestTemp": "108",
+        "highestTemp": "218"
+    },
+    {
+        "date": "20170331",
+        "avgTemp": "145",
+        "lowestTemp": "89",
+        "highestTemp": "218"
+    },
+    {
+        "date": "20170401",
+        "avgTemp": "108",
+        "lowestTemp": "60",
+        "highestTemp": "141"
+    },
+    {
+        "date": "20170402",
+        "avgTemp": "103",
+        "lowestTemp": "44",
+        "highestTemp": "169"
+    },
+    {
+        "date": "20170403",
+        "avgTemp": "81",
+        "lowestTemp": "27",
+        "highestTemp": "143"
+    },
+    {
+        "date": "20170404",
+        "avgTemp": "98",
+        "lowestTemp": "22",
+        "highestTemp": "165"
+    },
+    {
+        "date": "20170405",
+        "avgTemp": "92",
+        "lowestTemp": "62",
+        "highestTemp": "128"
+    },
+    {
+        "date": "20170406",
+        "avgTemp": "81",
+        "lowestTemp": "38",
+        "highestTemp": "118"
+    },
+    {
+        "date": "20170407",
+        "avgTemp": "105",
+        "lowestTemp": "73",
+        "highestTemp": "138"
+    },
+    {
+        "date": "20170408",
+        "avgTemp": "96",
+        "lowestTemp": "29",
+        "highestTemp": "155"
+    },
+    {
+        "date": "20170409",
+        "avgTemp": "117",
+        "lowestTemp": "8",
+        "highestTemp": "210"
+    },
+    {
+        "date": "20170410",
+        "avgTemp": "98",
+        "lowestTemp": "41",
+        "highestTemp": "155"
+    },
+    {
+        "date": "20170411",
+        "avgTemp": "96",
+        "lowestTemp": "23",
+        "highestTemp": "138"
+    },
+    {
+        "date": "20170412",
+        "avgTemp": "98",
+        "lowestTemp": "83",
+        "highestTemp": "119"
+    },
+    {
+        "date": "20170413",
+        "avgTemp": "93",
+        "lowestTemp": "60",
+        "highestTemp": "133"
+    },
+    {
+        "date": "20170414",
+        "avgTemp": "99",
+        "lowestTemp": "65",
+        "highestTemp": "130"
+    },
+    {
+        "date": "20170415",
+        "avgTemp": "96",
+        "lowestTemp": "65",
+        "highestTemp": "121"
+    },
+    {
+        "date": "20170416",
+        "avgTemp": "79",
+        "lowestTemp": "50",
+        "highestTemp": "108"
+    },
+    {
+        "date": "20170417",
+        "avgTemp": "65",
+        "lowestTemp": "27",
+        "highestTemp": "109"
+    },
+    {
+        "date": "20170418",
+        "avgTemp": "61",
+        "lowestTemp": "8",
+        "highestTemp": "111"
+    },
+    {
+        "date": "20170419",
+        "avgTemp": "39",
+        "lowestTemp": "-13",
+        "highestTemp": "83"
+    },
+    {
+        "date": "20170420",
+        "avgTemp": "69",
+        "lowestTemp": "-34",
+        "highestTemp": "129"
+    },
+    {
+        "date": "20170421",
+        "avgTemp": "111",
+        "lowestTemp": "82",
+        "highestTemp": "149"
+    },
+    {
+        "date": "20170422",
+        "avgTemp": "78",
+        "lowestTemp": "40",
+        "highestTemp": "113"
+    },
+    {
+        "date": "20170423",
+        "avgTemp": "66",
+        "lowestTemp": "20",
+        "highestTemp": "114"
+    },
+    {
+        "date": "20170424",
+        "avgTemp": "93",
+        "lowestTemp": "52",
+        "highestTemp": "130"
+    },
+    {
+        "date": "20170425",
+        "avgTemp": "59",
+        "lowestTemp": "21",
+        "highestTemp": "99"
+    },
+    {
+        "date": "20170426",
+        "avgTemp": "50",
+        "lowestTemp": "-14",
+        "highestTemp": "104"
+    },
+    {
+        "date": "20170427",
+        "avgTemp": "61",
+        "lowestTemp": "-20",
+        "highestTemp": "109"
+    },
+    {
+        "date": "20170428",
+        "avgTemp": "76",
+        "lowestTemp": "30",
+        "highestTemp": "117"
+    },
+    {
+        "date": "20170429",
+        "avgTemp": "76",
+        "lowestTemp": "5",
+        "highestTemp": "140"
+    },
+    {
+        "date": "20170430",
+        "avgTemp": "123",
+        "lowestTemp": "33",
+        "highestTemp": "184"
+    },
+    {
+        "date": "20170501",
+        "avgTemp": "117",
+        "lowestTemp": "82",
+        "highestTemp": "137"
+    },
+    {
+        "date": "20170502",
+        "avgTemp": "100",
+        "lowestTemp": "47",
+        "highestTemp": "152"
+    },
+    {
+        "date": "20170503",
+        "avgTemp": "107",
+        "lowestTemp": "77",
+        "highestTemp": "152"
+    },
+    {
+        "date": "20170504",
+        "avgTemp": "104",
+        "lowestTemp": "77",
+        "highestTemp": "133"
+    },
+    {
+        "date": "20170505",
+        "avgTemp": "89",
+        "lowestTemp": "66",
+        "highestTemp": "111"
+    },
+    {
+        "date": "20170506",
+        "avgTemp": "128",
+        "lowestTemp": "59",
+        "highestTemp": "188"
+    },
+    {
+        "date": "20170507",
+        "avgTemp": "117",
+        "lowestTemp": "86",
+        "highestTemp": "162"
+    },
+    {
+        "date": "20170508",
+        "avgTemp": "97",
+        "lowestTemp": "43",
+        "highestTemp": "153"
+    },
+    {
+        "date": "20170509",
+        "avgTemp": "80",
+        "lowestTemp": "11",
+        "highestTemp": "138"
+    },
+    {
+        "date": "20170510",
+        "avgTemp": "90",
+        "lowestTemp": "-1",
+        "highestTemp": "159"
+    },
+    {
+        "date": "20170511",
+        "avgTemp": "154",
+        "lowestTemp": "47",
+        "highestTemp": "228"
+    },
+    {
+        "date": "20170512",
+        "avgTemp": "155",
+        "lowestTemp": "120",
+        "highestTemp": "212"
+    },
+    {
+        "date": "20170513",
+        "avgTemp": "140",
+        "lowestTemp": "85",
+        "highestTemp": "190"
+    },
+    {
+        "date": "20170514",
+        "avgTemp": "134",
+        "lowestTemp": "66",
+        "highestTemp": "199"
+    },
+    {
+        "date": "20170515",
+        "avgTemp": "149",
+        "lowestTemp": "55",
+        "highestTemp": "212"
+    },
+    {
+        "date": "20170516",
+        "avgTemp": "204",
+        "lowestTemp": "152",
+        "highestTemp": "262"
+    },
+    {
+        "date": "20170517",
+        "avgTemp": "223",
+        "lowestTemp": "144",
+        "highestTemp": "284"
+    },
+    {
+        "date": "20170518",
+        "avgTemp": "165",
+        "lowestTemp": "144",
+        "highestTemp": "211"
+    },
+    {
+        "date": "20170519",
+        "avgTemp": "136",
+        "lowestTemp": "105",
+        "highestTemp": "167"
+    },
+    {
+        "date": "20170520",
+        "avgTemp": "125",
+        "lowestTemp": "74",
+        "highestTemp": "173"
+    },
+    {
+        "date": "20170521",
+        "avgTemp": "144",
+        "lowestTemp": "54",
+        "highestTemp": "202"
+    },
+    {
+        "date": "20170522",
+        "avgTemp": "176",
+        "lowestTemp": "81",
+        "highestTemp": "246"
+    },
+    {
+        "date": "20170523",
+        "avgTemp": "161",
+        "lowestTemp": "99",
+        "highestTemp": "210"
+    },
+    {
+        "date": "20170524",
+        "avgTemp": "159",
+        "lowestTemp": "90",
+        "highestTemp": "223"
+    },
+    {
+        "date": "20170525",
+        "avgTemp": "174",
+        "lowestTemp": "92",
+        "highestTemp": "230"
+    },
+    {
+        "date": "20170526",
+        "avgTemp": "203",
+        "lowestTemp": "110",
+        "highestTemp": "266"
+    },
+    {
+        "date": "20170527",
+        "avgTemp": "229",
+        "lowestTemp": "160",
+        "highestTemp": "319"
+    },
+    {
+        "date": "20170528",
+        "avgTemp": "205",
+        "lowestTemp": "149",
+        "highestTemp": "266"
+    },
+    {
+        "date": "20170529",
+        "avgTemp": "219",
+        "lowestTemp": "154",
+        "highestTemp": "286"
+    },
+    {
+        "date": "20170530",
+        "avgTemp": "183",
+        "lowestTemp": "155",
+        "highestTemp": "212"
+    },
+    {
+        "date": "20170531",
+        "avgTemp": "174",
+        "lowestTemp": "107",
+        "highestTemp": "222"
+    },
+    {
+        "date": "20170601",
+        "avgTemp": "166",
+        "lowestTemp": "75",
+        "highestTemp": "234"
+    },
+    {
+        "date": "20170602",
+        "avgTemp": "198",
+        "lowestTemp": "108",
+        "highestTemp": "266"
+    },
+    {
+        "date": "20170603",
+        "avgTemp": "184",
+        "lowestTemp": "143",
+        "highestTemp": "237"
+    },
+    {
+        "date": "20170604",
+        "avgTemp": "154",
+        "lowestTemp": "87",
+        "highestTemp": "195"
+    },
+    {
+        "date": "20170605",
+        "avgTemp": "171",
+        "lowestTemp": "84",
+        "highestTemp": "229"
+    },
+    {
+        "date": "20170606",
+        "avgTemp": "141",
+        "lowestTemp": "110",
+        "highestTemp": "174"
+    },
+    {
+        "date": "20170607",
+        "avgTemp": "140",
+        "lowestTemp": "113",
+        "highestTemp": "174"
+    },
+    {
+        "date": "20170608",
+        "avgTemp": "168",
+        "lowestTemp": "117",
+        "highestTemp": "232"
+    },
+    {
+        "date": "20170609",
+        "avgTemp": "165",
+        "lowestTemp": "130",
+        "highestTemp": "196"
+    },
+    {
+        "date": "20170610",
+        "avgTemp": "178",
+        "lowestTemp": "117",
+        "highestTemp": "239"
+    },
+    {
+        "date": "20170611",
+        "avgTemp": "199",
+        "lowestTemp": "121",
+        "highestTemp": "271"
+    },
+    {
+        "date": "20170612",
+        "avgTemp": "161",
+        "lowestTemp": "145",
+        "highestTemp": "178"
+    },
+    {
+        "date": "20170613",
+        "avgTemp": "163",
+        "lowestTemp": "93",
+        "highestTemp": "208"
+    },
+    {
+        "date": "20170614",
+        "avgTemp": "174",
+        "lowestTemp": "75",
+        "highestTemp": "244"
+    },
+    {
+        "date": "20170615",
+        "avgTemp": "200",
+        "lowestTemp": "120",
+        "highestTemp": "264"
+    },
+    {
+        "date": "20170616",
+        "avgTemp": "162",
+        "lowestTemp": "129",
+        "highestTemp": "180"
+    },
+    {
+        "date": "20170617",
+        "avgTemp": "186",
+        "lowestTemp": "129",
+        "highestTemp": "232"
+    },
+    {
+        "date": "20170618",
+        "avgTemp": "208",
+        "lowestTemp": "111",
+        "highestTemp": "278"
+    },
+    {
+        "date": "20170619",
+        "avgTemp": "236",
+        "lowestTemp": "137",
+        "highestTemp": "309"
+    },
+    {
+        "date": "20170620",
+        "avgTemp": "216",
+        "lowestTemp": "149",
+        "highestTemp": "274"
+    },
+    {
+        "date": "20170621",
+        "avgTemp": "214",
+        "lowestTemp": "131",
+        "highestTemp": "291"
+    },
+    {
+        "date": "20170622",
+        "avgTemp": "229",
+        "lowestTemp": "171",
+        "highestTemp": "308"
+    },
+    {
+        "date": "20170623",
+        "avgTemp": "196",
+        "lowestTemp": "168",
+        "highestTemp": "232"
+    },
+    {
+        "date": "20170624",
+        "avgTemp": "171",
+        "lowestTemp": "163",
+        "highestTemp": "179"
+    },
+    {
+        "date": "20170625",
+        "avgTemp": "175",
+        "lowestTemp": "154",
+        "highestTemp": "190"
+    },
+    {
+        "date": "20170626",
+        "avgTemp": "168",
+        "lowestTemp": "123",
+        "highestTemp": "206"
+    },
+    {
+        "date": "20170627",
+        "avgTemp": "173",
+        "lowestTemp": "113",
+        "highestTemp": "218"
+    },
+    {
+        "date": "20170628",
+        "avgTemp": "180",
+        "lowestTemp": "150",
+        "highestTemp": "219"
+    },
+    {
+        "date": "20170629",
+        "avgTemp": "175",
+        "lowestTemp": "133",
+        "highestTemp": "217"
+    },
+    {
+        "date": "20170630",
+        "avgTemp": "162",
+        "lowestTemp": "116",
+        "highestTemp": "208"
+    },
+    {
+        "date": "20170701",
+        "avgTemp": "161",
+        "lowestTemp": "139",
+        "highestTemp": "210"
+    },
+    {
+        "date": "20170702",
+        "avgTemp": "156",
+        "lowestTemp": "89",
+        "highestTemp": "196"
+    },
+    {
+        "date": "20170703",
+        "avgTemp": "166",
+        "lowestTemp": "81",
+        "highestTemp": "220"
+    },
+    {
+        "date": "20170704",
+        "avgTemp": "186",
+        "lowestTemp": "150",
+        "highestTemp": "232"
+    },
+    {
+        "date": "20170705",
+        "avgTemp": "190",
+        "lowestTemp": "120",
+        "highestTemp": "248"
+    },
+    {
+        "date": "20170706",
+        "avgTemp": "199",
+        "lowestTemp": "108",
+        "highestTemp": "265"
+    },
+    {
+        "date": "20170707",
+        "avgTemp": "206",
+        "lowestTemp": "153",
+        "highestTemp": "260"
+    },
+    {
+        "date": "20170708",
+        "avgTemp": "186",
+        "lowestTemp": "113",
+        "highestTemp": "245"
+    },
+    {
+        "date": "20170709",
+        "avgTemp": "172",
+        "lowestTemp": "91",
+        "highestTemp": "232"
+    },
+    {
+        "date": "20170710",
+        "avgTemp": "196",
+        "lowestTemp": "140",
+        "highestTemp": "259"
+    },
+    {
+        "date": "20170711",
+        "avgTemp": "177",
+        "lowestTemp": "153",
+        "highestTemp": "207"
+    },
+    {
+        "date": "20170712",
+        "avgTemp": "149",
+        "lowestTemp": "89",
+        "highestTemp": "182"
+    },
+    {
+        "date": "20170713",
+        "avgTemp": "146",
+        "lowestTemp": "74",
+        "highestTemp": "205"
+    },
+    {
+        "date": "20170714",
+        "avgTemp": "142",
+        "lowestTemp": "80",
+        "highestTemp": "186"
+    },
+    {
+        "date": "20170715",
+        "avgTemp": "172",
+        "lowestTemp": "109",
+        "highestTemp": "215"
+    },
+    {
+        "date": "20170716",
+        "avgTemp": "186",
+        "lowestTemp": "160",
+        "highestTemp": "221"
+    },
+    {
+        "date": "20170717",
+        "avgTemp": "186",
+        "lowestTemp": "130",
+        "highestTemp": "231"
+    },
+    {
+        "date": "20170718",
+        "avgTemp": "199",
+        "lowestTemp": "120",
+        "highestTemp": "252"
+    },
+    {
+        "date": "20170719",
+        "avgTemp": "235",
+        "lowestTemp": "180",
+        "highestTemp": "294"
+    },
+    {
+        "date": "20170720",
+        "avgTemp": "191",
+        "lowestTemp": "135",
+        "highestTemp": "242"
+    },
+    {
+        "date": "20170721",
+        "avgTemp": "182",
+        "lowestTemp": "128",
+        "highestTemp": "227"
+    },
+    {
+        "date": "20170722",
+        "avgTemp": "194",
+        "lowestTemp": "145",
+        "highestTemp": "242"
+    },
+    {
+        "date": "20170723",
+        "avgTemp": "160",
+        "lowestTemp": "132",
+        "highestTemp": "191"
+    },
+    {
+        "date": "20170724",
+        "avgTemp": "161",
+        "lowestTemp": "119",
+        "highestTemp": "202"
+    },
+    {
+        "date": "20170725",
+        "avgTemp": "167",
+        "lowestTemp": "140",
+        "highestTemp": "200"
+    },
+    {
+        "date": "20170726",
+        "avgTemp": "190",
+        "lowestTemp": "138",
+        "highestTemp": "236"
+    },
+    {
+        "date": "20170727",
+        "avgTemp": "185",
+        "lowestTemp": "162",
+        "highestTemp": "214"
+    },
+    {
+        "date": "20170728",
+        "avgTemp": "172",
+        "lowestTemp": "148",
+        "highestTemp": "210"
+    },
+    {
+        "date": "20170729",
+        "avgTemp": "182",
+        "lowestTemp": "162",
+        "highestTemp": "205"
+    },
+    {
+        "date": "20170730",
+        "avgTemp": "188",
+        "lowestTemp": "133",
+        "highestTemp": "229"
+    },
+    {
+        "date": "20170731",
+        "avgTemp": "181",
+        "lowestTemp": "126",
+        "highestTemp": "228"
+    },
+    {
+        "date": "20170801",
+        "avgTemp": "178",
+        "lowestTemp": "125",
+        "highestTemp": "227"
+    },
+    {
+        "date": "20170802",
+        "avgTemp": "176",
+        "lowestTemp": "135",
+        "highestTemp": "220"
+    },
+    {
+        "date": "20170803",
+        "avgTemp": "190",
+        "lowestTemp": "165",
+        "highestTemp": "225"
+    },
+    {
+        "date": "20170804",
+        "avgTemp": "183",
+        "lowestTemp": "154",
+        "highestTemp": "218"
+    },
+    {
+        "date": "20170805",
+        "avgTemp": "159",
+        "lowestTemp": "106",
+        "highestTemp": "204"
+    },
+    {
+        "date": "20170806",
+        "avgTemp": "158",
+        "lowestTemp": "90",
+        "highestTemp": "217"
+    },
+    {
+        "date": "20170807",
+        "avgTemp": "168",
+        "lowestTemp": "88",
+        "highestTemp": "226"
+    },
+    {
+        "date": "20170808",
+        "avgTemp": "162",
+        "lowestTemp": "141",
+        "highestTemp": "196"
+    },
+    {
+        "date": "20170809",
+        "avgTemp": "167",
+        "lowestTemp": "123",
+        "highestTemp": "213"
+    },
+    {
+        "date": "20170810",
+        "avgTemp": "157",
+        "lowestTemp": "97",
+        "highestTemp": "205"
+    },
+    {
+        "date": "20170811",
+        "avgTemp": "167",
+        "lowestTemp": "120",
+        "highestTemp": "203"
+    },
+    {
+        "date": "20170812",
+        "avgTemp": "168",
+        "lowestTemp": "125",
+        "highestTemp": "216"
+    },
+    {
+        "date": "20170813",
+        "avgTemp": "162",
+        "lowestTemp": "100",
+        "highestTemp": "215"
+    },
+    {
+        "date": "20170814",
+        "avgTemp": "179",
+        "lowestTemp": "105",
+        "highestTemp": "241"
+    },
+    {
+        "date": "20170815",
+        "avgTemp": "179",
+        "lowestTemp": "136",
+        "highestTemp": "218"
+    },
+    {
+        "date": "20170816",
+        "avgTemp": "176",
+        "lowestTemp": "116",
+        "highestTemp": "233"
+    },
+    {
+        "date": "20170817",
+        "avgTemp": "173",
+        "lowestTemp": "121",
+        "highestTemp": "199"
+    },
+    {
+        "date": "20170818",
+        "avgTemp": "169",
+        "lowestTemp": "130",
+        "highestTemp": "201"
+    },
+    {
+        "date": "20170819",
+        "avgTemp": "154",
+        "lowestTemp": "127",
+        "highestTemp": "196"
+    },
+    {
+        "date": "20170820",
+        "avgTemp": "158",
+        "lowestTemp": "115",
+        "highestTemp": "198"
+    },
+    {
+        "date": "20170821",
+        "avgTemp": "159",
+        "lowestTemp": "112",
+        "highestTemp": "208"
+    },
+    {
+        "date": "20170822",
+        "avgTemp": "182",
+        "lowestTemp": "129",
+        "highestTemp": "235"
+    },
+    {
+        "date": "20170823",
+        "avgTemp": "196",
+        "lowestTemp": "129",
+        "highestTemp": "250"
+    },
+    {
+        "date": "20170824",
+        "avgTemp": "179",
+        "lowestTemp": "111",
+        "highestTemp": "222"
+    },
+    {
+        "date": "20170825",
+        "avgTemp": "169",
+        "lowestTemp": "102",
+        "highestTemp": "234"
+    },
+    {
+        "date": "20170826",
+        "avgTemp": "182",
+        "lowestTemp": "100",
+        "highestTemp": "250"
+    },
+    {
+        "date": "20170827",
+        "avgTemp": "178",
+        "lowestTemp": "110",
+        "highestTemp": "247"
+    },
+    {
+        "date": "20170828",
+        "avgTemp": "187",
+        "lowestTemp": "106",
+        "highestTemp": "268"
+    },
+    {
+        "date": "20170829",
+        "avgTemp": "210",
+        "lowestTemp": "122",
+        "highestTemp": "290"
+    },
+    {
+        "date": "20170830",
+        "avgTemp": "178",
+        "lowestTemp": "135",
+        "highestTemp": "225"
+    },
+    {
+        "date": "20170831",
+        "avgTemp": "144",
+        "lowestTemp": "95",
+        "highestTemp": "197"
+    },
+    {
+        "date": "20170901",
+        "avgTemp": "147",
+        "lowestTemp": "98",
+        "highestTemp": "193"
+    },
+    {
+        "date": "20170902",
+        "avgTemp": "133",
+        "lowestTemp": "77",
+        "highestTemp": "194"
+    },
+    {
+        "date": "20170903",
+        "avgTemp": "130",
+        "lowestTemp": "57",
+        "highestTemp": "200"
+    },
+    {
+        "date": "20170904",
+        "avgTemp": "158",
+        "lowestTemp": "84",
+        "highestTemp": "216"
+    },
+    {
+        "date": "20170905",
+        "avgTemp": "186",
+        "lowestTemp": "158",
+        "highestTemp": "217"
+    },
+    {
+        "date": "20170906",
+        "avgTemp": "159",
+        "lowestTemp": "136",
+        "highestTemp": "183"
+    },
+    {
+        "date": "20170907",
+        "avgTemp": "156",
+        "lowestTemp": "130",
+        "highestTemp": "185"
+    },
+    {
+        "date": "20170908",
+        "avgTemp": "151",
+        "lowestTemp": "139",
+        "highestTemp": "158"
+    },
+    {
+        "date": "20170909",
+        "avgTemp": "132",
+        "lowestTemp": "82",
+        "highestTemp": "177"
+    },
+    {
+        "date": "20170910",
+        "avgTemp": "139",
+        "lowestTemp": "82",
+        "highestTemp": "177"
+    },
+    {
+        "date": "20170911",
+        "avgTemp": "141",
+        "lowestTemp": "117",
+        "highestTemp": "174"
+    },
+    {
+        "date": "20170912",
+        "avgTemp": "146",
+        "lowestTemp": "122",
+        "highestTemp": "183"
+    },
+    {
+        "date": "20170913",
+        "avgTemp": "141",
+        "lowestTemp": "108",
+        "highestTemp": "176"
+    },
+    {
+        "date": "20170914",
+        "avgTemp": "117",
+        "lowestTemp": "102",
+        "highestTemp": "144"
+    },
+    {
+        "date": "20170915",
+        "avgTemp": "125",
+        "lowestTemp": "97",
+        "highestTemp": "164"
+    },
+    {
+        "date": "20170916",
+        "avgTemp": "106",
+        "lowestTemp": "62",
+        "highestTemp": "129"
+    },
+    {
+        "date": "20170917",
+        "avgTemp": "108",
+        "lowestTemp": "48",
+        "highestTemp": "172"
+    },
+    {
+        "date": "20170918",
+        "avgTemp": "120",
+        "lowestTemp": "74",
+        "highestTemp": "162"
+    },
+    {
+        "date": "20170919",
+        "avgTemp": "120",
+        "lowestTemp": "80",
+        "highestTemp": "174"
+    },
+    {
+        "date": "20170920",
+        "avgTemp": "135",
+        "lowestTemp": "80",
+        "highestTemp": "175"
+    },
+    {
+        "date": "20170921",
+        "avgTemp": "134",
+        "lowestTemp": "89",
+        "highestTemp": "186"
+    },
+    {
+        "date": "20170922",
+        "avgTemp": "119",
+        "lowestTemp": "58",
+        "highestTemp": "192"
+    },
+    {
+        "date": "20170923",
+        "avgTemp": "109",
+        "lowestTemp": "39",
+        "highestTemp": "183"
+    },
+    {
+        "date": "20170924",
+        "avgTemp": "121",
+        "lowestTemp": "45",
+        "highestTemp": "204"
+    },
+    {
+        "date": "20170925",
+        "avgTemp": "142",
+        "lowestTemp": "97",
+        "highestTemp": "181"
+    },
+    {
+        "date": "20170926",
+        "avgTemp": "132",
+        "lowestTemp": "86",
+        "highestTemp": "172"
+    },
+    {
+        "date": "20170927",
+        "avgTemp": "136",
+        "lowestTemp": "66",
+        "highestTemp": "202"
+    },
+    {
+        "date": "20170928",
+        "avgTemp": "158",
+        "lowestTemp": "127",
+        "highestTemp": "206"
+    },
+    {
+        "date": "20170929",
+        "avgTemp": "171",
+        "lowestTemp": "127",
+        "highestTemp": "227"
+    },
+    {
+        "date": "20170930",
+        "avgTemp": "131",
+        "lowestTemp": "77",
+        "highestTemp": "157"
+    },
+    {
+        "date": "20171001",
+        "avgTemp": "141",
+        "lowestTemp": "97",
+        "highestTemp": "174"
+    },
+    {
+        "date": "20171002",
+        "avgTemp": "156",
+        "lowestTemp": "134",
+        "highestTemp": "179"
+    },
+    {
+        "date": "20171003",
+        "avgTemp": "136",
+        "lowestTemp": "118",
+        "highestTemp": "164"
+    },
+    {
+        "date": "20171004",
+        "avgTemp": "130",
+        "lowestTemp": "114",
+        "highestTemp": "152"
+    },
+    {
+        "date": "20171005",
+        "avgTemp": "129",
+        "lowestTemp": "103",
+        "highestTemp": "160"
+    },
+    {
+        "date": "20171006",
+        "avgTemp": "116",
+        "lowestTemp": "95",
+        "highestTemp": "150"
+    },
+    {
+        "date": "20171007",
+        "avgTemp": "122",
+        "lowestTemp": "106",
+        "highestTemp": "143"
+    },
+    {
+        "date": "20171008",
+        "avgTemp": "121",
+        "lowestTemp": "97",
+        "highestTemp": "147"
+    },
+    {
+        "date": "20171009",
+        "avgTemp": "121",
+        "lowestTemp": "101",
+        "highestTemp": "134"
+    },
+    {
+        "date": "20171010",
+        "avgTemp": "143",
+        "lowestTemp": "124",
+        "highestTemp": "158"
+    },
+    {
+        "date": "20171011",
+        "avgTemp": "148",
+        "lowestTemp": "142",
+        "highestTemp": "161"
+    },
+    {
+        "date": "20171012",
+        "avgTemp": "134",
+        "lowestTemp": "108",
+        "highestTemp": "161"
+    },
+    {
+        "date": "20171013",
+        "avgTemp": "153",
+        "lowestTemp": "109",
+        "highestTemp": "182"
+    },
+    {
+        "date": "20171014",
+        "avgTemp": "148",
+        "lowestTemp": "96",
+        "highestTemp": "199"
+    },
+    {
+        "date": "20171015",
+        "avgTemp": "158",
+        "lowestTemp": "93",
+        "highestTemp": "221"
+    },
+    {
+        "date": "20171016",
+        "avgTemp": "186",
+        "lowestTemp": "137",
+        "highestTemp": "244"
+    },
+    {
+        "date": "20171017",
+        "avgTemp": "129",
+        "lowestTemp": "82",
+        "highestTemp": "166"
+    },
+    {
+        "date": "20171018",
+        "avgTemp": "137",
+        "lowestTemp": "104",
+        "highestTemp": "186"
+    },
+    {
+        "date": "20171019",
+        "avgTemp": "157",
+        "lowestTemp": "101",
+        "highestTemp": "204"
+    },
+    {
+        "date": "20171020",
+        "avgTemp": "137",
+        "lowestTemp": "104",
+        "highestTemp": "167"
+    },
+    {
+        "date": "20171021",
+        "avgTemp": "132",
+        "lowestTemp": "104",
+        "highestTemp": "175"
+    },
+    {
+        "date": "20171022",
+        "avgTemp": "108",
+        "lowestTemp": "96",
+        "highestTemp": "132"
+    },
+    {
+        "date": "20171023",
+        "avgTemp": "126",
+        "lowestTemp": "103",
+        "highestTemp": "152"
+    },
+    {
+        "date": "20171024",
+        "avgTemp": "153",
+        "lowestTemp": "130",
+        "highestTemp": "171"
+    },
+    {
+        "date": "20171025",
+        "avgTemp": "142",
+        "lowestTemp": "90",
+        "highestTemp": "171"
+    },
+    {
+        "date": "20171026",
+        "avgTemp": "140",
+        "lowestTemp": "127",
+        "highestTemp": "175"
+    },
+    {
+        "date": "20171027",
+        "avgTemp": "118",
+        "lowestTemp": "99",
+        "highestTemp": "144"
+    },
+    {
+        "date": "20171028",
+        "avgTemp": "124",
+        "lowestTemp": "93",
+        "highestTemp": "153"
+    },
+    {
+        "date": "20171029",
+        "avgTemp": "107",
+        "lowestTemp": "68",
+        "highestTemp": "152"
+    },
+    {
+        "date": "20171030",
+        "avgTemp": "83",
+        "lowestTemp": "45",
+        "highestTemp": "121"
+    },
+    {
+        "date": "20171031",
+        "avgTemp": "101",
+        "lowestTemp": "82",
+        "highestTemp": "112"
+    },
+    {
+        "date": "20171101",
+        "avgTemp": "112",
+        "lowestTemp": "96",
+        "highestTemp": "135"
+    },
+    {
+        "date": "20171102",
+        "avgTemp": "98",
+        "lowestTemp": "38",
+        "highestTemp": "140"
+    },
+    {
+        "date": "20171103",
+        "avgTemp": "88",
+        "lowestTemp": "34",
+        "highestTemp": "124"
+    },
+    {
+        "date": "20171104",
+        "avgTemp": "106",
+        "lowestTemp": "74",
+        "highestTemp": "131"
+    },
+    {
+        "date": "20171105",
+        "avgTemp": "78",
+        "lowestTemp": "50",
+        "highestTemp": "109"
+    },
+    {
+        "date": "20171106",
+        "avgTemp": "48",
+        "lowestTemp": "-5",
+        "highestTemp": "109"
+    },
+    {
+        "date": "20171107",
+        "avgTemp": "33",
+        "lowestTemp": "-13",
+        "highestTemp": "98"
+    },
+    {
+        "date": "20171108",
+        "avgTemp": "59",
+        "lowestTemp": "24",
+        "highestTemp": "76"
+    },
+    {
+        "date": "20171109",
+        "avgTemp": "87",
+        "lowestTemp": "62",
+        "highestTemp": "111"
+    },
+    {
+        "date": "20171110",
+        "avgTemp": "92",
+        "lowestTemp": "58",
+        "highestTemp": "118"
+    },
+    {
+        "date": "20171111",
+        "avgTemp": "66",
+        "lowestTemp": "38",
+        "highestTemp": "94"
+    },
+    {
+        "date": "20171112",
+        "avgTemp": "52",
+        "lowestTemp": "32",
+        "highestTemp": "64"
+    },
+    {
+        "date": "20171113",
+        "avgTemp": "62",
+        "lowestTemp": "10",
+        "highestTemp": "103"
+    },
+    {
+        "date": "20171114",
+        "avgTemp": "77",
+        "lowestTemp": "27",
+        "highestTemp": "92"
+    },
+    {
+        "date": "20171115",
+        "avgTemp": "94",
+        "lowestTemp": "85",
+        "highestTemp": "102"
+    },
+    {
+        "date": "20171116",
+        "avgTemp": "93",
+        "lowestTemp": "62",
+        "highestTemp": "107"
+    },
+    {
+        "date": "20171117",
+        "avgTemp": "56",
+        "lowestTemp": "6",
+        "highestTemp": "110"
+    },
+    {
+        "date": "20171118",
+        "avgTemp": "69",
+        "lowestTemp": "35",
+        "highestTemp": "96"
+    },
+    {
+        "date": "20171119",
+        "avgTemp": "67",
+        "lowestTemp": "44",
+        "highestTemp": "99"
+    },
+    {
+        "date": "20171120",
+        "avgTemp": "78",
+        "lowestTemp": "46",
+        "highestTemp": "118"
+    },
+    {
+        "date": "20171121",
+        "avgTemp": "115",
+        "lowestTemp": "106",
+        "highestTemp": "124"
+    },
+    {
+        "date": "20171122",
+        "avgTemp": "114",
+        "lowestTemp": "105",
+        "highestTemp": "133"
+    },
+    {
+        "date": "20171123",
+        "avgTemp": "111",
+        "lowestTemp": "82",
+        "highestTemp": "144"
+    },
+    {
+        "date": "20171124",
+        "avgTemp": "69",
+        "lowestTemp": "43",
+        "highestTemp": "92"
+    },
+    {
+        "date": "20171125",
+        "avgTemp": "37",
+        "lowestTemp": "-6",
+        "highestTemp": "74"
+    },
+    {
+        "date": "20171126",
+        "avgTemp": "53",
+        "lowestTemp": "30",
+        "highestTemp": "80"
+    },
+    {
+        "date": "20171127",
+        "avgTemp": "67",
+        "lowestTemp": "47",
+        "highestTemp": "91"
+    },
+    {
+        "date": "20171128",
+        "avgTemp": "54",
+        "lowestTemp": "12",
+        "highestTemp": "78"
+    },
+    {
+        "date": "20171129",
+        "avgTemp": "29",
+        "lowestTemp": "6",
+        "highestTemp": "40"
+    },
+    {
+        "date": "20171130",
+        "avgTemp": "15",
+        "lowestTemp": "-24",
+        "highestTemp": "46"
+    },
+    {
+        "date": "20171201",
+        "avgTemp": "0",
+        "lowestTemp": "-28",
+        "highestTemp": "31"
+    },
+    {
+        "date": "20171202",
+        "avgTemp": "-4",
+        "lowestTemp": "-12",
+        "highestTemp": "6"
+    },
+    {
+        "date": "20171203",
+        "avgTemp": "37",
+        "lowestTemp": "3",
+        "highestTemp": "66"
+    },
+    {
+        "date": "20171204",
+        "avgTemp": "70",
+        "lowestTemp": "52",
+        "highestTemp": "91"
+    },
+    {
+        "date": "20171205",
+        "avgTemp": "76",
+        "lowestTemp": "54",
+        "highestTemp": "91"
+    },
+    {
+        "date": "20171206",
+        "avgTemp": "80",
+        "lowestTemp": "69",
+        "highestTemp": "92"
+    },
+    {
+        "date": "20171207",
+        "avgTemp": "59",
+        "lowestTemp": "43",
+        "highestTemp": "72"
+    },
+    {
+        "date": "20171208",
+        "avgTemp": "26",
+        "lowestTemp": "3",
+        "highestTemp": "61"
+    },
+    {
+        "date": "20171209",
+        "avgTemp": "21",
+        "lowestTemp": "4",
+        "highestTemp": "46"
+    },
+    {
+        "date": "20171210",
+        "avgTemp": "11",
+        "lowestTemp": "0",
+        "highestTemp": "41"
+    },
+    {
+        "date": "20171211",
+        "avgTemp": "-1",
+        "lowestTemp": "-29",
+        "highestTemp": "16"
+    },
+    {
+        "date": "20171212",
+        "avgTemp": "18",
+        "lowestTemp": "3",
+        "highestTemp": "41"
+    },
+    {
+        "date": "20171213",
+        "avgTemp": "40",
+        "lowestTemp": "8",
+        "highestTemp": "64"
+    },
+    {
+        "date": "20171214",
+        "avgTemp": "33",
+        "lowestTemp": "4",
+        "highestTemp": "54"
+    },
+    {
+        "date": "20171215",
+        "avgTemp": "26",
+        "lowestTemp": "-2",
+        "highestTemp": "43"
+    },
+    {
+        "date": "20171216",
+        "avgTemp": "27",
+        "lowestTemp": "1",
+        "highestTemp": "62"
+    },
+    {
+        "date": "20171217",
+        "avgTemp": "25",
+        "lowestTemp": "-28",
+        "highestTemp": "63"
+    },
+    {
+        "date": "20171218",
+        "avgTemp": "59",
+        "lowestTemp": "22",
+        "highestTemp": "80"
+    },
+    {
+        "date": "20171219",
+        "avgTemp": "52",
+        "lowestTemp": "13",
+        "highestTemp": "75"
+    },
+    {
+        "date": "20171220",
+        "avgTemp": "75",
+        "lowestTemp": "49",
+        "highestTemp": "87"
+    },
+    {
+        "date": "20171221",
+        "avgTemp": "84",
+        "lowestTemp": "76",
+        "highestTemp": "93"
+    },
+    {
+        "date": "20171222",
+        "avgTemp": "86",
+        "lowestTemp": "73",
+        "highestTemp": "96"
+    },
+    {
+        "date": "20171223",
+        "avgTemp": "87",
+        "lowestTemp": "80",
+        "highestTemp": "94"
+    },
+    {
+        "date": "20171224",
+        "avgTemp": "82",
+        "lowestTemp": "72",
+        "highestTemp": "96"
+    },
+    {
+        "date": "20171225",
+        "avgTemp": "74",
+        "lowestTemp": "45",
+        "highestTemp": "91"
+    },
+    {
+        "date": "20171226",
+        "avgTemp": "58",
+        "lowestTemp": "46",
+        "highestTemp": "74"
+    },
+    {
+        "date": "20171227",
+        "avgTemp": "51",
+        "lowestTemp": "36",
+        "highestTemp": "66"
+    },
+    {
+        "date": "20171228",
+        "avgTemp": "39",
+        "lowestTemp": "24",
+        "highestTemp": "53"
+    },
+    {
+        "date": "20171229",
+        "avgTemp": "28",
+        "lowestTemp": "-7",
+        "highestTemp": "67"
+    },
+    {
+        "date": "20171230",
+        "avgTemp": "88",
+        "lowestTemp": "39",
+        "highestTemp": "122"
+    },
+    {
+        "date": "20171231",
+        "avgTemp": "106",
+        "lowestTemp": "85",
+        "highestTemp": "137"
     }
 ]

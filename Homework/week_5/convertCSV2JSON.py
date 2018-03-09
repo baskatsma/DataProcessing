@@ -15,13 +15,13 @@ from collections import OrderedDict
 if __name__ == "__main__":
 
     # Initialize the keys
-    JSONKeyNames=["month", "avgWind", "highestWind", "lowestWind"]
+    JSONKeyNames=["date", "avgTemp", "lowestTemp", "highestTemp"]
 
     # Create blank array to store the new data in
     dataStorage = []
 
     # Read data file
-    with open("data_edited_2017.csv", "r") as dataFile:
+    with open("data_edited_2016.csv", "r") as dataFile:
         dataReader = csv.DictReader(dataFile, JSONKeyNames, delimiter=";")
 
         # Iterate over each line
@@ -36,7 +36,7 @@ if __name__ == "__main__":
             dataStorage.append(data)
 
     # Create new JSON file and use .dump to convert
-    with open("data_edited_2017.json", "w+") as JSONFile:
+    with open("data_edited_2016.json", "w+") as JSONFile:
         json.dump(dataStorage, JSONFile, indent=4)
 
     # Close all files
