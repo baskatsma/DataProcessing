@@ -1,2198 +1,2198 @@
 [
     {
         "date": "20160101",
-        "avgTemp": "41",
-        "lowestTemp": "-2",
-        "highestTemp": "75"
+        "Average": "41",
+        "Lowest": "-2",
+        "Highest": "75"
     },
     {
         "date": "20160102",
-        "avgTemp": "54",
-        "lowestTemp": "46",
-        "highestTemp": "63"
+        "Average": "54",
+        "Lowest": "46",
+        "Highest": "63"
     },
     {
         "date": "20160103",
-        "avgTemp": "69",
-        "lowestTemp": "52",
-        "highestTemp": "82"
+        "Average": "69",
+        "Lowest": "52",
+        "Highest": "82"
     },
     {
         "date": "20160104",
-        "avgTemp": "57",
-        "lowestTemp": "38",
-        "highestTemp": "70"
+        "Average": "57",
+        "Lowest": "38",
+        "Highest": "70"
     },
     {
         "date": "20160105",
-        "avgTemp": "68",
-        "lowestTemp": "47",
-        "highestTemp": "77"
+        "Average": "68",
+        "Lowest": "47",
+        "Highest": "77"
     },
     {
         "date": "20160106",
-        "avgTemp": "26",
-        "lowestTemp": "16",
-        "highestTemp": "47"
+        "Average": "26",
+        "Lowest": "16",
+        "Highest": "47"
     },
     {
         "date": "20160107",
-        "avgTemp": "61",
-        "lowestTemp": "35",
-        "highestTemp": "79"
+        "Average": "61",
+        "Lowest": "35",
+        "Highest": "79"
     },
     {
         "date": "20160108",
-        "avgTemp": "54",
-        "lowestTemp": "14",
-        "highestTemp": "83"
+        "Average": "54",
+        "Lowest": "14",
+        "Highest": "83"
     },
     {
         "date": "20160109",
-        "avgTemp": "56",
-        "lowestTemp": "10",
-        "highestTemp": "79"
+        "Average": "56",
+        "Lowest": "10",
+        "Highest": "79"
     },
     {
         "date": "20160110",
-        "avgTemp": "69",
-        "lowestTemp": "50",
-        "highestTemp": "90"
+        "Average": "69",
+        "Lowest": "50",
+        "Highest": "90"
     },
     {
         "date": "20160111",
-        "avgTemp": "48",
-        "lowestTemp": "21",
-        "highestTemp": "67"
+        "Average": "48",
+        "Lowest": "21",
+        "Highest": "67"
     },
     {
         "date": "20160112",
-        "avgTemp": "58",
-        "lowestTemp": "47",
-        "highestTemp": "72"
+        "Average": "58",
+        "Lowest": "47",
+        "Highest": "72"
     },
     {
         "date": "20160113",
-        "avgTemp": "50",
-        "lowestTemp": "24",
-        "highestTemp": "70"
+        "Average": "50",
+        "Lowest": "24",
+        "Highest": "70"
     },
     {
         "date": "20160114",
-        "avgTemp": "35",
-        "lowestTemp": "16",
-        "highestTemp": "53"
+        "Average": "35",
+        "Lowest": "16",
+        "Highest": "53"
     },
     {
         "date": "20160115",
-        "avgTemp": "24",
-        "lowestTemp": "-12",
-        "highestTemp": "40"
+        "Average": "24",
+        "Lowest": "-12",
+        "Highest": "40"
     },
     {
         "date": "20160116",
-        "avgTemp": "27",
-        "lowestTemp": "-16",
-        "highestTemp": "56"
+        "Average": "27",
+        "Lowest": "-16",
+        "Highest": "56"
     },
     {
         "date": "20160117",
-        "avgTemp": "-10",
-        "lowestTemp": "-56",
-        "highestTemp": "30"
+        "Average": "-10",
+        "Lowest": "-56",
+        "Highest": "30"
     },
     {
         "date": "20160118",
-        "avgTemp": "-33",
-        "lowestTemp": "-67",
-        "highestTemp": "0"
+        "Average": "-33",
+        "Lowest": "-67",
+        "Highest": "0"
     },
     {
         "date": "20160119",
-        "avgTemp": "-25",
-        "lowestTemp": "-80",
-        "highestTemp": "7"
+        "Average": "-25",
+        "Lowest": "-80",
+        "Highest": "7"
     },
     {
         "date": "20160120",
-        "avgTemp": "12",
-        "lowestTemp": "-37",
-        "highestTemp": "53"
+        "Average": "12",
+        "Lowest": "-37",
+        "Highest": "53"
     },
     {
         "date": "20160121",
-        "avgTemp": "-12",
-        "lowestTemp": "-43",
-        "highestTemp": "15"
+        "Average": "-12",
+        "Lowest": "-43",
+        "Highest": "15"
     },
     {
         "date": "20160122",
-        "avgTemp": "9",
-        "lowestTemp": "-22",
-        "highestTemp": "57"
+        "Average": "9",
+        "Lowest": "-22",
+        "Highest": "57"
     },
     {
         "date": "20160123",
-        "avgTemp": "66",
-        "lowestTemp": "28",
-        "highestTemp": "90"
+        "Average": "66",
+        "Lowest": "28",
+        "Highest": "90"
     },
     {
         "date": "20160124",
-        "avgTemp": "77",
-        "lowestTemp": "50",
-        "highestTemp": "104"
+        "Average": "77",
+        "Lowest": "50",
+        "Highest": "104"
     },
     {
         "date": "20160125",
-        "avgTemp": "107",
-        "lowestTemp": "74",
-        "highestTemp": "146"
+        "Average": "107",
+        "Lowest": "74",
+        "Highest": "146"
     },
     {
         "date": "20160126",
-        "avgTemp": "92",
-        "lowestTemp": "66",
-        "highestTemp": "111"
+        "Average": "92",
+        "Lowest": "66",
+        "Highest": "111"
     },
     {
         "date": "20160127",
-        "avgTemp": "109",
-        "lowestTemp": "86",
-        "highestTemp": "124"
+        "Average": "109",
+        "Lowest": "86",
+        "Highest": "124"
     },
     {
         "date": "20160128",
-        "avgTemp": "67",
-        "lowestTemp": "49",
-        "highestTemp": "90"
+        "Average": "67",
+        "Lowest": "49",
+        "Highest": "90"
     },
     {
         "date": "20160129",
-        "avgTemp": "85",
-        "lowestTemp": "53",
-        "highestTemp": "100"
+        "Average": "85",
+        "Lowest": "53",
+        "Highest": "100"
     },
     {
         "date": "20160130",
-        "avgTemp": "74",
-        "lowestTemp": "51",
-        "highestTemp": "99"
+        "Average": "74",
+        "Lowest": "51",
+        "Highest": "99"
     },
     {
         "date": "20160131",
-        "avgTemp": "68",
-        "lowestTemp": "36",
-        "highestTemp": "108"
+        "Average": "68",
+        "Lowest": "36",
+        "Highest": "108"
     },
     {
         "date": "20160201",
-        "avgTemp": "115",
-        "lowestTemp": "106",
-        "highestTemp": "119"
+        "Average": "115",
+        "Lowest": "106",
+        "Highest": "119"
     },
     {
         "date": "20160202",
-        "avgTemp": "89",
-        "lowestTemp": "65",
-        "highestTemp": "114"
+        "Average": "89",
+        "Lowest": "65",
+        "Highest": "114"
     },
     {
         "date": "20160203",
-        "avgTemp": "50",
-        "lowestTemp": "31",
-        "highestTemp": "70"
+        "Average": "50",
+        "Lowest": "31",
+        "Highest": "70"
     },
     {
         "date": "20160204",
-        "avgTemp": "51",
-        "lowestTemp": "29",
-        "highestTemp": "77"
+        "Average": "51",
+        "Lowest": "29",
+        "Highest": "77"
     },
     {
         "date": "20160205",
-        "avgTemp": "87",
-        "lowestTemp": "50",
-        "highestTemp": "109"
+        "Average": "87",
+        "Lowest": "50",
+        "Highest": "109"
     },
     {
         "date": "20160206",
-        "avgTemp": "94",
-        "lowestTemp": "83",
-        "highestTemp": "106"
+        "Average": "94",
+        "Lowest": "83",
+        "Highest": "106"
     },
     {
         "date": "20160207",
-        "avgTemp": "85",
-        "lowestTemp": "66",
-        "highestTemp": "111"
+        "Average": "85",
+        "Lowest": "66",
+        "Highest": "111"
     },
     {
         "date": "20160208",
-        "avgTemp": "85",
-        "lowestTemp": "70",
-        "highestTemp": "99"
+        "Average": "85",
+        "Lowest": "70",
+        "Highest": "99"
     },
     {
         "date": "20160209",
-        "avgTemp": "53",
-        "lowestTemp": "33",
-        "highestTemp": "82"
+        "Average": "53",
+        "Lowest": "33",
+        "Highest": "82"
     },
     {
         "date": "20160210",
-        "avgTemp": "48",
-        "lowestTemp": "18",
-        "highestTemp": "83"
+        "Average": "48",
+        "Lowest": "18",
+        "Highest": "83"
     },
     {
         "date": "20160211",
-        "avgTemp": "38",
-        "lowestTemp": "-16",
-        "highestTemp": "83"
+        "Average": "38",
+        "Lowest": "-16",
+        "Highest": "83"
     },
     {
         "date": "20160212",
-        "avgTemp": "27",
-        "lowestTemp": "-17",
-        "highestTemp": "66"
+        "Average": "27",
+        "Lowest": "-17",
+        "Highest": "66"
     },
     {
         "date": "20160213",
-        "avgTemp": "18",
-        "lowestTemp": "-20",
-        "highestTemp": "44"
+        "Average": "18",
+        "Lowest": "-20",
+        "Highest": "44"
     },
     {
         "date": "20160214",
-        "avgTemp": "14",
-        "lowestTemp": "5",
-        "highestTemp": "26"
+        "Average": "14",
+        "Lowest": "5",
+        "Highest": "26"
     },
     {
         "date": "20160215",
-        "avgTemp": "23",
-        "lowestTemp": "-31",
-        "highestTemp": "56"
+        "Average": "23",
+        "Lowest": "-31",
+        "Highest": "56"
     },
     {
         "date": "20160216",
-        "avgTemp": "-3",
-        "lowestTemp": "-50",
-        "highestTemp": "61"
+        "Average": "-3",
+        "Lowest": "-50",
+        "Highest": "61"
     },
     {
         "date": "20160217",
-        "avgTemp": "-13",
-        "lowestTemp": "-52",
-        "highestTemp": "35"
+        "Average": "-13",
+        "Lowest": "-52",
+        "Highest": "35"
     },
     {
         "date": "20160218",
-        "avgTemp": "13",
-        "lowestTemp": "-23",
-        "highestTemp": "31"
+        "Average": "13",
+        "Lowest": "-23",
+        "Highest": "31"
     },
     {
         "date": "20160219",
-        "avgTemp": "39",
-        "lowestTemp": "12",
-        "highestTemp": "83"
+        "Average": "39",
+        "Lowest": "12",
+        "Highest": "83"
     },
     {
         "date": "20160220",
-        "avgTemp": "82",
-        "lowestTemp": "50",
-        "highestTemp": "111"
+        "Average": "82",
+        "Lowest": "50",
+        "Highest": "111"
     },
     {
         "date": "20160221",
-        "avgTemp": "104",
-        "lowestTemp": "86",
-        "highestTemp": "116"
+        "Average": "104",
+        "Lowest": "86",
+        "Highest": "116"
     },
     {
         "date": "20160222",
-        "avgTemp": "68",
-        "lowestTemp": "44",
-        "highestTemp": "113"
+        "Average": "68",
+        "Lowest": "44",
+        "Highest": "113"
     },
     {
         "date": "20160223",
-        "avgTemp": "43",
-        "lowestTemp": "8",
-        "highestTemp": "79"
+        "Average": "43",
+        "Lowest": "8",
+        "Highest": "79"
     },
     {
         "date": "20160224",
-        "avgTemp": "23",
-        "lowestTemp": "-14",
-        "highestTemp": "65"
+        "Average": "23",
+        "Lowest": "-14",
+        "Highest": "65"
     },
     {
         "date": "20160225",
-        "avgTemp": "18",
-        "lowestTemp": "-10",
-        "highestTemp": "54"
+        "Average": "18",
+        "Lowest": "-10",
+        "Highest": "54"
     },
     {
         "date": "20160226",
-        "avgTemp": "21",
-        "lowestTemp": "-7",
-        "highestTemp": "55"
+        "Average": "21",
+        "Lowest": "-7",
+        "Highest": "55"
     },
     {
         "date": "20160227",
-        "avgTemp": "22",
-        "lowestTemp": "-16",
-        "highestTemp": "63"
+        "Average": "22",
+        "Lowest": "-16",
+        "Highest": "63"
     },
     {
         "date": "20160228",
-        "avgTemp": "22",
-        "lowestTemp": "-17",
-        "highestTemp": "66"
+        "Average": "22",
+        "Lowest": "-17",
+        "Highest": "66"
     },
     {
         "date": "20160229",
-        "avgTemp": "13",
-        "lowestTemp": "-43",
-        "highestTemp": "67"
+        "Average": "13",
+        "Lowest": "-43",
+        "Highest": "67"
     },
     {
         "date": "20160301",
-        "avgTemp": "20",
-        "lowestTemp": "-54",
-        "highestTemp": "86"
+        "Average": "20",
+        "Lowest": "-54",
+        "Highest": "86"
     },
     {
         "date": "20160302",
-        "avgTemp": "53",
-        "lowestTemp": "27",
-        "highestTemp": "90"
+        "Average": "53",
+        "Lowest": "27",
+        "Highest": "90"
     },
     {
         "date": "20160303",
-        "avgTemp": "39",
-        "lowestTemp": "-4",
-        "highestTemp": "84"
+        "Average": "39",
+        "Lowest": "-4",
+        "Highest": "84"
     },
     {
         "date": "20160304",
-        "avgTemp": "10",
-        "lowestTemp": "-25",
-        "highestTemp": "32"
+        "Average": "10",
+        "Lowest": "-25",
+        "Highest": "32"
     },
     {
         "date": "20160305",
-        "avgTemp": "5",
-        "lowestTemp": "-45",
-        "highestTemp": "64"
+        "Average": "5",
+        "Lowest": "-45",
+        "Highest": "64"
     },
     {
         "date": "20160306",
-        "avgTemp": "30",
-        "lowestTemp": "7",
-        "highestTemp": "73"
+        "Average": "30",
+        "Lowest": "7",
+        "Highest": "73"
     },
     {
         "date": "20160307",
-        "avgTemp": "25",
-        "lowestTemp": "-8",
-        "highestTemp": "78"
+        "Average": "25",
+        "Lowest": "-8",
+        "Highest": "78"
     },
     {
         "date": "20160308",
-        "avgTemp": "36",
-        "lowestTemp": "-22",
-        "highestTemp": "83"
+        "Average": "36",
+        "Lowest": "-22",
+        "Highest": "83"
     },
     {
         "date": "20160309",
-        "avgTemp": "44",
-        "lowestTemp": "14",
-        "highestTemp": "81"
+        "Average": "44",
+        "Lowest": "14",
+        "Highest": "81"
     },
     {
         "date": "20160310",
-        "avgTemp": "41",
-        "lowestTemp": "-12",
-        "highestTemp": "92"
+        "Average": "41",
+        "Lowest": "-12",
+        "Highest": "92"
     },
     {
         "date": "20160311",
-        "avgTemp": "32",
-        "lowestTemp": "-15",
-        "highestTemp": "85"
+        "Average": "32",
+        "Lowest": "-15",
+        "Highest": "85"
     },
     {
         "date": "20160312",
-        "avgTemp": "31",
-        "lowestTemp": "-27",
-        "highestTemp": "101"
+        "Average": "31",
+        "Lowest": "-27",
+        "Highest": "101"
     },
     {
         "date": "20160313",
-        "avgTemp": "39",
-        "lowestTemp": "-16",
-        "highestTemp": "99"
+        "Average": "39",
+        "Lowest": "-16",
+        "Highest": "99"
     },
     {
         "date": "20160314",
-        "avgTemp": "41",
-        "lowestTemp": "-20",
-        "highestTemp": "104"
+        "Average": "41",
+        "Lowest": "-20",
+        "Highest": "104"
     },
     {
         "date": "20160315",
-        "avgTemp": "46",
-        "lowestTemp": "-6",
-        "highestTemp": "83"
+        "Average": "46",
+        "Lowest": "-6",
+        "Highest": "83"
     },
     {
         "date": "20160316",
-        "avgTemp": "44",
-        "lowestTemp": "-2",
-        "highestTemp": "90"
+        "Average": "44",
+        "Lowest": "-2",
+        "Highest": "90"
     },
     {
         "date": "20160317",
-        "avgTemp": "57",
-        "lowestTemp": "0",
-        "highestTemp": "120"
+        "Average": "57",
+        "Lowest": "0",
+        "Highest": "120"
     },
     {
         "date": "20160318",
-        "avgTemp": "52",
-        "lowestTemp": "24",
-        "highestTemp": "68"
+        "Average": "52",
+        "Lowest": "24",
+        "Highest": "68"
     },
     {
         "date": "20160319",
-        "avgTemp": "62",
-        "lowestTemp": "51",
-        "highestTemp": "75"
+        "Average": "62",
+        "Lowest": "51",
+        "Highest": "75"
     },
     {
         "date": "20160320",
-        "avgTemp": "68",
-        "lowestTemp": "42",
-        "highestTemp": "96"
+        "Average": "68",
+        "Lowest": "42",
+        "Highest": "96"
     },
     {
         "date": "20160321",
-        "avgTemp": "72",
-        "lowestTemp": "58",
-        "highestTemp": "93"
+        "Average": "72",
+        "Lowest": "58",
+        "Highest": "93"
     },
     {
         "date": "20160322",
-        "avgTemp": "76",
-        "lowestTemp": "46",
-        "highestTemp": "101"
+        "Average": "76",
+        "Lowest": "46",
+        "Highest": "101"
     },
     {
         "date": "20160323",
-        "avgTemp": "76",
-        "lowestTemp": "62",
-        "highestTemp": "101"
+        "Average": "76",
+        "Lowest": "62",
+        "Highest": "101"
     },
     {
         "date": "20160324",
-        "avgTemp": "79",
-        "lowestTemp": "66",
-        "highestTemp": "99"
+        "Average": "79",
+        "Lowest": "66",
+        "Highest": "99"
     },
     {
         "date": "20160325",
-        "avgTemp": "65",
-        "lowestTemp": "0",
-        "highestTemp": "96"
+        "Average": "65",
+        "Lowest": "0",
+        "Highest": "96"
     },
     {
         "date": "20160326",
-        "avgTemp": "95",
-        "lowestTemp": "6",
-        "highestTemp": "149"
+        "Average": "95",
+        "Lowest": "6",
+        "Highest": "149"
     },
     {
         "date": "20160327",
-        "avgTemp": "91",
-        "lowestTemp": "55",
-        "highestTemp": "133"
+        "Average": "91",
+        "Lowest": "55",
+        "Highest": "133"
     },
     {
         "date": "20160328",
-        "avgTemp": "97",
-        "lowestTemp": "75",
-        "highestTemp": "129"
+        "Average": "97",
+        "Lowest": "75",
+        "Highest": "129"
     },
     {
         "date": "20160329",
-        "avgTemp": "78",
-        "lowestTemp": "55",
-        "highestTemp": "112"
+        "Average": "78",
+        "Lowest": "55",
+        "Highest": "112"
     },
     {
         "date": "20160330",
-        "avgTemp": "81",
-        "lowestTemp": "43",
-        "highestTemp": "117"
+        "Average": "81",
+        "Lowest": "43",
+        "Highest": "117"
     },
     {
         "date": "20160331",
-        "avgTemp": "76",
-        "lowestTemp": "31",
-        "highestTemp": "116"
+        "Average": "76",
+        "Lowest": "31",
+        "Highest": "116"
     },
     {
         "date": "20160401",
-        "avgTemp": "72",
-        "lowestTemp": "12",
-        "highestTemp": "130"
+        "Average": "72",
+        "Lowest": "12",
+        "Highest": "130"
     },
     {
         "date": "20160402",
-        "avgTemp": "101",
-        "lowestTemp": "37",
-        "highestTemp": "134"
+        "Average": "101",
+        "Lowest": "37",
+        "Highest": "134"
     },
     {
         "date": "20160403",
-        "avgTemp": "152",
-        "lowestTemp": "121",
-        "highestTemp": "204"
+        "Average": "152",
+        "Lowest": "121",
+        "Highest": "204"
     },
     {
         "date": "20160404",
-        "avgTemp": "124",
-        "lowestTemp": "75",
-        "highestTemp": "158"
+        "Average": "124",
+        "Lowest": "75",
+        "Highest": "158"
     },
     {
         "date": "20160405",
-        "avgTemp": "106",
-        "lowestTemp": "80",
-        "highestTemp": "133"
+        "Average": "106",
+        "Lowest": "80",
+        "Highest": "133"
     },
     {
         "date": "20160406",
-        "avgTemp": "89",
-        "lowestTemp": "68",
-        "highestTemp": "117"
+        "Average": "89",
+        "Lowest": "68",
+        "Highest": "117"
     },
     {
         "date": "20160407",
-        "avgTemp": "73",
-        "lowestTemp": "53",
-        "highestTemp": "104"
+        "Average": "73",
+        "Lowest": "53",
+        "Highest": "104"
     },
     {
         "date": "20160408",
-        "avgTemp": "67",
-        "lowestTemp": "16",
-        "highestTemp": "115"
+        "Average": "67",
+        "Lowest": "16",
+        "Highest": "115"
     },
     {
         "date": "20160409",
-        "avgTemp": "92",
-        "lowestTemp": "10",
-        "highestTemp": "149"
+        "Average": "92",
+        "Lowest": "10",
+        "Highest": "149"
     },
     {
         "date": "20160410",
-        "avgTemp": "107",
-        "lowestTemp": "52",
-        "highestTemp": "157"
+        "Average": "107",
+        "Lowest": "52",
+        "Highest": "157"
     },
     {
         "date": "20160411",
-        "avgTemp": "132",
-        "lowestTemp": "73",
-        "highestTemp": "182"
+        "Average": "132",
+        "Lowest": "73",
+        "Highest": "182"
     },
     {
         "date": "20160412",
-        "avgTemp": "116",
-        "lowestTemp": "50",
-        "highestTemp": "167"
+        "Average": "116",
+        "Lowest": "50",
+        "Highest": "167"
     },
     {
         "date": "20160413",
-        "avgTemp": "90",
-        "lowestTemp": "36",
-        "highestTemp": "158"
+        "Average": "90",
+        "Lowest": "36",
+        "Highest": "158"
     },
     {
         "date": "20160414",
-        "avgTemp": "106",
-        "lowestTemp": "29",
-        "highestTemp": "167"
+        "Average": "106",
+        "Lowest": "29",
+        "Highest": "167"
     },
     {
         "date": "20160415",
-        "avgTemp": "103",
-        "lowestTemp": "89",
-        "highestTemp": "141"
+        "Average": "103",
+        "Lowest": "89",
+        "Highest": "141"
     },
     {
         "date": "20160416",
-        "avgTemp": "86",
-        "lowestTemp": "54",
-        "highestTemp": "118"
+        "Average": "86",
+        "Lowest": "54",
+        "Highest": "118"
     },
     {
         "date": "20160417",
-        "avgTemp": "62",
-        "lowestTemp": "10",
-        "highestTemp": "106"
+        "Average": "62",
+        "Lowest": "10",
+        "Highest": "106"
     },
     {
         "date": "20160418",
-        "avgTemp": "81",
-        "lowestTemp": "-1",
-        "highestTemp": "130"
+        "Average": "81",
+        "Lowest": "-1",
+        "Highest": "130"
     },
     {
         "date": "20160419",
-        "avgTemp": "97",
-        "lowestTemp": "40",
-        "highestTemp": "136"
+        "Average": "97",
+        "Lowest": "40",
+        "Highest": "136"
     },
     {
         "date": "20160420",
-        "avgTemp": "86",
-        "lowestTemp": "30",
-        "highestTemp": "138"
+        "Average": "86",
+        "Lowest": "30",
+        "Highest": "138"
     },
     {
         "date": "20160421",
-        "avgTemp": "101",
-        "lowestTemp": "27",
-        "highestTemp": "166"
+        "Average": "101",
+        "Lowest": "27",
+        "Highest": "166"
     },
     {
         "date": "20160422",
-        "avgTemp": "87",
-        "lowestTemp": "57",
-        "highestTemp": "125"
+        "Average": "87",
+        "Lowest": "57",
+        "Highest": "125"
     },
     {
         "date": "20160423",
-        "avgTemp": "62",
-        "lowestTemp": "30",
-        "highestTemp": "93"
+        "Average": "62",
+        "Lowest": "30",
+        "Highest": "93"
     },
     {
         "date": "20160424",
-        "avgTemp": "46",
-        "lowestTemp": "21",
-        "highestTemp": "88"
+        "Average": "46",
+        "Lowest": "21",
+        "Highest": "88"
     },
     {
         "date": "20160425",
-        "avgTemp": "49",
-        "lowestTemp": "17",
-        "highestTemp": "80"
+        "Average": "49",
+        "Lowest": "17",
+        "Highest": "80"
     },
     {
         "date": "20160426",
-        "avgTemp": "48",
-        "lowestTemp": "13",
-        "highestTemp": "77"
+        "Average": "48",
+        "Lowest": "13",
+        "Highest": "77"
     },
     {
         "date": "20160427",
-        "avgTemp": "60",
-        "lowestTemp": "32",
-        "highestTemp": "107"
+        "Average": "60",
+        "Lowest": "32",
+        "Highest": "107"
     },
     {
         "date": "20160428",
-        "avgTemp": "58",
-        "lowestTemp": "7",
-        "highestTemp": "93"
+        "Average": "58",
+        "Lowest": "7",
+        "Highest": "93"
     },
     {
         "date": "20160429",
-        "avgTemp": "74",
-        "lowestTemp": "46",
-        "highestTemp": "106"
+        "Average": "74",
+        "Lowest": "46",
+        "Highest": "106"
     },
     {
         "date": "20160430",
-        "avgTemp": "77",
-        "lowestTemp": "28",
-        "highestTemp": "112"
+        "Average": "77",
+        "Lowest": "28",
+        "Highest": "112"
     },
     {
         "date": "20160501",
-        "avgTemp": "79",
-        "lowestTemp": "-1",
-        "highestTemp": "141"
+        "Average": "79",
+        "Lowest": "-1",
+        "Highest": "141"
     },
     {
         "date": "20160502",
-        "avgTemp": "115",
-        "lowestTemp": "16",
-        "highestTemp": "179"
+        "Average": "115",
+        "Lowest": "16",
+        "Highest": "179"
     },
     {
         "date": "20160503",
-        "avgTemp": "97",
-        "lowestTemp": "30",
-        "highestTemp": "140"
+        "Average": "97",
+        "Lowest": "30",
+        "Highest": "140"
     },
     {
         "date": "20160504",
-        "avgTemp": "95",
-        "lowestTemp": "17",
-        "highestTemp": "160"
+        "Average": "95",
+        "Lowest": "17",
+        "Highest": "160"
     },
     {
         "date": "20160505",
-        "avgTemp": "128",
-        "lowestTemp": "29",
-        "highestTemp": "188"
+        "Average": "128",
+        "Lowest": "29",
+        "Highest": "188"
     },
     {
         "date": "20160506",
-        "avgTemp": "164",
-        "lowestTemp": "81",
-        "highestTemp": "236"
+        "Average": "164",
+        "Lowest": "81",
+        "Highest": "236"
     },
     {
         "date": "20160507",
-        "avgTemp": "195",
-        "lowestTemp": "94",
-        "highestTemp": "258"
+        "Average": "195",
+        "Lowest": "94",
+        "Highest": "258"
     },
     {
         "date": "20160508",
-        "avgTemp": "201",
-        "lowestTemp": "127",
-        "highestTemp": "252"
+        "Average": "201",
+        "Lowest": "127",
+        "Highest": "252"
     },
     {
         "date": "20160509",
-        "avgTemp": "202",
-        "lowestTemp": "142",
-        "highestTemp": "253"
+        "Average": "202",
+        "Lowest": "142",
+        "Highest": "253"
     },
     {
         "date": "20160510",
-        "avgTemp": "189",
-        "lowestTemp": "154",
-        "highestTemp": "221"
+        "Average": "189",
+        "Lowest": "154",
+        "Highest": "221"
     },
     {
         "date": "20160511",
-        "avgTemp": "204",
-        "lowestTemp": "141",
-        "highestTemp": "255"
+        "Average": "204",
+        "Lowest": "141",
+        "Highest": "255"
     },
     {
         "date": "20160512",
-        "avgTemp": "202",
-        "lowestTemp": "144",
-        "highestTemp": "251"
+        "Average": "202",
+        "Lowest": "144",
+        "Highest": "251"
     },
     {
         "date": "20160513",
-        "avgTemp": "154",
-        "lowestTemp": "97",
-        "highestTemp": "222"
+        "Average": "154",
+        "Lowest": "97",
+        "Highest": "222"
     },
     {
         "date": "20160514",
-        "avgTemp": "89",
-        "lowestTemp": "64",
-        "highestTemp": "121"
+        "Average": "89",
+        "Lowest": "64",
+        "Highest": "121"
     },
     {
         "date": "20160515",
-        "avgTemp": "86",
-        "lowestTemp": "53",
-        "highestTemp": "121"
+        "Average": "86",
+        "Lowest": "53",
+        "Highest": "121"
     },
     {
         "date": "20160516",
-        "avgTemp": "93",
-        "lowestTemp": "40",
-        "highestTemp": "136"
+        "Average": "93",
+        "Lowest": "40",
+        "Highest": "136"
     },
     {
         "date": "20160517",
-        "avgTemp": "123",
-        "lowestTemp": "50",
-        "highestTemp": "181"
+        "Average": "123",
+        "Lowest": "50",
+        "Highest": "181"
     },
     {
         "date": "20160518",
-        "avgTemp": "136",
-        "lowestTemp": "83",
-        "highestTemp": "187"
+        "Average": "136",
+        "Lowest": "83",
+        "Highest": "187"
     },
     {
         "date": "20160519",
-        "avgTemp": "134",
-        "lowestTemp": "104",
-        "highestTemp": "173"
+        "Average": "134",
+        "Lowest": "104",
+        "Highest": "173"
     },
     {
         "date": "20160520",
-        "avgTemp": "137",
-        "lowestTemp": "107",
-        "highestTemp": "186"
+        "Average": "137",
+        "Lowest": "107",
+        "Highest": "186"
     },
     {
         "date": "20160521",
-        "avgTemp": "179",
-        "lowestTemp": "107",
-        "highestTemp": "234"
+        "Average": "179",
+        "Lowest": "107",
+        "Highest": "234"
     },
     {
         "date": "20160522",
-        "avgTemp": "155",
-        "lowestTemp": "129",
-        "highestTemp": "190"
+        "Average": "155",
+        "Lowest": "129",
+        "Highest": "190"
     },
     {
         "date": "20160523",
-        "avgTemp": "120",
-        "lowestTemp": "105",
-        "highestTemp": "133"
+        "Average": "120",
+        "Lowest": "105",
+        "Highest": "133"
     },
     {
         "date": "20160524",
-        "avgTemp": "114",
-        "lowestTemp": "98",
-        "highestTemp": "146"
+        "Average": "114",
+        "Lowest": "98",
+        "Highest": "146"
     },
     {
         "date": "20160525",
-        "avgTemp": "118",
-        "lowestTemp": "77",
-        "highestTemp": "145"
+        "Average": "118",
+        "Lowest": "77",
+        "Highest": "145"
     },
     {
         "date": "20160526",
-        "avgTemp": "137",
-        "lowestTemp": "56",
-        "highestTemp": "193"
+        "Average": "137",
+        "Lowest": "56",
+        "Highest": "193"
     },
     {
         "date": "20160527",
-        "avgTemp": "160",
-        "lowestTemp": "106",
-        "highestTemp": "209"
+        "Average": "160",
+        "Lowest": "106",
+        "Highest": "209"
     },
     {
         "date": "20160528",
-        "avgTemp": "176",
-        "lowestTemp": "112",
-        "highestTemp": "227"
+        "Average": "176",
+        "Lowest": "112",
+        "Highest": "227"
     },
     {
         "date": "20160529",
-        "avgTemp": "172",
-        "lowestTemp": "140",
-        "highestTemp": "205"
+        "Average": "172",
+        "Lowest": "140",
+        "Highest": "205"
     },
     {
         "date": "20160530",
-        "avgTemp": "162",
-        "lowestTemp": "153",
-        "highestTemp": "180"
+        "Average": "162",
+        "Lowest": "153",
+        "Highest": "180"
     },
     {
         "date": "20160531",
-        "avgTemp": "182",
-        "lowestTemp": "131",
-        "highestTemp": "226"
+        "Average": "182",
+        "Lowest": "131",
+        "Highest": "226"
     },
     {
         "date": "20160601",
-        "avgTemp": "192",
-        "lowestTemp": "154",
-        "highestTemp": "243"
+        "Average": "192",
+        "Lowest": "154",
+        "Highest": "243"
     },
     {
         "date": "20160602",
-        "avgTemp": "153",
-        "lowestTemp": "137",
-        "highestTemp": "172"
+        "Average": "153",
+        "Lowest": "137",
+        "Highest": "172"
     },
     {
         "date": "20160603",
-        "avgTemp": "164",
-        "lowestTemp": "137",
-        "highestTemp": "214"
+        "Average": "164",
+        "Lowest": "137",
+        "Highest": "214"
     },
     {
         "date": "20160604",
-        "avgTemp": "201",
-        "lowestTemp": "141",
-        "highestTemp": "275"
+        "Average": "201",
+        "Lowest": "141",
+        "Highest": "275"
     },
     {
         "date": "20160605",
-        "avgTemp": "200",
-        "lowestTemp": "137",
-        "highestTemp": "256"
+        "Average": "200",
+        "Lowest": "137",
+        "Highest": "256"
     },
     {
         "date": "20160606",
-        "avgTemp": "189",
-        "lowestTemp": "117",
-        "highestTemp": "256"
+        "Average": "189",
+        "Lowest": "117",
+        "Highest": "256"
     },
     {
         "date": "20160607",
-        "avgTemp": "201",
-        "lowestTemp": "153",
-        "highestTemp": "265"
+        "Average": "201",
+        "Lowest": "153",
+        "Highest": "265"
     },
     {
         "date": "20160608",
-        "avgTemp": "161",
-        "lowestTemp": "127",
-        "highestTemp": "216"
+        "Average": "161",
+        "Lowest": "127",
+        "Highest": "216"
     },
     {
         "date": "20160609",
-        "avgTemp": "153",
-        "lowestTemp": "110",
-        "highestTemp": "203"
+        "Average": "153",
+        "Lowest": "110",
+        "Highest": "203"
     },
     {
         "date": "20160610",
-        "avgTemp": "164",
-        "lowestTemp": "108",
-        "highestTemp": "212"
+        "Average": "164",
+        "Lowest": "108",
+        "Highest": "212"
     },
     {
         "date": "20160611",
-        "avgTemp": "162",
-        "lowestTemp": "120",
-        "highestTemp": "208"
+        "Average": "162",
+        "Lowest": "120",
+        "Highest": "208"
     },
     {
         "date": "20160612",
-        "avgTemp": "166",
-        "lowestTemp": "135",
-        "highestTemp": "211"
+        "Average": "166",
+        "Lowest": "135",
+        "Highest": "211"
     },
     {
         "date": "20160613",
-        "avgTemp": "159",
-        "lowestTemp": "146",
-        "highestTemp": "190"
+        "Average": "159",
+        "Lowest": "146",
+        "Highest": "190"
     },
     {
         "date": "20160614",
-        "avgTemp": "152",
-        "lowestTemp": "111",
-        "highestTemp": "191"
+        "Average": "152",
+        "Lowest": "111",
+        "Highest": "191"
     },
     {
         "date": "20160615",
-        "avgTemp": "146",
-        "lowestTemp": "113",
-        "highestTemp": "187"
+        "Average": "146",
+        "Lowest": "113",
+        "Highest": "187"
     },
     {
         "date": "20160616",
-        "avgTemp": "157",
-        "lowestTemp": "92",
-        "highestTemp": "211"
+        "Average": "157",
+        "Lowest": "92",
+        "Highest": "211"
     },
     {
         "date": "20160617",
-        "avgTemp": "151",
-        "lowestTemp": "111",
-        "highestTemp": "195"
+        "Average": "151",
+        "Lowest": "111",
+        "Highest": "195"
     },
     {
         "date": "20160618",
-        "avgTemp": "141",
-        "lowestTemp": "99",
-        "highestTemp": "171"
+        "Average": "141",
+        "Lowest": "99",
+        "Highest": "171"
     },
     {
         "date": "20160619",
-        "avgTemp": "153",
-        "lowestTemp": "121",
-        "highestTemp": "189"
+        "Average": "153",
+        "Lowest": "121",
+        "Highest": "189"
     },
     {
         "date": "20160620",
-        "avgTemp": "155",
-        "lowestTemp": "141",
-        "highestTemp": "168"
+        "Average": "155",
+        "Lowest": "141",
+        "Highest": "168"
     },
     {
         "date": "20160621",
-        "avgTemp": "170",
-        "lowestTemp": "134",
-        "highestTemp": "201"
+        "Average": "170",
+        "Lowest": "134",
+        "Highest": "201"
     },
     {
         "date": "20160622",
-        "avgTemp": "201",
-        "lowestTemp": "147",
-        "highestTemp": "249"
+        "Average": "201",
+        "Lowest": "147",
+        "Highest": "249"
     },
     {
         "date": "20160623",
-        "avgTemp": "220",
-        "lowestTemp": "182",
-        "highestTemp": "284"
+        "Average": "220",
+        "Lowest": "182",
+        "Highest": "284"
     },
     {
         "date": "20160624",
-        "avgTemp": "192",
-        "lowestTemp": "133",
-        "highestTemp": "227"
+        "Average": "192",
+        "Lowest": "133",
+        "Highest": "227"
     },
     {
         "date": "20160625",
-        "avgTemp": "154",
-        "lowestTemp": "109",
-        "highestTemp": "193"
+        "Average": "154",
+        "Lowest": "109",
+        "Highest": "193"
     },
     {
         "date": "20160626",
-        "avgTemp": "149",
-        "lowestTemp": "121",
-        "highestTemp": "183"
+        "Average": "149",
+        "Lowest": "121",
+        "Highest": "183"
     },
     {
         "date": "20160627",
-        "avgTemp": "149",
-        "lowestTemp": "109",
-        "highestTemp": "189"
+        "Average": "149",
+        "Lowest": "109",
+        "Highest": "189"
     },
     {
         "date": "20160628",
-        "avgTemp": "167",
-        "lowestTemp": "92",
-        "highestTemp": "218"
+        "Average": "167",
+        "Lowest": "92",
+        "Highest": "218"
     },
     {
         "date": "20160629",
-        "avgTemp": "160",
-        "lowestTemp": "132",
-        "highestTemp": "202"
+        "Average": "160",
+        "Lowest": "132",
+        "Highest": "202"
     },
     {
         "date": "20160630",
-        "avgTemp": "164",
-        "lowestTemp": "144",
-        "highestTemp": "192"
+        "Average": "164",
+        "Lowest": "144",
+        "Highest": "192"
     },
     {
         "date": "20160701",
-        "avgTemp": "169",
-        "lowestTemp": "143",
-        "highestTemp": "198"
+        "Average": "169",
+        "Lowest": "143",
+        "Highest": "198"
     },
     {
         "date": "20160702",
-        "avgTemp": "154",
-        "lowestTemp": "120",
-        "highestTemp": "187"
+        "Average": "154",
+        "Lowest": "120",
+        "Highest": "187"
     },
     {
         "date": "20160703",
-        "avgTemp": "147",
-        "lowestTemp": "99",
-        "highestTemp": "198"
+        "Average": "147",
+        "Lowest": "99",
+        "Highest": "198"
     },
     {
         "date": "20160704",
-        "avgTemp": "170",
-        "lowestTemp": "86",
-        "highestTemp": "228"
+        "Average": "170",
+        "Lowest": "86",
+        "Highest": "228"
     },
     {
         "date": "20160705",
-        "avgTemp": "154",
-        "lowestTemp": "115",
-        "highestTemp": "181"
+        "Average": "154",
+        "Lowest": "115",
+        "Highest": "181"
     },
     {
         "date": "20160706",
-        "avgTemp": "149",
-        "lowestTemp": "94",
-        "highestTemp": "194"
+        "Average": "149",
+        "Lowest": "94",
+        "Highest": "194"
     },
     {
         "date": "20160707",
-        "avgTemp": "168",
-        "lowestTemp": "83",
-        "highestTemp": "221"
+        "Average": "168",
+        "Lowest": "83",
+        "Highest": "221"
     },
     {
         "date": "20160708",
-        "avgTemp": "175",
-        "lowestTemp": "151",
-        "highestTemp": "212"
+        "Average": "175",
+        "Lowest": "151",
+        "Highest": "212"
     },
     {
         "date": "20160709",
-        "avgTemp": "197",
-        "lowestTemp": "146",
-        "highestTemp": "236"
+        "Average": "197",
+        "Lowest": "146",
+        "Highest": "236"
     },
     {
         "date": "20160710",
-        "avgTemp": "213",
-        "lowestTemp": "159",
-        "highestTemp": "274"
+        "Average": "213",
+        "Lowest": "159",
+        "Highest": "274"
     },
     {
         "date": "20160711",
-        "avgTemp": "186",
-        "lowestTemp": "162",
-        "highestTemp": "217"
+        "Average": "186",
+        "Lowest": "162",
+        "Highest": "217"
     },
     {
         "date": "20160712",
-        "avgTemp": "166",
-        "lowestTemp": "125",
-        "highestTemp": "203"
+        "Average": "166",
+        "Lowest": "125",
+        "Highest": "203"
     },
     {
         "date": "20160713",
-        "avgTemp": "145",
-        "lowestTemp": "111",
-        "highestTemp": "183"
+        "Average": "145",
+        "Lowest": "111",
+        "Highest": "183"
     },
     {
         "date": "20160714",
-        "avgTemp": "145",
-        "lowestTemp": "87",
-        "highestTemp": "192"
+        "Average": "145",
+        "Lowest": "87",
+        "Highest": "192"
     },
     {
         "date": "20160715",
-        "avgTemp": "166",
-        "lowestTemp": "91",
-        "highestTemp": "213"
+        "Average": "166",
+        "Lowest": "91",
+        "Highest": "213"
     },
     {
         "date": "20160716",
-        "avgTemp": "197",
-        "lowestTemp": "169",
-        "highestTemp": "226"
+        "Average": "197",
+        "Lowest": "169",
+        "Highest": "226"
     },
     {
         "date": "20160717",
-        "avgTemp": "198",
-        "lowestTemp": "145",
-        "highestTemp": "238"
+        "Average": "198",
+        "Lowest": "145",
+        "Highest": "238"
     },
     {
         "date": "20160718",
-        "avgTemp": "202",
-        "lowestTemp": "132",
-        "highestTemp": "265"
+        "Average": "202",
+        "Lowest": "132",
+        "Highest": "265"
     },
     {
         "date": "20160719",
-        "avgTemp": "228",
-        "lowestTemp": "120",
-        "highestTemp": "295"
+        "Average": "228",
+        "Lowest": "120",
+        "Highest": "295"
     },
     {
         "date": "20160720",
-        "avgTemp": "254",
-        "lowestTemp": "188",
-        "highestTemp": "329"
+        "Average": "254",
+        "Lowest": "188",
+        "Highest": "329"
     },
     {
         "date": "20160721",
-        "avgTemp": "218",
-        "lowestTemp": "164",
-        "highestTemp": "274"
+        "Average": "218",
+        "Lowest": "164",
+        "Highest": "274"
     },
     {
         "date": "20160722",
-        "avgTemp": "211",
-        "lowestTemp": "168",
-        "highestTemp": "261"
+        "Average": "211",
+        "Lowest": "168",
+        "Highest": "261"
     },
     {
         "date": "20160723",
-        "avgTemp": "211",
-        "lowestTemp": "176",
-        "highestTemp": "253"
+        "Average": "211",
+        "Lowest": "176",
+        "Highest": "253"
     },
     {
         "date": "20160724",
-        "avgTemp": "207",
-        "lowestTemp": "155",
-        "highestTemp": "255"
+        "Average": "207",
+        "Lowest": "155",
+        "Highest": "255"
     },
     {
         "date": "20160725",
-        "avgTemp": "182",
-        "lowestTemp": "126",
-        "highestTemp": "224"
+        "Average": "182",
+        "Lowest": "126",
+        "Highest": "224"
     },
     {
         "date": "20160726",
-        "avgTemp": "184",
-        "lowestTemp": "114",
-        "highestTemp": "234"
+        "Average": "184",
+        "Lowest": "114",
+        "Highest": "234"
     },
     {
         "date": "20160727",
-        "avgTemp": "179",
-        "lowestTemp": "160",
-        "highestTemp": "213"
+        "Average": "179",
+        "Lowest": "160",
+        "Highest": "213"
     },
     {
         "date": "20160728",
-        "avgTemp": "190",
-        "lowestTemp": "154",
-        "highestTemp": "235"
+        "Average": "190",
+        "Lowest": "154",
+        "Highest": "235"
     },
     {
         "date": "20160729",
-        "avgTemp": "183",
-        "lowestTemp": "154",
-        "highestTemp": "212"
+        "Average": "183",
+        "Lowest": "154",
+        "Highest": "212"
     },
     {
         "date": "20160730",
-        "avgTemp": "177",
-        "lowestTemp": "160",
-        "highestTemp": "209"
+        "Average": "177",
+        "Lowest": "160",
+        "Highest": "209"
     },
     {
         "date": "20160731",
-        "avgTemp": "170",
-        "lowestTemp": "129",
-        "highestTemp": "205"
+        "Average": "170",
+        "Lowest": "129",
+        "Highest": "205"
     },
     {
         "date": "20160801",
-        "avgTemp": "165",
-        "lowestTemp": "131",
-        "highestTemp": "210"
+        "Average": "165",
+        "Lowest": "131",
+        "Highest": "210"
     },
     {
         "date": "20160802",
-        "avgTemp": "166",
-        "lowestTemp": "136",
-        "highestTemp": "186"
+        "Average": "166",
+        "Lowest": "136",
+        "Highest": "186"
     },
     {
         "date": "20160803",
-        "avgTemp": "190",
-        "lowestTemp": "164",
-        "highestTemp": "217"
+        "Average": "190",
+        "Lowest": "164",
+        "Highest": "217"
     },
     {
         "date": "20160804",
-        "avgTemp": "173",
-        "lowestTemp": "150",
-        "highestTemp": "208"
+        "Average": "173",
+        "Lowest": "150",
+        "Highest": "208"
     },
     {
         "date": "20160805",
-        "avgTemp": "176",
-        "lowestTemp": "129",
-        "highestTemp": "216"
+        "Average": "176",
+        "Lowest": "129",
+        "Highest": "216"
     },
     {
         "date": "20160806",
-        "avgTemp": "164",
-        "lowestTemp": "105",
-        "highestTemp": "224"
+        "Average": "164",
+        "Lowest": "105",
+        "Highest": "224"
     },
     {
         "date": "20160807",
-        "avgTemp": "184",
-        "lowestTemp": "105",
-        "highestTemp": "228"
+        "Average": "184",
+        "Lowest": "105",
+        "Highest": "228"
     },
     {
         "date": "20160808",
-        "avgTemp": "172",
-        "lowestTemp": "125",
-        "highestTemp": "205"
+        "Average": "172",
+        "Lowest": "125",
+        "Highest": "205"
     },
     {
         "date": "20160809",
-        "avgTemp": "144",
-        "lowestTemp": "103",
-        "highestTemp": "185"
+        "Average": "144",
+        "Lowest": "103",
+        "Highest": "185"
     },
     {
         "date": "20160810",
-        "avgTemp": "128",
-        "lowestTemp": "69",
-        "highestTemp": "168"
+        "Average": "128",
+        "Lowest": "69",
+        "Highest": "168"
     },
     {
         "date": "20160811",
-        "avgTemp": "136",
-        "lowestTemp": "67",
-        "highestTemp": "163"
+        "Average": "136",
+        "Lowest": "67",
+        "Highest": "163"
     },
     {
         "date": "20160812",
-        "avgTemp": "189",
-        "lowestTemp": "163",
-        "highestTemp": "226"
+        "Average": "189",
+        "Lowest": "163",
+        "Highest": "226"
     },
     {
         "date": "20160813",
-        "avgTemp": "176",
-        "lowestTemp": "143",
-        "highestTemp": "215"
+        "Average": "176",
+        "Lowest": "143",
+        "Highest": "215"
     },
     {
         "date": "20160814",
-        "avgTemp": "170",
-        "lowestTemp": "96",
-        "highestTemp": "217"
+        "Average": "170",
+        "Lowest": "96",
+        "Highest": "217"
     },
     {
         "date": "20160815",
-        "avgTemp": "161",
-        "lowestTemp": "82",
-        "highestTemp": "217"
+        "Average": "161",
+        "Lowest": "82",
+        "Highest": "217"
     },
     {
         "date": "20160816",
-        "avgTemp": "163",
-        "lowestTemp": "114",
-        "highestTemp": "210"
+        "Average": "163",
+        "Lowest": "114",
+        "Highest": "210"
     },
     {
         "date": "20160817",
-        "avgTemp": "172",
-        "lowestTemp": "100",
-        "highestTemp": "234"
+        "Average": "172",
+        "Lowest": "100",
+        "Highest": "234"
     },
     {
         "date": "20160818",
-        "avgTemp": "177",
-        "lowestTemp": "97",
-        "highestTemp": "242"
+        "Average": "177",
+        "Lowest": "97",
+        "Highest": "242"
     },
     {
         "date": "20160819",
-        "avgTemp": "181",
-        "lowestTemp": "98",
-        "highestTemp": "243"
+        "Average": "181",
+        "Lowest": "98",
+        "Highest": "243"
     },
     {
         "date": "20160820",
-        "avgTemp": "178",
-        "lowestTemp": "148",
-        "highestTemp": "229"
+        "Average": "178",
+        "Lowest": "148",
+        "Highest": "229"
     },
     {
         "date": "20160821",
-        "avgTemp": "167",
-        "lowestTemp": "147",
-        "highestTemp": "198"
+        "Average": "167",
+        "Lowest": "147",
+        "Highest": "198"
     },
     {
         "date": "20160822",
-        "avgTemp": "180",
-        "lowestTemp": "142",
-        "highestTemp": "227"
+        "Average": "180",
+        "Lowest": "142",
+        "Highest": "227"
     },
     {
         "date": "20160823",
-        "avgTemp": "210",
-        "lowestTemp": "140",
-        "highestTemp": "269"
+        "Average": "210",
+        "Lowest": "140",
+        "Highest": "269"
     },
     {
         "date": "20160824",
-        "avgTemp": "228",
-        "lowestTemp": "170",
-        "highestTemp": "302"
+        "Average": "228",
+        "Lowest": "170",
+        "Highest": "302"
     },
     {
         "date": "20160825",
-        "avgTemp": "243",
-        "lowestTemp": "172",
-        "highestTemp": "310"
+        "Average": "243",
+        "Lowest": "172",
+        "Highest": "310"
     },
     {
         "date": "20160826",
-        "avgTemp": "221",
-        "lowestTemp": "176",
-        "highestTemp": "262"
+        "Average": "221",
+        "Lowest": "176",
+        "Highest": "262"
     },
     {
         "date": "20160827",
-        "avgTemp": "216",
-        "lowestTemp": "161",
-        "highestTemp": "265"
+        "Average": "216",
+        "Lowest": "161",
+        "Highest": "265"
     },
     {
         "date": "20160828",
-        "avgTemp": "205",
-        "lowestTemp": "177",
-        "highestTemp": "246"
+        "Average": "205",
+        "Lowest": "177",
+        "Highest": "246"
     },
     {
         "date": "20160829",
-        "avgTemp": "172",
-        "lowestTemp": "100",
-        "highestTemp": "214"
+        "Average": "172",
+        "Lowest": "100",
+        "Highest": "214"
     },
     {
         "date": "20160830",
-        "avgTemp": "162",
-        "lowestTemp": "85",
-        "highestTemp": "238"
+        "Average": "162",
+        "Lowest": "85",
+        "Highest": "238"
     },
     {
         "date": "20160831",
-        "avgTemp": "174",
-        "lowestTemp": "86",
-        "highestTemp": "254"
+        "Average": "174",
+        "Lowest": "86",
+        "Highest": "254"
     },
     {
         "date": "20160901",
-        "avgTemp": "172",
-        "lowestTemp": "102",
-        "highestTemp": "229"
+        "Average": "172",
+        "Lowest": "102",
+        "Highest": "229"
     },
     {
         "date": "20160902",
-        "avgTemp": "166",
-        "lowestTemp": "97",
-        "highestTemp": "217"
+        "Average": "166",
+        "Lowest": "97",
+        "Highest": "217"
     },
     {
         "date": "20160903",
-        "avgTemp": "185",
-        "lowestTemp": "144",
-        "highestTemp": "229"
+        "Average": "185",
+        "Lowest": "144",
+        "Highest": "229"
     },
     {
         "date": "20160904",
-        "avgTemp": "179",
-        "lowestTemp": "157",
-        "highestTemp": "213"
+        "Average": "179",
+        "Lowest": "157",
+        "Highest": "213"
     },
     {
         "date": "20160905",
-        "avgTemp": "173",
-        "lowestTemp": "115",
-        "highestTemp": "228"
+        "Average": "173",
+        "Lowest": "115",
+        "Highest": "228"
     },
     {
         "date": "20160906",
-        "avgTemp": "177",
-        "lowestTemp": "113",
-        "highestTemp": "242"
+        "Average": "177",
+        "Lowest": "113",
+        "Highest": "242"
     },
     {
         "date": "20160907",
-        "avgTemp": "183",
-        "lowestTemp": "114",
-        "highestTemp": "268"
+        "Average": "183",
+        "Lowest": "114",
+        "Highest": "268"
     },
     {
         "date": "20160908",
-        "avgTemp": "196",
-        "lowestTemp": "116",
-        "highestTemp": "276"
+        "Average": "196",
+        "Lowest": "116",
+        "Highest": "276"
     },
     {
         "date": "20160909",
-        "avgTemp": "169",
-        "lowestTemp": "117",
-        "highestTemp": "229"
+        "Average": "169",
+        "Lowest": "117",
+        "Highest": "229"
     },
     {
         "date": "20160910",
-        "avgTemp": "184",
-        "lowestTemp": "113",
-        "highestTemp": "257"
+        "Average": "184",
+        "Lowest": "113",
+        "Highest": "257"
     },
     {
         "date": "20160911",
-        "avgTemp": "185",
-        "lowestTemp": "148",
-        "highestTemp": "217"
+        "Average": "185",
+        "Lowest": "148",
+        "Highest": "217"
     },
     {
         "date": "20160912",
-        "avgTemp": "209",
-        "lowestTemp": "150",
-        "highestTemp": "281"
+        "Average": "209",
+        "Lowest": "150",
+        "Highest": "281"
     },
     {
         "date": "20160913",
-        "avgTemp": "235",
-        "lowestTemp": "152",
-        "highestTemp": "312"
+        "Average": "235",
+        "Lowest": "152",
+        "Highest": "312"
     },
     {
         "date": "20160914",
-        "avgTemp": "230",
-        "lowestTemp": "153",
-        "highestTemp": "314"
+        "Average": "230",
+        "Lowest": "153",
+        "Highest": "314"
     },
     {
         "date": "20160915",
-        "avgTemp": "226",
-        "lowestTemp": "165",
-        "highestTemp": "290"
+        "Average": "226",
+        "Lowest": "165",
+        "Highest": "290"
     },
     {
         "date": "20160916",
-        "avgTemp": "174",
-        "lowestTemp": "155",
-        "highestTemp": "212"
+        "Average": "174",
+        "Lowest": "155",
+        "Highest": "212"
     },
     {
         "date": "20160917",
-        "avgTemp": "173",
-        "lowestTemp": "137",
-        "highestTemp": "216"
+        "Average": "173",
+        "Lowest": "137",
+        "Highest": "216"
     },
     {
         "date": "20160918",
-        "avgTemp": "167",
-        "lowestTemp": "142",
-        "highestTemp": "207"
+        "Average": "167",
+        "Lowest": "142",
+        "Highest": "207"
     },
     {
         "date": "20160919",
-        "avgTemp": "144",
-        "lowestTemp": "95",
-        "highestTemp": "198"
+        "Average": "144",
+        "Lowest": "95",
+        "Highest": "198"
     },
     {
         "date": "20160920",
-        "avgTemp": "145",
-        "lowestTemp": "79",
-        "highestTemp": "200"
+        "Average": "145",
+        "Lowest": "79",
+        "Highest": "200"
     },
     {
         "date": "20160921",
-        "avgTemp": "147",
-        "lowestTemp": "83",
-        "highestTemp": "207"
+        "Average": "147",
+        "Lowest": "83",
+        "Highest": "207"
     },
     {
         "date": "20160922",
-        "avgTemp": "138",
-        "lowestTemp": "69",
-        "highestTemp": "213"
+        "Average": "138",
+        "Lowest": "69",
+        "Highest": "213"
     },
     {
         "date": "20160923",
-        "avgTemp": "136",
-        "lowestTemp": "73",
-        "highestTemp": "203"
+        "Average": "136",
+        "Lowest": "73",
+        "Highest": "203"
     },
     {
         "date": "20160924",
-        "avgTemp": "152",
-        "lowestTemp": "83",
-        "highestTemp": "236"
+        "Average": "152",
+        "Lowest": "83",
+        "Highest": "236"
     },
     {
         "date": "20160925",
-        "avgTemp": "163",
-        "lowestTemp": "121",
-        "highestTemp": "243"
+        "Average": "163",
+        "Lowest": "121",
+        "Highest": "243"
     },
     {
         "date": "20160926",
-        "avgTemp": "135",
-        "lowestTemp": "76",
-        "highestTemp": "191"
+        "Average": "135",
+        "Lowest": "76",
+        "Highest": "191"
     },
     {
         "date": "20160927",
-        "avgTemp": "145",
-        "lowestTemp": "56",
-        "highestTemp": "204"
+        "Average": "145",
+        "Lowest": "56",
+        "Highest": "204"
     },
     {
         "date": "20160928",
-        "avgTemp": "187",
-        "lowestTemp": "162",
-        "highestTemp": "216"
+        "Average": "187",
+        "Lowest": "162",
+        "Highest": "216"
     },
     {
         "date": "20160929",
-        "avgTemp": "159",
-        "lowestTemp": "138",
-        "highestTemp": "177"
+        "Average": "159",
+        "Lowest": "138",
+        "Highest": "177"
     },
     {
         "date": "20160930",
-        "avgTemp": "145",
-        "lowestTemp": "108",
-        "highestTemp": "187"
+        "Average": "145",
+        "Lowest": "108",
+        "Highest": "187"
     },
     {
         "date": "20161001",
-        "avgTemp": "135",
-        "lowestTemp": "99",
-        "highestTemp": "176"
+        "Average": "135",
+        "Lowest": "99",
+        "Highest": "176"
     },
     {
         "date": "20161002",
-        "avgTemp": "121",
-        "lowestTemp": "88",
-        "highestTemp": "157"
+        "Average": "121",
+        "Lowest": "88",
+        "Highest": "157"
     },
     {
         "date": "20161003",
-        "avgTemp": "145",
-        "lowestTemp": "111",
-        "highestTemp": "190"
+        "Average": "145",
+        "Lowest": "111",
+        "Highest": "190"
     },
     {
         "date": "20161004",
-        "avgTemp": "130",
-        "lowestTemp": "99",
-        "highestTemp": "173"
+        "Average": "130",
+        "Lowest": "99",
+        "Highest": "173"
     },
     {
         "date": "20161005",
-        "avgTemp": "98",
-        "lowestTemp": "54",
-        "highestTemp": "141"
+        "Average": "98",
+        "Lowest": "54",
+        "Highest": "141"
     },
     {
         "date": "20161006",
-        "avgTemp": "94",
-        "lowestTemp": "39",
-        "highestTemp": "127"
+        "Average": "94",
+        "Lowest": "39",
+        "Highest": "127"
     },
     {
         "date": "20161007",
-        "avgTemp": "118",
-        "lowestTemp": "100",
-        "highestTemp": "145"
+        "Average": "118",
+        "Lowest": "100",
+        "Highest": "145"
     },
     {
         "date": "20161008",
-        "avgTemp": "110",
-        "lowestTemp": "65",
-        "highestTemp": "142"
+        "Average": "110",
+        "Lowest": "65",
+        "Highest": "142"
     },
     {
         "date": "20161009",
-        "avgTemp": "79",
-        "lowestTemp": "13",
-        "highestTemp": "145"
+        "Average": "79",
+        "Lowest": "13",
+        "Highest": "145"
     },
     {
         "date": "20161010",
-        "avgTemp": "79",
-        "lowestTemp": "19",
-        "highestTemp": "135"
+        "Average": "79",
+        "Lowest": "19",
+        "Highest": "135"
     },
     {
         "date": "20161011",
-        "avgTemp": "80",
-        "lowestTemp": "3",
-        "highestTemp": "131"
+        "Average": "80",
+        "Lowest": "3",
+        "Highest": "131"
     },
     {
         "date": "20161012",
-        "avgTemp": "89",
-        "lowestTemp": "68",
-        "highestTemp": "110"
+        "Average": "89",
+        "Lowest": "68",
+        "Highest": "110"
     },
     {
         "date": "20161013",
-        "avgTemp": "91",
-        "lowestTemp": "77",
-        "highestTemp": "114"
+        "Average": "91",
+        "Lowest": "77",
+        "Highest": "114"
     },
     {
         "date": "20161014",
-        "avgTemp": "99",
-        "lowestTemp": "73",
-        "highestTemp": "134"
+        "Average": "99",
+        "Lowest": "73",
+        "Highest": "134"
     },
     {
         "date": "20161015",
-        "avgTemp": "107",
-        "lowestTemp": "89",
-        "highestTemp": "137"
+        "Average": "107",
+        "Lowest": "89",
+        "Highest": "137"
     },
     {
         "date": "20161016",
-        "avgTemp": "133",
-        "lowestTemp": "82",
-        "highestTemp": "188"
+        "Average": "133",
+        "Lowest": "82",
+        "Highest": "188"
     },
     {
         "date": "20161017",
-        "avgTemp": "121",
-        "lowestTemp": "82",
-        "highestTemp": "163"
+        "Average": "121",
+        "Lowest": "82",
+        "Highest": "163"
     },
     {
         "date": "20161018",
-        "avgTemp": "102",
-        "lowestTemp": "75",
-        "highestTemp": "128"
+        "Average": "102",
+        "Lowest": "75",
+        "Highest": "128"
     },
     {
         "date": "20161019",
-        "avgTemp": "88",
-        "lowestTemp": "44",
-        "highestTemp": "120"
+        "Average": "88",
+        "Lowest": "44",
+        "Highest": "120"
     },
     {
         "date": "20161020",
-        "avgTemp": "85",
-        "lowestTemp": "27",
-        "highestTemp": "120"
+        "Average": "85",
+        "Lowest": "27",
+        "Highest": "120"
     },
     {
         "date": "20161021",
-        "avgTemp": "76",
-        "lowestTemp": "15",
-        "highestTemp": "127"
+        "Average": "76",
+        "Lowest": "15",
+        "Highest": "127"
     },
     {
         "date": "20161022",
-        "avgTemp": "67",
-        "lowestTemp": "10",
-        "highestTemp": "104"
+        "Average": "67",
+        "Lowest": "10",
+        "Highest": "104"
     },
     {
         "date": "20161023",
-        "avgTemp": "48",
-        "lowestTemp": "-7",
-        "highestTemp": "116"
+        "Average": "48",
+        "Lowest": "-7",
+        "Highest": "116"
     },
     {
         "date": "20161024",
-        "avgTemp": "71",
-        "lowestTemp": "41",
-        "highestTemp": "95"
+        "Average": "71",
+        "Lowest": "41",
+        "Highest": "95"
     },
     {
         "date": "20161025",
-        "avgTemp": "87",
-        "lowestTemp": "79",
-        "highestTemp": "101"
+        "Average": "87",
+        "Lowest": "79",
+        "Highest": "101"
     },
     {
         "date": "20161026",
-        "avgTemp": "95",
-        "lowestTemp": "40",
-        "highestTemp": "126"
+        "Average": "95",
+        "Lowest": "40",
+        "Highest": "126"
     },
     {
         "date": "20161027",
-        "avgTemp": "118",
-        "lowestTemp": "104",
-        "highestTemp": "138"
+        "Average": "118",
+        "Lowest": "104",
+        "Highest": "138"
     },
     {
         "date": "20161028",
-        "avgTemp": "131",
-        "lowestTemp": "103",
-        "highestTemp": "148"
+        "Average": "131",
+        "Lowest": "103",
+        "Highest": "148"
     },
     {
         "date": "20161029",
-        "avgTemp": "96",
-        "lowestTemp": "52",
-        "highestTemp": "154"
+        "Average": "96",
+        "Lowest": "52",
+        "Highest": "154"
     },
     {
         "date": "20161030",
-        "avgTemp": "87",
-        "lowestTemp": "41",
-        "highestTemp": "153"
+        "Average": "87",
+        "Lowest": "41",
+        "Highest": "153"
     },
     {
         "date": "20161031",
-        "avgTemp": "85",
-        "lowestTemp": "29",
-        "highestTemp": "162"
+        "Average": "85",
+        "Lowest": "29",
+        "Highest": "162"
     },
     {
         "date": "20161101",
-        "avgTemp": "81",
-        "lowestTemp": "40",
-        "highestTemp": "138"
+        "Average": "81",
+        "Lowest": "40",
+        "Highest": "138"
     },
     {
         "date": "20161102",
-        "avgTemp": "72",
-        "lowestTemp": "22",
-        "highestTemp": "117"
+        "Average": "72",
+        "Lowest": "22",
+        "Highest": "117"
     },
     {
         "date": "20161103",
-        "avgTemp": "67",
-        "lowestTemp": "8",
-        "highestTemp": "120"
+        "Average": "67",
+        "Lowest": "8",
+        "Highest": "120"
     },
     {
         "date": "20161104",
-        "avgTemp": "76",
-        "lowestTemp": "63",
-        "highestTemp": "97"
+        "Average": "76",
+        "Lowest": "63",
+        "Highest": "97"
     },
     {
         "date": "20161105",
-        "avgTemp": "69",
-        "lowestTemp": "49",
-        "highestTemp": "108"
+        "Average": "69",
+        "Lowest": "49",
+        "Highest": "108"
     },
     {
         "date": "20161106",
-        "avgTemp": "61",
-        "lowestTemp": "24",
-        "highestTemp": "93"
+        "Average": "61",
+        "Lowest": "24",
+        "Highest": "93"
     },
     {
         "date": "20161107",
-        "avgTemp": "42",
-        "lowestTemp": "-1",
-        "highestTemp": "57"
+        "Average": "42",
+        "Lowest": "-1",
+        "Highest": "57"
     },
     {
         "date": "20161108",
-        "avgTemp": "19",
-        "lowestTemp": "-29",
-        "highestTemp": "56"
+        "Average": "19",
+        "Lowest": "-29",
+        "Highest": "56"
     },
     {
         "date": "20161109",
-        "avgTemp": "30",
-        "lowestTemp": "5",
-        "highestTemp": "43"
+        "Average": "30",
+        "Lowest": "5",
+        "Highest": "43"
     },
     {
         "date": "20161110",
-        "avgTemp": "40",
-        "lowestTemp": "31",
-        "highestTemp": "52"
+        "Average": "40",
+        "Lowest": "31",
+        "Highest": "52"
     },
     {
         "date": "20161111",
-        "avgTemp": "18",
-        "lowestTemp": "-31",
-        "highestTemp": "58"
+        "Average": "18",
+        "Lowest": "-31",
+        "Highest": "58"
     },
     {
         "date": "20161112",
-        "avgTemp": "20",
-        "lowestTemp": "-33",
-        "highestTemp": "50"
+        "Average": "20",
+        "Lowest": "-33",
+        "Highest": "50"
     },
     {
         "date": "20161113",
-        "avgTemp": "27",
-        "lowestTemp": "-10",
-        "highestTemp": "47"
+        "Average": "27",
+        "Lowest": "-10",
+        "Highest": "47"
     },
     {
         "date": "20161114",
-        "avgTemp": "31",
-        "lowestTemp": "-23",
-        "highestTemp": "69"
+        "Average": "31",
+        "Lowest": "-23",
+        "Highest": "69"
     },
     {
         "date": "20161115",
-        "avgTemp": "108",
-        "lowestTemp": "69",
-        "highestTemp": "129"
+        "Average": "108",
+        "Lowest": "69",
+        "Highest": "129"
     },
     {
         "date": "20161116",
-        "avgTemp": "119",
-        "lowestTemp": "93",
-        "highestTemp": "142"
+        "Average": "119",
+        "Lowest": "93",
+        "Highest": "142"
     },
     {
         "date": "20161117",
-        "avgTemp": "93",
-        "lowestTemp": "76",
-        "highestTemp": "115"
+        "Average": "93",
+        "Lowest": "76",
+        "Highest": "115"
     },
     {
         "date": "20161118",
-        "avgTemp": "60",
-        "lowestTemp": "32",
-        "highestTemp": "82"
+        "Average": "60",
+        "Lowest": "32",
+        "Highest": "82"
     },
     {
         "date": "20161119",
-        "avgTemp": "58",
-        "lowestTemp": "40",
-        "highestTemp": "81"
+        "Average": "58",
+        "Lowest": "40",
+        "Highest": "81"
     },
     {
         "date": "20161120",
-        "avgTemp": "84",
-        "lowestTemp": "48",
-        "highestTemp": "125"
+        "Average": "84",
+        "Lowest": "48",
+        "Highest": "125"
     },
     {
         "date": "20161121",
-        "avgTemp": "120",
-        "lowestTemp": "81",
-        "highestTemp": "139"
+        "Average": "120",
+        "Lowest": "81",
+        "Highest": "139"
     },
     {
         "date": "20161122",
-        "avgTemp": "110",
-        "lowestTemp": "65",
-        "highestTemp": "136"
+        "Average": "110",
+        "Lowest": "65",
+        "Highest": "136"
     },
     {
         "date": "20161123",
-        "avgTemp": "79",
-        "lowestTemp": "37",
-        "highestTemp": "111"
+        "Average": "79",
+        "Lowest": "37",
+        "Highest": "111"
     },
     {
         "date": "20161124",
-        "avgTemp": "66",
-        "lowestTemp": "30",
-        "highestTemp": "87"
+        "Average": "66",
+        "Lowest": "30",
+        "Highest": "87"
     },
     {
         "date": "20161125",
-        "avgTemp": "33",
-        "lowestTemp": "-6",
-        "highestTemp": "84"
+        "Average": "33",
+        "Lowest": "-6",
+        "Highest": "84"
     },
     {
         "date": "20161126",
-        "avgTemp": "-1",
-        "lowestTemp": "-26",
-        "highestTemp": "36"
+        "Average": "-1",
+        "Lowest": "-26",
+        "Highest": "36"
     },
     {
         "date": "20161127",
-        "avgTemp": "56",
-        "lowestTemp": "-10",
-        "highestTemp": "94"
+        "Average": "56",
+        "Lowest": "-10",
+        "Highest": "94"
     },
     {
         "date": "20161128",
-        "avgTemp": "-3",
-        "lowestTemp": "-41",
-        "highestTemp": "42"
+        "Average": "-3",
+        "Lowest": "-41",
+        "Highest": "42"
     },
     {
         "date": "20161129",
-        "avgTemp": "-31",
-        "lowestTemp": "-70",
-        "highestTemp": "43"
+        "Average": "-31",
+        "Lowest": "-70",
+        "Highest": "43"
     },
     {
         "date": "20161130",
-        "avgTemp": "20",
-        "lowestTemp": "-70",
-        "highestTemp": "68"
+        "Average": "20",
+        "Lowest": "-70",
+        "Highest": "68"
     },
     {
         "date": "20161201",
-        "avgTemp": "79",
-        "lowestTemp": "51",
-        "highestTemp": "94"
+        "Average": "79",
+        "Lowest": "51",
+        "Highest": "94"
     },
     {
         "date": "20161202",
-        "avgTemp": "52",
-        "lowestTemp": "-25",
-        "highestTemp": "94"
+        "Average": "52",
+        "Lowest": "-25",
+        "Highest": "94"
     },
     {
         "date": "20161203",
-        "avgTemp": "-1",
-        "lowestTemp": "-43",
-        "highestTemp": "81"
+        "Average": "-1",
+        "Lowest": "-43",
+        "Highest": "81"
     },
     {
         "date": "20161204",
-        "avgTemp": "-14",
-        "lowestTemp": "-50",
-        "highestTemp": "40"
+        "Average": "-14",
+        "Lowest": "-50",
+        "Highest": "40"
     },
     {
         "date": "20161205",
-        "avgTemp": "-27",
-        "lowestTemp": "-69",
-        "highestTemp": "41"
+        "Average": "-27",
+        "Lowest": "-69",
+        "Highest": "41"
     },
     {
         "date": "20161206",
-        "avgTemp": "1",
-        "lowestTemp": "-53",
-        "highestTemp": "54"
+        "Average": "1",
+        "Lowest": "-53",
+        "Highest": "54"
     },
     {
         "date": "20161207",
-        "avgTemp": "63",
-        "lowestTemp": "18",
-        "highestTemp": "95"
+        "Average": "63",
+        "Lowest": "18",
+        "Highest": "95"
     },
     {
         "date": "20161208",
-        "avgTemp": "82",
-        "lowestTemp": "64",
-        "highestTemp": "96"
+        "Average": "82",
+        "Lowest": "64",
+        "Highest": "96"
     },
     {
         "date": "20161209",
-        "avgTemp": "91",
-        "lowestTemp": "74",
-        "highestTemp": "104"
+        "Average": "91",
+        "Lowest": "74",
+        "Highest": "104"
     },
     {
         "date": "20161210",
-        "avgTemp": "78",
-        "lowestTemp": "66",
-        "highestTemp": "92"
+        "Average": "78",
+        "Lowest": "66",
+        "Highest": "92"
     },
     {
         "date": "20161211",
-        "avgTemp": "85",
-        "lowestTemp": "69",
-        "highestTemp": "96"
+        "Average": "85",
+        "Lowest": "69",
+        "Highest": "96"
     },
     {
         "date": "20161212",
-        "avgTemp": "53",
-        "lowestTemp": "8",
-        "highestTemp": "76"
+        "Average": "53",
+        "Lowest": "8",
+        "Highest": "76"
     },
     {
         "date": "20161213",
-        "avgTemp": "66",
-        "lowestTemp": "53",
-        "highestTemp": "75"
+        "Average": "66",
+        "Lowest": "53",
+        "Highest": "75"
     },
     {
         "date": "20161214",
-        "avgTemp": "73",
-        "lowestTemp": "48",
-        "highestTemp": "91"
+        "Average": "73",
+        "Lowest": "48",
+        "Highest": "91"
     },
     {
         "date": "20161215",
-        "avgTemp": "65",
-        "lowestTemp": "52",
-        "highestTemp": "79"
+        "Average": "65",
+        "Lowest": "52",
+        "Highest": "79"
     },
     {
         "date": "20161216",
-        "avgTemp": "54",
-        "lowestTemp": "27",
-        "highestTemp": "75"
+        "Average": "54",
+        "Lowest": "27",
+        "Highest": "75"
     },
     {
         "date": "20161217",
-        "avgTemp": "61",
-        "lowestTemp": "32",
-        "highestTemp": "85"
+        "Average": "61",
+        "Lowest": "32",
+        "Highest": "85"
     },
     {
         "date": "20161218",
-        "avgTemp": "62",
-        "lowestTemp": "26",
-        "highestTemp": "91"
+        "Average": "62",
+        "Lowest": "26",
+        "Highest": "91"
     },
     {
         "date": "20161219",
-        "avgTemp": "43",
-        "lowestTemp": "-2",
-        "highestTemp": "75"
+        "Average": "43",
+        "Lowest": "-2",
+        "Highest": "75"
     },
     {
         "date": "20161220",
-        "avgTemp": "-6",
-        "lowestTemp": "-27",
-        "highestTemp": "10"
+        "Average": "-6",
+        "Lowest": "-27",
+        "Highest": "10"
     },
     {
         "date": "20161221",
-        "avgTemp": "41",
-        "lowestTemp": "0",
-        "highestTemp": "71"
+        "Average": "41",
+        "Lowest": "0",
+        "Highest": "71"
     },
     {
         "date": "20161222",
-        "avgTemp": "59",
-        "lowestTemp": "48",
-        "highestTemp": "69"
+        "Average": "59",
+        "Lowest": "48",
+        "Highest": "69"
     },
     {
         "date": "20161223",
-        "avgTemp": "60",
-        "lowestTemp": "43",
-        "highestTemp": "80"
+        "Average": "60",
+        "Lowest": "43",
+        "Highest": "80"
     },
     {
         "date": "20161224",
-        "avgTemp": "79",
-        "lowestTemp": "61",
-        "highestTemp": "97"
+        "Average": "79",
+        "Lowest": "61",
+        "Highest": "97"
     },
     {
         "date": "20161225",
-        "avgTemp": "104",
-        "lowestTemp": "81",
-        "highestTemp": "117"
+        "Average": "104",
+        "Lowest": "81",
+        "Highest": "117"
     },
     {
         "date": "20161226",
-        "avgTemp": "83",
-        "lowestTemp": "61",
-        "highestTemp": "118"
+        "Average": "83",
+        "Lowest": "61",
+        "Highest": "118"
     },
     {
         "date": "20161227",
-        "avgTemp": "66",
-        "lowestTemp": "30",
-        "highestTemp": "93"
+        "Average": "66",
+        "Lowest": "30",
+        "Highest": "93"
     },
     {
         "date": "20161228",
-        "avgTemp": "10",
-        "lowestTemp": "-31",
-        "highestTemp": "43"
+        "Average": "10",
+        "Lowest": "-31",
+        "Highest": "43"
     },
     {
         "date": "20161229",
-        "avgTemp": "-22",
-        "lowestTemp": "-40",
-        "highestTemp": "-8"
+        "Average": "-22",
+        "Lowest": "-40",
+        "Highest": "-8"
     },
     {
         "date": "20161230",
-        "avgTemp": "-11",
-        "lowestTemp": "-40",
-        "highestTemp": "15"
+        "Average": "-11",
+        "Lowest": "-40",
+        "Highest": "15"
     },
     {
         "date": "20161231",
-        "avgTemp": "18",
-        "lowestTemp": "8",
-        "highestTemp": "33"
+        "Average": "18",
+        "Lowest": "8",
+        "Highest": "33"
     }
 ]

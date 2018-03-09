@@ -13,29 +13,31 @@ body {
 
 h1 {
   margin-top: 30px;
-  font: 30px sans-serif;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 30px;
 }
 
 p {
-  font: 13px sans-serif;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 11px;
 }
 
 .axis path,
 .axis line {
   fill: none;
-  stroke: #eee;
+  stroke: #000;
   shape-rendering: crispEdges;
-  stroke: black;
-  stroke-width: 0.5px;
 }
 
 .axis text {
-  font: 14px sans-serif;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 10px;
 }
 
-.axis .ytext,
-.axis .xtext {
-  font: 18px sans-serif;
+.axis .ytext {
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 .line {
@@ -44,15 +46,17 @@ p {
 }
 
 .legend text {
-  font: 15px sans-serif;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 15px;
 }
 
 .legend .ltext {
-  font: 18px sans-serif;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 18px;
   font-weight: 520;
 }
 
 text {
-  font: 15px sans-serif;
-  font-weight: bold;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 14px;
 }

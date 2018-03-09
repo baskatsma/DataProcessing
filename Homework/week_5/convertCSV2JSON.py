@@ -15,7 +15,7 @@ from collections import OrderedDict
 if __name__ == "__main__":
 
     # Initialize the keys
-    JSONKeyNames=["date", "avgTemp", "lowestTemp", "highestTemp"]
+    JSONKeyNames=["date", "Average", "Lowest", "Highest"]
 
     # Create blank array to store the new data in
     dataStorage = []
