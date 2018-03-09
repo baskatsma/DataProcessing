@@ -16,7 +16,7 @@ window.onload = function() {
 };
 
 // Get the dropdown year value when it's clicked and then update the graph
-function yearSelecter() {
+function yearSelector() {
     var yearButton = document.getElementById("selectYear");
     yearButton.onclick = function() {
         var selectedYear = yearButton.value;
@@ -279,6 +279,6 @@ function drawGraph(selectedYear) {
 // Add an event listener for the dropdown menu
 document.addEventListener("readystatechange", function() {
     if (document.readyState === "complete") {
-        yearSelecter();
+        yearSelector();
     }
 });
