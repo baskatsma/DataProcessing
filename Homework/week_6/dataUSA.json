@@ -1,0 +1,257 @@
+[
+    {
+        "state": "01",
+        "name": "Alabama",
+        "pop2017": "4874747"
+    },
+    {
+        "state": "02",
+        "name": "Alaska",
+        "pop2017": "739795"
+    },
+    {
+        "state": "04",
+        "name": "Arizona",
+        "pop2017": "7016270"
+    },
+    {
+        "state": "05",
+        "name": "Arkansas",
+        "pop2017": "3004279"
+    },
+    {
+        "state": "06",
+        "name": "California",
+        "pop2017": "39536653"
+    },
+    {
+        "state": "08",
+        "name": "Colorado",
+        "pop2017": "5607154"
+    },
+    {
+        "state": "09",
+        "name": "Connecticut",
+        "pop2017": "3588184"
+    },
+    {
+        "state": "10",
+        "name": "Delaware",
+        "pop2017": "961939"
+    },
+    {
+        "state": "11",
+        "name": "District of Columbia",
+        "pop2017": "693972"
+    },
+    {
+        "state": "12",
+        "name": "Florida",
+        "pop2017": "20984400"
+    },
+    {
+        "state": "13",
+        "name": "Georgia",
+        "pop2017": "10429379"
+    },
+    {
+        "state": "15",
+        "name": "Hawaii",
+        "pop2017": "1427538"
+    },
+    {
+        "state": "16",
+        "name": "Idaho",
+        "pop2017": "1716943"
+    },
+    {
+        "state": "17",
+        "name": "Illinois",
+        "pop2017": "12802023"
+    },
+    {
+        "state": "18",
+        "name": "Indiana",
+        "pop2017": "6666818"
+    },
+    {
+        "state": "19",
+        "name": "Iowa",
+        "pop2017": "3145711"
+    },
+    {
+        "state": "20",
+        "name": "Kansas",
+        "pop2017": "2913123"
+    },
+    {
+        "state": "21",
+        "name": "Kentucky",
+        "pop2017": "4454189"
+    },
+    {
+        "state": "22",
+        "name": "Louisiana",
+        "pop2017": "4684333"
+    },
+    {
+        "state": "23",
+        "name": "Maine",
+        "pop2017": "1335907"
+    },
+    {
+        "state": "24",
+        "name": "Maryland",
+        "pop2017": "6052177"
+    },
+    {
+        "state": "25",
+        "name": "Massachusetts",
+        "pop2017": "6859819"
+    },
+    {
+        "state": "26",
+        "name": "Michigan",
+        "pop2017": "9962311"
+    },
+    {
+        "state": "27",
+        "name": "Minnesota",
+        "pop2017": "5576606"
+    },
+    {
+        "state": "28",
+        "name": "Mississippi",
+        "pop2017": "2984100"
+    },
+    {
+        "state": "29",
+        "name": "Missouri",
+        "pop2017": "6113532"
+    },
+    {
+        "state": "30",
+        "name": "Montana",
+        "pop2017": "1050493"
+    },
+    {
+        "state": "31",
+        "name": "Nebraska",
+        "pop2017": "1920076"
+    },
+    {
+        "state": "32",
+        "name": "Nevada",
+        "pop2017": "2998039"
+    },
+    {
+        "state": "33",
+        "name": "New Hampshire",
+        "pop2017": "1342795"
+    },
+    {
+        "state": "34",
+        "name": "New Jersey",
+        "pop2017": "9005644"
+    },
+    {
+        "state": "35",
+        "name": "New Mexico",
+        "pop2017": "2088070"
+    },
+    {
+        "state": "36",
+        "name": "New York",
+        "pop2017": "19849399"
+    },
+    {
+        "state": "37",
+        "name": "North Carolina",
+        "pop2017": "10273419"
+    },
+    {
+        "state": "38",
+        "name": "North Dakota",
+        "pop2017": "755393"
+    },
+    {
+        "state": "39",
+        "name": "Ohio",
+        "pop2017": "11658609"
+    },
+    {
+        "state": "40",
+        "name": "Oklahoma",
+        "pop2017": "3930864"
+    },
+    {
+        "state": "41",
+        "name": "Oregon",
+        "pop2017": "4142776"
+    },
+    {
+        "state": "42",
+        "name": "Pennsylvania",
+        "pop2017": "12805537"
+    },
+    {
+        "state": "44",
+        "name": "Rhode Island",
+        "pop2017": "1059639"
+    },
+    {
+        "state": "45",
+        "name": "South Carolina",
+        "pop2017": "5024369"
+    },
+    {
+        "state": "46",
+        "name": "South Dakota",
+        "pop2017": "869666"
+    },
+    {
+        "state": "47",
+        "name": "Tennessee",
+        "pop2017": "6715984"
+    },
+    {
+        "state": "48",
+        "name": "Texas",
+        "pop2017": "28304596"
+    },
+    {
+        "state": "49",
+        "name": "Utah",
+        "pop2017": "3101833"
+    },
+    {
+        "state": "50",
+        "name": "Vermont",
+        "pop2017": "623657"
+    },
+    {
+        "state": "51",
+        "name": "Virginia",
+        "pop2017": "8470020"
+    },
+    {
+        "state": "53",
+        "name": "Washington",
+        "pop2017": "7405743"
+    },
+    {
+        "state": "54",
+        "name": "West Virginia",
+        "pop2017": "1815857"
+    },
+    {
+        "state": "55",
+        "name": "Wisconsin",
+        "pop2017": "5795483"
+    },
+    {
+        "state": "56",
+        "name": "Wyoming",
+        "pop2017": "579315"
+    }
+]
