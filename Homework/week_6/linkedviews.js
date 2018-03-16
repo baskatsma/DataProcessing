@@ -11,12 +11,12 @@
  window.onload = function() {
 
   //Width and height of map
-  var margin = {top: 20, bottom: 20, left: 120, right: 200},
-      height = 650 - margin.top - margin.bottom,
-      width = 1200 - margin.left - margin.right;
+  var margin = {top: 10, bottom: 20, left: 120, right: 200},
+      height = 550 - margin.top - margin.bottom,
+      width = 1300 - margin.left - margin.right;
 
-  var lowColor = '#f9f9f9'
-  var highColor = '#bc2a66'
+  var lowColor = "#f9f9f9"
+  var highColor = "teal"
 
   // D3 Projection
   var projection = d3.geoAlbersUsa()
@@ -29,10 +29,10 @@
 
   // Initialize tip
   var tip = d3.tip()
-      .attr('class', 'd3-tip')
-      .offset([-10, 0])
+      .attr("class", "d3-tip")
+      .offset([-5, 0])
       .html(function(d) {
-          return "<strong>Population:</strong> <span style='color:red'>" + d.properties.value + "</span>";
+          return "<strong>State:</strong> " + d.properties.name + "</span>" + "<br>" + "<strong>Population:</strong> " + d.properties.value + "</span>";
         });
 
   var svg = d3.select(".map")
@@ -53,6 +53,13 @@
         var dataArray = [];
         data.forEach(function(d) {
           d.pop2017 = parseInt(d.pop2017);
+          d.births2011 = parseInt(d.births2011);
+          d.births2012 = parseInt(d.births2012);
+          d.births2013 = parseInt(d.births2013);
+          d.births2014 = parseInt(d.births2014);
+          d.births2015 = parseInt(d.births2015);
+          d.births2016 = parseInt(d.births2016);
+          d.births2017 = parseInt(d.births2017);
           dataArray.push(+d.pop2017);
         });
         console.log(dataArray);
@@ -60,16 +67,18 @@
         var minVal = d3.min(dataArray);
       	var maxVal = d3.max(dataArray);
 
+        createBarchart(data);
+
         var ramp = d3.scaleLinear().domain([minVal,maxVal]).range([lowColor,highColor])
 
-        for (var i = 0; i < data.length; i++) {
-            // var obj = data[i];
-            // console.log(obj.id);
+        for (var i = 0, lenI = data.length; i < lenI; i++) {
+
             var dataState = data[i].name;
             var dataValue = data[i].pop2017;
 
             // Find the corresponding state inside the GeoJSON
-            for (var j = 0; j < us.features.length; j++) {
+            for (var j = 0, lenJ = us.features.length; j < lenJ; j++) {
+
                 var jsonState = us.features[j].properties.name;
 
                 if (dataState == jsonState) {
@@ -92,13 +101,13 @@
           .style("stroke", "#fff")
           .style("stroke-width", "1")
           .style("fill", function(d) { return ramp(d.properties.value) })
-          .on('mouseover', tip.show)
-          .on('mouseout', tip.hide);
+          .on("mouseover", tip.show)
+          .on("mouseout", tip.hide);
 
     		// add a legend
-    		var w = 140, h = 300;
+    		var w = 110, h = 200;
 
-    		var key = d3.select("body")
+    		var key = d3.select("svg")
     			.append("svg")
     			.attr("width", w)
     			.attr("height", h)
@@ -124,10 +133,10 @@
     			.attr("stop-opacity", 1);
 
     		key.append("rect")
-    			.attr("width", w - 100)
+    			.attr("width", w - 80)
     			.attr("height", h)
     			.style("fill", "url(#gradient)")
-    			.attr("transform", "translate(0,10)");
+    			.attr("transform", "translate(10,10)");
 
     		var y = d3.scaleLinear()
     			.range([h, 0])
@@ -140,4 +149,14 @@
     			.attr("transform", "translate(41,10)")
     			.call(yAxis)
       });
+
+      function createBarchart(data) {
+          console.log(data);
+
+          var svg2 = d3.select(".barchart")
+              .attr("width", width + margin.left + margin.right)
+              .attr("height", height + margin.top + margin.bottom)
+              .append("g")
+                  .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+      }
 };

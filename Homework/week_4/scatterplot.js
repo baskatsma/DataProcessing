@@ -41,7 +41,7 @@ window.onload = function() {
           .attr("class", "d3-tip")
           .offset([-10, 0])
           .html(function(d) {
-              return "<strong>Country:</strong> <span style='color:red'>" + d.country + "</span>" + "<br>" + "<strong>Region:</strong> <span style='color:red'>" + d.region + "</span>" + "<br>" + "<strong>Life expectancy:</strong> <span style='color:red'>" + d.lifeExpectancy + "</span>" + "<br>" + "<strong>Wellbeing:</strong> <span style='color:red'>" + d.wellbeing + "</span>";
+              return "<strong>Country:</strong>" + d.country + "</span>" + "<br>" + "<strong>Region:</strong>" + d.region + "</span>" + "<br>" + "<strong>Life expectancy:</strong>" + d.lifeExpectancy + "</span>" + "<br>" + "<strong>Wellbeing:</strong>" + d.wellbeing + "</span>";
           });
 
         // Start the tip

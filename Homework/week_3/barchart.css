@@ -30,7 +30,6 @@ p {
 .d3-tip {
   line-height: 1;
   font: 14px sans-serif;
-  font-weight: bold;
   padding: 12px;
   background: rgba(0, 0, 0, 1);
   color: #fff;
