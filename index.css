@@ -50,7 +50,3 @@ html, body {
     -moz-animation-delay: 0.30s;
     -ms-transition-animation-delay: 0.30s;
 }
-
-#week6 {
-  visibility: hidden;
-}
