@@ -15,7 +15,7 @@ from collections import OrderedDict
 if __name__ == "__main__":
 
     # Initialize the keys
-    JSONKeyNames=["state", "name", "pop2017", "births2011", "births2012", "births2013", "births2014", "births2015", "births2016", "births2017"]
+    JSONKeyNames=["state", "name", "pop2010", "pop2011", "pop2012", "pop2013", "pop2014", "pop2015", "pop2016", "pop2017"]
 
     # Create blank array to store the new data in
     dataStorage = []
