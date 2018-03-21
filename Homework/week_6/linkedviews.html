@@ -12,6 +12,16 @@
 
   <head>
       <meta charset="utf-8">
+
+      <!--
+      *
+      * Include Bootstrap 4.0
+      *
+      -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
       <link rel="stylesheet" type="text/css" href="linkedviews.css">
       <script src="https://d3js.org/d3.v4.min.js" charset="utf-8"></script>
       <script src="https://d3js.org/queue.v1.min.js" charset="utf-8"></script>
@@ -21,6 +31,10 @@
   </head>
 
   <body>
+    <form>
+      <div class="w-25 p-3 text-center">
+        <input type="search" class="form-control" id="stateInput" placeholder="Search for a state">
+      </div>
       <svg class="map"></svg>
       <svg class="barchart"></svg>
       <p>Bas Katsma, 10787690 — Source: <a href="https://www.census.gov/data/datasets/2017/demo/popest/nation-total.html#ds">Census.gov</a></p>

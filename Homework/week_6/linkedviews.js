@@ -62,12 +62,12 @@
       .attr("class", "yAxis")
       .call(yAxis
           .tickPadding(5)
-          .tickSize(10, 0))
+          .tickSize(10, 0));
 
   svg2.append("g")
       .attr("class", "x axis")
       .attr("transform", "translate(0," + height * downscale + ")")
-      .call(xAxis)
+      .call(xAxis);
 
   svg2.append("text")
       .attr("class", "xtext")
@@ -84,6 +84,16 @@
         .attr("text-anchor", "end")
         .text("Population");
 
+  // Add tooltip
+  var barTip = d3.tip()
+    .attr("class", "d3-tip")
+    .offset([-10, 0])
+    .html(function (d) {
+      return (d)});
+
+  // Start the barchart tip
+  svg2.call(barTip);
+
   // Initialize tip
   var tip = d3.tip()
       .attr("class", "d3-tip")
@@ -92,7 +102,7 @@
           return "<strong>State:</strong> " + d.properties.name + "</span>" + "<br>" + "<strong>Population in 2017:</strong> " + d.properties.value2017 + "</span>";
       });
 
-  // Call tip
+  // Start the map tip
   svg.call(tip);
 
   d3.queue()
@@ -103,7 +113,7 @@
         if (error) throw error;
 
         var chosenState = "Alabama";
-        updateBarchart(chosenState, data);
+        updateBarchart(data, chosenState);
 
         var dataArray = [];
         data.forEach(function(d) {
@@ -148,7 +158,7 @@
           .style("fill", function(d) { return ramp(d.properties.value2017) })
           .on("mouseover", tip.show)
           .on("mouseout", tip.hide)
-          .on("click", function(d) { var chosenState = d.properties.name; updateBarchart(chosenState, data) });
+          .on("click", function(d) { var chosenState = d.properties.name; updateBarchart(data, chosenState) });
 
         createLegend(minVal, maxVal);
 
@@ -202,9 +212,19 @@
         .call(yAxis)
   }
 
-  function updateBarchart(chosenState, data) {
+  function updateBarchart(data, chosenState) {
 
       var population = [];
+
+      // Add tooltip
+      var barTip = d3.tip()
+        .attr("class", "d3-tip")
+        .offset([-10, 0])
+        .html(function (d) {
+          return (d)});
+
+      // start the tip
+      svg2.call(barTip);
 
       // Send JSON values into separate arrays
       for (var i = 0, len = data.length; i < len; i++) {
@@ -244,5 +264,8 @@
               .attr("y", function(d) { return y(d); })
               .attr("height", function(d) { return height * downscale - y(d); })
               .style("fill", "teal");
+              // .on("mouseover", barTip.show)
+              // .on("mouseout", barTip.hide);
+
   }
 };
