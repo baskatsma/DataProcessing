@@ -23,12 +23,12 @@
 
   // D3 Projection
   var projection = d3.geoAlbersUsa()
-    .translate([width / 2, height / 2]) // translate to center of screen
-    .scale([1000]); // scale things down so see entire US
+      .translate([width / 2, height / 2]) // translate to center of screen
+      .scale([1000]); // scale things down so see entire US
 
   // Define path generator
   var path = d3.geoPath() // path generator that will convert GeoJSON to SVG paths
-    .projection(projection); // tell path generator to use albersUsa projection
+      .projection(projection); // tell path generator to use albersUsa projection
 
   // Append measurements to the map
   var svg = d3.select(".map")
@@ -43,7 +43,8 @@
       .attr("class", "d3-mapTip")
       .offset([-5, 0])
       .html(function(d) {
-          return "<strong>State:</strong> " + d.properties.name + "</span>" + "<br>" + "<strong>Population in 2017:</strong> " + d.properties.value2017 + "</span>";
+          var formatThousand = d3.format(",");
+          return "<strong>State:</strong> " + d.properties.name + "</span>" + "<br>" + "<strong>Population in 2017:</strong> " + formatThousand(d.properties.value2017) + "</span>";
       });
 
   // Start the map tip
@@ -190,7 +191,8 @@
         .attr("class", "d3-barTip")
         .offset([-10, 0])
         .html(function (d) {
-          return (d)});
+          var formatDecimals = d3.format(".2f");
+          return (formatDecimals(d))});
 
       // start the tip
       svg2.call(barTip);
@@ -220,32 +222,25 @@
           .call(xAxis);
 
       svg2.append("text")
-          .attr("class", "xText")
-          .attr("y", margin.bottom / 1.5)
-          .attr("x", width / 2)
-          .attr("dy", ".71em")
-          .style("text-anchor", "end");
-
-      svg2.append("text")
-            .attr("class", "yText")
-            .attr("transform", "rotate(-90)")
-            .attr("x", -margin.left * 0.65)
-            .attr("y", -margin.left * 0.45)
-            .attr("text-anchor", "end")
-            .text("Population (in millions)");
+          .attr("class", "yText")
+          .attr("transform", "rotate(-90)")
+          .attr("x", -margin.left * 0.65)
+          .attr("y", -margin.left * 0.45)
+          .attr("text-anchor", "end")
+          .text("Population (in millions)");
 
       // Add bars with linked data to the chart
       svg2.selectAll(".bar")
-        .data(population)
-      .enter().append("rect")
-        .attr("class", "bar")
-        .attr("x", function(d, i) { return x(years[i]); })
-        .attr("y", function(d) { return y(d); })
-        .attr("height", function(d) { return height * downscale - y(d); })
-        .attr("width", x.bandwidth())
-        .on("mouseover", barTip.show)
-        .on("mouseout", barTip.hide)
-        .style("fill", "teal");
+          .data(population)
+          .enter().append("rect")
+              .attr("class", "bar")
+              .attr("x", function(d, i) { return x(years[i]); })
+              .attr("y", function(d) { return y(d); })
+              .attr("height", function(d) { return height * downscale - y(d); })
+              .attr("width", x.bandwidth())
+              .on("mouseover", barTip.show)
+              .on("mouseout", barTip.hide)
+              .style("fill", "teal");
   }
 
   function updateBarchart(data, chosenState) {
@@ -275,7 +270,8 @@
         .attr("class", "d3-barTip")
         .offset([-10, 0])
         .html(function (d) {
-          return (d)});
+          var formatDecimals = d3.format(".2f");
+          return (formatDecimals(d))});
 
       // start the tip
       svg2.call(barTip);
@@ -299,10 +295,10 @@
           .on("mouseout", barTip.hide);
 
       bars
-        .transition().duration(1000)
-        .attr("y", function(d) { return y(d); })
-        .attr("height", function(d) { return height * downscale - y(d); })
-        .style("fill", "teal");
+          .transition().duration(1000)
+          .attr("y", function(d) { return y(d); })
+          .attr("height", function(d) { return height * downscale - y(d); })
+          .style("fill", "teal");
   }
 };
 
