@@ -191,8 +191,9 @@
         .attr("class", "d3-barTip")
         .offset([-10, 0])
         .html(function (d) {
-          var formatDecimals = d3.format(".2f");
-          return (formatDecimals(d))});
+            var formatDecimals = d3.format(".2f");
+            return formatDecimals(d) + " million";
+        });
 
       // start the tip
       svg2.call(barTip);
@@ -270,8 +271,9 @@
         .attr("class", "d3-barTip")
         .offset([-10, 0])
         .html(function (d) {
-          var formatDecimals = d3.format(".2f");
-          return (formatDecimals(d))});
+            var formatDecimals = d3.format(".2f");
+            return formatDecimals(d) + " million";
+        });
 
       // start the tip
       svg2.call(barTip);

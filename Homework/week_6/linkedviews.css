@@ -54,7 +54,7 @@ p {
 
 .d3-barTip {
     position: absolute;
-    width: 100px;
+    width: 120px;
     height: auto;
     padding: 10px;
     font: 14px sans-serif;
