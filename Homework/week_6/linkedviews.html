@@ -12,6 +12,7 @@
 
   <head>
       <meta charset="utf-8">
+      <title>Week 6 - Linked Views by Bas Katsma (10787690)</title>
 
       <!--
       *
@@ -27,10 +28,10 @@
       <script src="https://d3js.org/queue.v1.min.js" charset="utf-8"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
       <script src="linkedviews.js" type="text/javascript"></script>
-      <title>Week 6, by Bas Katsma (10787690)</title>
   </head>
 
   <body>
+      <h1>United States of America</h1>
       <!--
       *
       *  linkedviews.html
@@ -48,14 +49,15 @@
       -->
       <!--
       *
-      <h1>United States of America</h1>
+
       <div class="container">
         <button type="button" class="btn btn-outline-info" id="randomizeButton" onclick="randomizeButton()">Randomize state</button>
       </div>
       *
       -->
-      <svg class="map"></svg>
-      <svg class="barchart"></svg>
+      <div class="map"></div>
+      <h2 id="barchartTitle"></h2>
+      <div class="barchart"></div>
       <p>Bas Katsma, 10787690 — Source: <a href="https://www.census.gov/data/datasets/2017/demo/popest/nation-total.html#ds">Census.gov</a></p>
   </body>
 

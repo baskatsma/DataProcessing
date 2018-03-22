@@ -18,21 +18,23 @@ body {
 h1 {
     margin-top: 30px;
     font-family: Futura;
-    /*
-    font-family: "Helvetica Neue", Helvetica, sans-serif;
-    */
     font-size: 30px;
+}
+
+h2 {
+    margin-right: 70px;
+    font-family: Futura;
+    font-size: 30px;
+    text-align: center;
 }
 
 p {
     font-family: Futura;
-    /*
-    font-family: "Helvetica Neue", Helvetica, sans-serif;
-    */
     font-size: 11px;
 }
 
-.d3-tip {
+
+.d3-mapTip {
     position: absolute;
     width: 260px;
     height: auto;
@@ -50,10 +52,28 @@ p {
     pointer-events: none;
 }
 
+.d3-barTip {
+    position: absolute;
+    width: 100px;
+    height: auto;
+    padding: 10px;
+    font: 14px sans-serif;
+    font-family: Futura;
+    text-align: center;
+    background-color: white;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+    pointer-events: none;
+}
+
 path:hover {
     fill-opacity: .5;
 }
 
-.ytext {
+.yText {
     font: 14px Futura;
 }

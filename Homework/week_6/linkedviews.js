@@ -30,80 +30,24 @@
   var path = d3.geoPath() // path generator that will convert GeoJSON to SVG paths
     .projection(projection); // tell path generator to use albersUsa projection
 
+  // Append measurements to the map
   var svg = d3.select(".map")
-      .attr("width", width + margin.left + margin.right)
-      .attr("height", height + margin.top + margin.bottom)
+      .append("svg")
+          .attr("width", width + margin.left + margin.right)
+          .attr("height", height + margin.top + margin.bottom)
       .append("g")
           .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-  // Set-up years for X-axis of the barchart
-  var years = ["2010", "2011", "2012", "2013", "2014", "2015", "2016"];
-
-  // Append measurements to the barchart
-  var svg2 = d3.select(".barchart")
-      .attr("width", width * downscale + margin.left + margin.right)
-      .attr("height", height * downscale + margin.top + margin.bottom)
-      .append("g")
-          .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-
-  // Define X and Y, and its range
-  var x = d3.scaleBand()
-      .range([0, width * downscale])
-      .domain(years)
-      .padding(0.3);
-
-  var y = d3.scaleLinear()
-      .range([height * downscale, 0]);
-
-  var xAxis = d3.axisBottom(x);
-  var yAxis = d3.axisLeft(y);
-
-  svg2.append("g")
-      .attr("class", "yAxis")
-      .call(yAxis
-          .tickPadding(5)
-          .tickSize(10, 0));
-
-  svg2.append("g")
-      .attr("class", "x axis")
-      .attr("transform", "translate(0," + height * downscale + ")")
-      .call(xAxis);
-
-  svg2.append("text")
-      .attr("class", "xtext")
-      .attr("y", margin.bottom / 1.5)
-      .attr("x", width / 2)
-      .attr("dy", ".71em")
-      .style("text-anchor", "end");
-
-  svg2.append("text")
-        .attr("class", "ytext")
-        .attr("transform", "rotate(-90)")
-        .attr("x", -margin.left * 1)
-        .attr("y", -margin.left * 0.5)
-        .attr("text-anchor", "end")
-        .text("Population");
-
-  // Add tooltip
-  var barTip = d3.tip()
-    .attr("class", "d3-tip")
-    .offset([-10, 0])
-    .html(function (d) {
-      return (d)});
-
-  // Start the barchart tip
-  svg2.call(barTip);
-
-  // Initialize tip
-  var tip = d3.tip()
-      .attr("class", "d3-tip")
+  // Initialize map tooltip
+  var mapTip = d3.tip()
+      .attr("class", "d3-mapTip")
       .offset([-5, 0])
       .html(function(d) {
           return "<strong>State:</strong> " + d.properties.name + "</span>" + "<br>" + "<strong>Population in 2017:</strong> " + d.properties.value2017 + "</span>";
       });
 
   // Start the map tip
-  svg.call(tip);
+  svg.call(mapTip);
 
   d3.queue()
     .defer(d3.json, "us.json")
@@ -112,36 +56,30 @@
 
         if (error) throw error;
 
-        var chosenState = "Alabama";
-        updateBarchart(data, chosenState);
-
         var dataArray = [];
         data.forEach(function(d) {
           d.pop2017 = parseInt(d.pop2017);
           dataArray.push(d.pop2017);
         });
 
+        var chosenState = "Alabama";
+        makeBarchart(data, chosenState);
+
         var minVal = d3.min(dataArray);
       	var maxVal = d3.max(dataArray);
-
         var ramp = d3.scaleLinear().domain([minVal,maxVal]).range([lowColor,highColor]);
 
         for (var i = 0, lenI = data.length; i < lenI; i++) {
-
             var dataState = data[i].name;
             var dataValue2017 = data[i].pop2017;
 
             // Find the corresponding state inside the GeoJSON
             for (var j = 0, lenJ = us.features.length; j < lenJ; j++) {
-
                 var jsonState = us.features[j].properties.name;
 
+                // Copy the data value into the JSON if the states match
                 if (dataState == jsonState) {
-
-                  // Copy the data value into the JSON
                   us.features[j].properties.value2017 = dataValue2017;
-
-                  // Stop looking through the JSON
                   break;
                 }
             }
@@ -156,15 +94,15 @@
           .style("stroke", "#fff")
           .style("stroke-width", "1")
           .style("fill", function(d) { return ramp(d.properties.value2017) })
-          .on("mouseover", tip.show)
-          .on("mouseout", tip.hide)
+          .on("mouseover", mapTip.show)
+          .on("mouseout", mapTip.hide)
           .on("click", function(d) { var chosenState = d.properties.name; updateBarchart(data, chosenState) });
 
-        createLegend(minVal, maxVal);
+        makeLegend(minVal, maxVal);
 
   });
 
-  function createLegend(minVal, maxVal) {
+  function makeLegend(minVal, maxVal) {
 
       // add a legend
       var w = 110, h = 200;
@@ -212,19 +150,27 @@
         .call(yAxis)
   }
 
-  function updateBarchart(data, chosenState) {
+  function makeBarchart(data, chosenState) {
 
+      // Dynamically add the title
+      document.getElementById("barchartTitle").innerHTML = "Population of " + chosenState + " from 2010 to 2016";
+
+      // Initialize width, height and margins
+      var margin = {top: 10, bottom: 20, left: 120, right: 200},
+          height = 550 - margin.top - margin.bottom,
+          width = 1200 - margin.left - margin.right;
+
+      // Set-up years for X-axis of the barchart
+      var years = ["2010", "2011", "2012", "2013", "2014", "2015", "2016"];
       var population = [];
 
-      // Add tooltip
-      var barTip = d3.tip()
-        .attr("class", "d3-tip")
-        .offset([-10, 0])
-        .html(function (d) {
-          return (d)});
-
-      // start the tip
-      svg2.call(barTip);
+      // Append measurements to the barchart
+      var svg2 = d3.select(".barchart")
+          .append("svg")
+              .attr("width", width * downscale + margin.left + margin.right)
+              .attr("height", height * downscale + margin.top + margin.bottom)
+          .append("g")
+              .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
       // Send JSON values into separate arrays
       for (var i = 0, len = data.length; i < len; i++) {
@@ -239,33 +185,124 @@
           }
       }
 
-      // Update axis domains
-      y.domain([0, d3.max(population)]);
+      // Add tooltip
+      var barTip = d3.tip()
+        .attr("class", "d3-barTip")
+        .offset([-10, 0])
+        .html(function (d) {
+          return (d)});
 
-      svg2.select(".yAxis")
+      // start the tip
+      svg2.call(barTip);
+
+      // Define X and Y, and its range
+      var x = d3.scaleBand()
+          .range([0, width * downscale])
+          .domain(years)
+          .padding(0.3);
+
+      var y = d3.scaleLinear()
+          .range([height * downscale, 0])
+          .domain([0, d3.max(population)]);
+
+      var xAxis = d3.axisBottom(x);
+      var yAxis = d3.axisLeft(y);
+
+      svg2.append("g")
+          .attr("class", "yAxis")
+          .call(yAxis
+              .tickPadding(5)
+              .tickSize(10, 0));
+
+      svg2.append("g")
+          .attr("class", "xAxis")
+          .attr("transform", "translate(0," + height * downscale + ")")
+          .call(xAxis);
+
+      svg2.append("text")
+          .attr("class", "xText")
+          .attr("y", margin.bottom / 1.5)
+          .attr("x", width / 2)
+          .attr("dy", ".71em")
+          .style("text-anchor", "end");
+
+      svg2.append("text")
+            .attr("class", "yText")
+            .attr("transform", "rotate(-90)")
+            .attr("x", -margin.left * 0.65)
+            .attr("y", -margin.left * 0.45)
+            .attr("text-anchor", "end")
+            .text("Population (in millions)");
+
+      // Add bars with linked data to the chart
+      svg2.selectAll(".bar")
+        .data(population)
+      .enter().append("rect")
+        .attr("class", "bar")
+        .attr("x", function(d, i) { return x(years[i]); })
+        .attr("y", function(d) { return y(d); })
+        .attr("height", function(d) { return height * downscale - y(d); })
+        .attr("width", x.bandwidth())
+        .on("mouseover", barTip.show)
+        .on("mouseout", barTip.hide)
+        .style("fill", "teal");
+  }
+
+  function updateBarchart(data, chosenState) {
+
+      // Dynamically add the title
+      document.getElementById("barchartTitle").innerHTML = "Population of " + chosenState + " from 2010 to 2016";
+
+      var population = [];
+
+      var svg2 = d3.select(".barchart").select("svg").select("g");
+
+      // Send JSON values into separate arrays
+      for (var i = 0, len = data.length; i < len; i++) {
+          if (data[i].name === chosenState) {
+              population.push(Number(data[i].pop2010)/1000000);
+              population.push(Number(data[i].pop2011)/1000000);
+              population.push(Number(data[i].pop2012)/1000000);
+              population.push(Number(data[i].pop2013)/1000000);
+              population.push(Number(data[i].pop2014)/1000000);
+              population.push(Number(data[i].pop2015)/1000000);
+              population.push(Number(data[i].pop2016)/1000000);
+          }
+      }
+
+      // Add tooltip
+      var barTip = d3.tip()
+        .attr("class", "d3-barTip")
+        .offset([-10, 0])
+        .html(function (d) {
+          return (d)});
+
+      // start the tip
+      svg2.call(barTip);
+
+      // set the range and domain for y
+      var y = d3.scaleLinear()
+          .domain([0, d3.max(population)])
+          .range([height * downscale, 0]);
+
+      // create and draw y-axis on desired position and set label
+      var yAxis = d3.axisLeft(y);
+
+      d3.select(".yAxis")
           .transition()
           .duration(1200)
           .call(yAxis)
 
-      svg2.select(".xAxis")
-          .attr("transform", "translate(0," + height * downscale + ")")
-          .call(xAxis)
+      var bars = svg2.selectAll(".bar")
+          .data(population)
+          .on("mouseover", barTip.show)
+          .on("mouseout", barTip.hide);
 
-      svg2.selectAll(".bar")
-            .remove()
-            .exit()
-            .data(population)
-            .enter()
-            .append("rect")
-              .attr("class", "bar")
-              .attr("x", function(d, i) { return x(years[i]); })
-              .attr("width", x.bandwidth())
-              .transition().duration(500)
-              .attr("y", function(d) { return y(d); })
-              .attr("height", function(d) { return height * downscale - y(d); })
-              .style("fill", "teal");
-              // .on("mouseover", barTip.show)
-              // .on("mouseout", barTip.hide);
+      bars
+        .transition().duration(1000)
+        .attr("y", function(d) { return y(d); })
+        .attr("height", function(d) { return height * downscale - y(d); })
+        .style("fill", "teal");
   }
 };
 
