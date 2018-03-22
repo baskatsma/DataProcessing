@@ -248,8 +248,8 @@
           .call(yAxis)
 
       svg2.select(".xAxis")
-      		.attr("transform", "translate(0," + height * downscale + ")")
-      		.call(xAxis)
+          .attr("transform", "translate(0," + height * downscale + ")")
+          .call(xAxis)
 
       svg2.selectAll(".bar")
             .remove()
@@ -266,6 +266,19 @@
               .style("fill", "teal");
               // .on("mouseover", barTip.show)
               // .on("mouseout", barTip.hide);
-
   }
 };
+
+// function randomizeButton() {
+//
+//     var a = 6;
+//     console.log(a);
+//     updateBarchart(data, "New York");
+// }
+//
+// // Add an event listener for the dropdown menu
+// document.addEventListener("readystatechange", function() {
+//     if (document.readyState === "complete") {
+//         randomizeButton();
+//     }
+// });
