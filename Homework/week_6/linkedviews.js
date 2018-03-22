@@ -54,12 +54,12 @@ function makeMap(us, data) {
 
   // D3 Projection
   var projection = d3.geoAlbersUsa()
-    .translate([width / 2, height / 2]) // translate to center of screen
+    .translate([width / 2, height / 2])
     .scale([800]);
 
   // Define path generator
-  var path = d3.geoPath() // path generator that will convert GeoJSON to SVG paths
-    .projection(projection); // tell path generator to use albersUsa projection
+  var path = d3.geoPath()
+    .projection(projection);
 
   // Append measurements to the map
   var svg = d3.select(".map")
@@ -97,6 +97,8 @@ function makeMap(us, data) {
       }
   }
 
+  console.log(us.features);
+
   // Create default barchart
   var chosenState = "Alabama";
   makeBarchart(chosenState);
@@ -111,7 +113,7 @@ function makeMap(us, data) {
   svg.call(mapTip);
 
   // Bind the data to the SVG and create one path per GeoJSON feature
-  var newSvg = svg.selectAll("path")
+  svg.selectAll("path")
     .data(us.features)
     .enter()
     .append("path")
@@ -121,20 +123,14 @@ function makeMap(us, data) {
     .style("fill", function(d) { return ramp(d.properties.value2017) })
     .on("mouseover", mapTip.show)
     .on("mouseout", mapTip.hide)
-    .on("click", stateClicked);
+    .on("click", function(d) {
+        d3.select(".selected").classed("selected", false);
+        d3.select(this).classed("selected", true);
+        var chosenState = d.properties.name; updateBarchart(chosenState);
+    });
 
   // Draw the map legend
   makeLegend(minVal, maxVal);
-}
-
-function stateClicked(d, chosenState) {
-
-    console.log(this)
-    var selection = this;
-    d3.select(".selected").classed("selected", false);
-    d3.select(this).classed("selected", true);
-    var chosenState = d.properties.name; updateBarchart(chosenState);
-
 }
 
 function makeLegend(minVal, maxVal) {
@@ -330,6 +326,9 @@ function randomState() {
     randomizeButton.onclick = function() {
 
         var pickState = jsonData[Math.floor(Math.random() * jsonData.length)];
+
+        // Remove old highlight and update the barchart
+        d3.select(".selected").classed("selected", false);
         updateBarchart(pickState.name);
     }
 }
