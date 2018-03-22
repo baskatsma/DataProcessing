@@ -11,8 +11,20 @@ body {
     text-align: center;
 }
 
+.map {
+    margin-left: 30px;
+    float: left;
+}
+
+.barchart {
+    margin-top: 15px;
+    margin-left: 30px;
+    float: left;
+}
+
 .container {
-    margin-top: 30px;
+    margin-top: 15px;
+    margin-bottom: 80px;
 }
 
 h1 {
@@ -22,17 +34,17 @@ h1 {
 }
 
 h2 {
-    margin-right: 10px;
+    margin-right: 175px;
     font-family: Futura;
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
 }
 
 p {
     font-family: Futura;
     font-size: 11px;
+    text-align: center;
 }
-
 
 .d3-mapTip {
     position: absolute;
@@ -68,6 +80,10 @@ p {
     -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
     pointer-events: none;
+}
+
+.animating {
+    fill-opacity: .5;
 }
 
 path:hover {
