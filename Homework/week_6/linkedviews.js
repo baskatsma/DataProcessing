@@ -12,16 +12,14 @@
 
     // Load US map and population data
     d3.queue()
-       .defer(d3.json, "us.json")
-       .defer(d3.json, "dataUSA.json")
-       .await(mainCode);
+      .defer(d3.json, "us.json")
+      .defer(d3.json, "dataUSA.json")
+      .await(mainCode);
 
     // Then, add an event listener for the randomize button
     document.addEventListener("readystatechange", function() {
         randomState();
-
     });
-
  });
 
 // Initialize width, height and margins
@@ -42,8 +40,8 @@ var highColor = "teal"
 
 // Initialize map tooltip
 var mapTip = d3.tip()
-    .attr("class", "d3-mapTip")
-    .offset([-5, 0])
+  .attr("class", "d3-mapTip")
+  .offset([-5, 0])
 
 function mainCode(error, us, data) {
 
@@ -56,27 +54,27 @@ function makeMap(us, data) {
 
   // D3 Projection
   var projection = d3.geoAlbersUsa()
-      .translate([width / 2, height / 2]) // translate to center of screen
-      .scale([800]);
+    .translate([width / 2, height / 2]) // translate to center of screen
+    .scale([800]);
 
   // Define path generator
   var path = d3.geoPath() // path generator that will convert GeoJSON to SVG paths
-      .projection(projection); // tell path generator to use albersUsa projection
+    .projection(projection); // tell path generator to use albersUsa projection
 
   // Append measurements to the map
   var svg = d3.select(".map")
-      .append("svg")
-          .attr("width", width + margin.left + margin.right / 1.85)
-          .attr("height", height)
-      .append("g")
-          .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+    .append("svg")
+        .attr("width", width + margin.left + margin.right / 1.85)
+        .attr("height", height)
+    .append("g")
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
   // Clean the data and push into arrays
   dataArray = [];
   data.forEach(function(d) {
-    d.pop2017 = Number(d.pop2017);
-    dataArray.push(d.pop2017)
-    jsonData.push(d);
+      d.pop2017 = Number(d.pop2017);
+      dataArray.push(d.pop2017)
+      jsonData.push(d);
   });
 
   var minVal = d3.min(dataArray);
@@ -93,8 +91,8 @@ function makeMap(us, data) {
 
           // Copy the data value into the JSON if the states match
           if (dataState == jsonState) {
-            us.features[j].properties.value2017 = dataValue2017;
-            break;
+              us.features[j].properties.value2017 = dataValue2017;
+              break;
           }
       }
   }
@@ -112,10 +110,8 @@ function makeMap(us, data) {
   // Start the map tooltip
   svg.call(mapTip);
 
-  var colors = "red";
-
   // Bind the data to the SVG and create one path per GeoJSON feature
-  svg.selectAll("path")
+  var newSvg = svg.selectAll("path")
     .data(us.features)
     .enter()
     .append("path")
@@ -125,10 +121,20 @@ function makeMap(us, data) {
     .style("fill", function(d) { return ramp(d.properties.value2017) })
     .on("mouseover", mapTip.show)
     .on("mouseout", mapTip.hide)
-    .on("click", function(d) { var chosenState = d.properties.name; updateBarchart(chosenState) });
+    .on("click", stateClicked);
 
   // Draw the map legend
   makeLegend(minVal, maxVal);
+}
+
+function stateClicked(d, chosenState) {
+
+    console.log(this)
+    var selection = this;
+    d3.select(".selected").classed("selected", false);
+    d3.select(this).classed("selected", true);
+    var chosenState = d.properties.name; updateBarchart(chosenState);
+
 }
 
 function makeLegend(minVal, maxVal) {
@@ -182,15 +188,15 @@ function makeLegend(minVal, maxVal) {
 function makeBarchart(chosenState) {
 
     // Dynamically add the title
-    document.getElementById("barchartTitle").innerHTML = "Population of " + chosenState + " from 2010 to 2016";
+    addTitle(chosenState);
 
     // Append measurements to the barchart
     var svg2 = d3.select(".barchart")
-        .append("svg")
-            .attr("width", width * downscale / 10 + margin.left + margin.right * 0.75)
-            .attr("height", height * downscale + margin.top + margin.bottom)
-        .append("g")
-            .attr("transform", "translate(" + margin.left / 2 + "," + margin.top + ")");
+      .append("svg")
+          .attr("width", width * downscale / 10 + margin.left + margin.right)
+          .attr("height", height * downscale + margin.top + margin.bottom)
+      .append("g")
+          .attr("transform", "translate(" + margin.left * 0.35 + "," + margin.top + ")");
 
     // Convert JSON population strings to numbers
     population = [];
@@ -210,54 +216,52 @@ function makeBarchart(chosenState) {
 
     // Define X and Y, and its range
     var x = d3.scaleBand()
-        .range([0, width * downscale])
-        .domain(years)
-        .padding(0.25);
+      .range([0, width * downscale])
+      .domain(years)
+      .padding(0.25);
 
     var y = d3.scaleLinear()
-        .range([height * downscale, 0])
-        .domain([0, d3.max(population)]);
+      .range([height * downscale, 0])
+      .domain([0, d3.max(population)]);
 
     var xAxis = d3.axisBottom(x);
     var yAxis = d3.axisLeft(y);
 
     svg2.append("g")
-        .attr("class", "yAxis")
-        .call(yAxis
-            .tickPadding(5)
-            .tickSize(10, 0));
+      .attr("class", "yAxis")
+      .call(yAxis
+          .tickPadding(5)
+          .tickSize(10, 0));
 
     svg2.append("g")
-        .attr("class", "xAxis")
-        .attr("transform", "translate(0," + height * downscale + ")")
-        .call(xAxis);
+      .attr("class", "xAxis")
+      .attr("transform", "translate(0," + height * downscale + ")")
+      .call(xAxis);
 
     svg2.append("text")
-        .attr("class", "yText")
-        .attr("transform", "rotate(-90)")
-        .attr("x", -margin.left * 0.3)
-        .attr("y", -margin.left * 0.3)
-        .attr("text-anchor", "end")
-        .text("Population (in millions)");
+      .attr("class", "yText")
+      .attr("transform", "rotate(-90)")
+      .attr("y", -margin.left * 0.25)
+      .attr("text-anchor", "end")
+      .text("Population (in millions)");
 
     // Add bars with linked data to the chart
     svg2.selectAll(".bar")
-        .data(population)
-        .enter().append("rect")
-            .attr("class", "bar")
-            .attr("x", function(d, i) { return x(years[i]); })
-            .attr("y", function(d) { return y(d); })
-            .attr("height", function(d) { return height * downscale - y(d); })
-            .attr("width", x.bandwidth())
-            .on("mouseover", barTip.show)
-            .on("mouseout", barTip.hide)
-            .style("fill", "teal");
+      .data(population)
+      .enter().append("rect")
+          .attr("class", "bar")
+          .attr("x", function(d, i) { return x(years[i]); })
+          .attr("y", function(d) { return y(d); })
+          .attr("height", function(d) { return height * downscale - y(d); })
+          .attr("width", x.bandwidth())
+          .on("mouseover", barTip.show)
+          .on("mouseout", barTip.hide)
+          .style("fill", "teal");
 }
 
 function updateBarchart(chosenState) {
 
-    // Dynamically add the title
-    document.getElementById("barchartTitle").innerHTML = "Population of " + chosenState + " from 2010 to 2016";
+    addTitle(chosenState);
 
     var svg2 = d3.select(".barchart").select("svg").select("g");
 
@@ -279,27 +283,27 @@ function updateBarchart(chosenState) {
 
     // set the range and domain for y
     var y = d3.scaleLinear()
-        .domain([0, d3.max(population)])
-        .range([height * downscale, 0]);
+      .domain([0, d3.max(population)])
+      .range([height * downscale, 0]);
 
     // create and draw y-axis on desired position and set label
     var yAxis = d3.axisLeft(y);
 
     d3.select(".yAxis")
-        .transition()
-        .duration(1200)
-        .call(yAxis)
+      .transition()
+      .duration(1200)
+      .call(yAxis)
 
     var bars = svg2.selectAll(".bar")
-        .data(population)
-        .on("mouseover", barTip.show)
-        .on("mouseout", barTip.hide);
+      .data(population)
+      .on("mouseover", barTip.show)
+      .on("mouseout", barTip.hide);
 
     bars
-        .transition().duration(1000)
-        .attr("y", function(d) { return y(d); })
-        .attr("height", function(d) { return height * downscale - y(d); })
-        .style("fill", "teal");
+      .transition().duration(1000)
+      .attr("y", function(d) { return y(d); })
+      .attr("height", function(d) { return height * downscale - y(d); })
+      .style("fill", "teal");
 }
 
 function getPopulationValues(chosenState) {
@@ -328,4 +332,10 @@ function randomState() {
         var pickState = jsonData[Math.floor(Math.random() * jsonData.length)];
         updateBarchart(pickState.name);
     }
+}
+
+function addTitle(chosenState) {
+
+    // Dynamically add the title
+    document.getElementById("barchartTitle").innerHTML = chosenState.bold() + " population, " + "2010 to 2016";
 }
