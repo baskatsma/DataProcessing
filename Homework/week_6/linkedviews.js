@@ -11,11 +11,11 @@
  window.onload = function() {
 
   // Initialize width, height and margins
-  var margin = {top: 10, bottom: 20, left: 120, right: 200},
-      height = 550 - margin.top - margin.bottom,
-      width = 1200 - margin.left - margin.right;
+  var margin = {top: 10, bottom: 20, left: 175, right: 200},
+      height = 450 - margin.top - margin.bottom,
+      width = 900 - margin.left - margin.right;
 
-  var downscale = 0.6;
+  var downscale = 0.5;
 
   // Set-up colors for map
   var lowColor = "#f9f9f9"
@@ -24,7 +24,7 @@
   // D3 Projection
   var projection = d3.geoAlbersUsa()
       .translate([width / 2, height / 2]) // translate to center of screen
-      .scale([1000]); // scale things down so see entire US
+      .scale([800]);
 
   // Define path generator
   var path = d3.geoPath() // path generator that will convert GeoJSON to SVG paths
@@ -44,7 +44,7 @@
       .offset([-5, 0])
       .html(function(d) {
           var formatThousand = d3.format(",");
-          return "<strong>State:</strong> " + d.properties.name + "</span>" + "<br>" + "<strong>Population in 2017:</strong> " + formatThousand(d.properties.value2017) + "</span>";
+          return "<strong>State:</strong> " + d.properties.name + "<br>" + "<strong>Population in 2017:</strong> " + formatThousand(d.properties.value2017);
       });
 
   // Start the map tip
@@ -157,9 +157,9 @@
       document.getElementById("barchartTitle").innerHTML = "Population of " + chosenState + " from 2010 to 2016";
 
       // Initialize width, height and margins
-      var margin = {top: 10, bottom: 20, left: 120, right: 200},
-          height = 550 - margin.top - margin.bottom,
-          width = 1200 - margin.left - margin.right;
+      var margin = {top: 10, bottom: 20, left: 175, right: 200},
+          height = 450 - margin.top - margin.bottom,
+          width = 1000 - margin.left - margin.right;
 
       // Set-up years for X-axis of the barchart
       var years = ["2010", "2011", "2012", "2013", "2014", "2015", "2016"];
@@ -192,7 +192,7 @@
         .offset([-10, 0])
         .html(function (d) {
             var formatDecimals = d3.format(".2f");
-            return formatDecimals(d) + " million";
+            return formatDecimals(d).bold() + " million";
         });
 
       // start the tip
@@ -225,8 +225,8 @@
       svg2.append("text")
           .attr("class", "yText")
           .attr("transform", "rotate(-90)")
-          .attr("x", -margin.left * 0.65)
-          .attr("y", -margin.left * 0.45)
+          .attr("x", -margin.left * 0.2)
+          .attr("y", -margin.left * 0.3)
           .attr("text-anchor", "end")
           .text("Population (in millions)");
 
@@ -272,7 +272,7 @@
         .offset([-10, 0])
         .html(function (d) {
             var formatDecimals = d3.format(".2f");
-            return formatDecimals(d) + " million";
+            return formatDecimals(d).bold() + " million";
         });
 
       // start the tip
