@@ -26,7 +26,8 @@ function makeBarchart(chosenState) {
 
     // Add barchart tooltip
     var barTip = d3.tip()
-      .attr("class", "d3-barTip")
+      .attr("class", "d3-tip")
+      .attr("id", "barTooltip")
       .offset([-10, 0])
       .html(function (d) {
           var formatDecimals = d3.format(".2f");
@@ -93,7 +94,8 @@ function updateBarchart(chosenState) {
 
     // Add tooltip
     var barTip = d3.tip()
-      .attr("class", "d3-barTip")
+      .attr("class", "d3-tip")
+      .attr("id", "barTooltip")
       .offset([-10, 0])
       .html(function (d) {
           var formatDecimals = d3.format(".2f");

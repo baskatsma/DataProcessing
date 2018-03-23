@@ -9,10 +9,29 @@
 
 body {
     text-align: center;
+    font-family: Futura;
+}
+
+h1 {
+    margin-top: 35px;
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 16px;
+}
+
+p {
+    font-size: 11px;
 }
 
 .pos-f-t {
     text-align: left !important;
+    font-family: Helvetica !important;
+}
+
+#storytellingTitle {
+    font-family: Futura;
 }
 
 .col-4 {
@@ -20,37 +39,17 @@ body {
     text-align: center !important;
 }
 
-h1 {
-    margin-top: 35px;
-    font-family: Futura;
-    font-size: 30px;
-}
-
-h2 {
-    font-family: Futura;
-    font-size: 16px;
-    text-align: center;
-}
-
-p {
-    font-family: Futura;
-    font-size: 11px;
-    text-align: center;
-}
-
 .container {
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
-.d3-mapTip {
+.d3-tip {
     position: absolute;
-    width: 260px;
     height: auto;
     padding: 10px;
     font: 14px sans-serif;
     font-family: Futura;
-    text-align: left;
     background-color: white;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -61,22 +60,14 @@ p {
     pointer-events: none;
 }
 
-.d3-barTip {
-    position: absolute;
+#mapTooltip {
+    width: 260px;
+    text-align: left;
+}
+
+#barTooltip {
     width: 120px;
-    height: auto;
-    padding: 10px;
-    font: 14px sans-serif;
-    font-family: Futura;
     text-align: center;
-    background-color: white;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
-    -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
-    -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
-    pointer-events: none;
 }
 
 /*  Add custom navigation bar icon and color  */
@@ -88,16 +79,18 @@ p {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='teal' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
-.selected {
-    fill: #06aa61 !important;
-}
-
+/*  Define interactive map hover and selection properties  */
 path:hover {
     fill-opacity: .4;
 }
 
+.selected {
+    fill: #06aa61 !important;
+}
+
+/*  Adjust barchart Y-axis label  */
 .yText {
     position: relative;
-    font: 14px Futura;
+    font-size: 14px;
     text-align: center;
 }

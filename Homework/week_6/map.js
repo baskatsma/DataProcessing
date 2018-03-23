@@ -59,7 +59,8 @@ function makeMap(us, data) {
 
   // Initialize map tooltip
   var mapTip = d3.tip()
-    .attr("class", "d3-mapTip")
+    .attr("class", "d3-tip")
+    .attr("id", "mapTooltip")
     .offset([-5, 0])
     .html(function(d) {
       var formatThousand = d3.format(",");

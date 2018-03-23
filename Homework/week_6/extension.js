@@ -15,7 +15,7 @@
      "De geografische kaart laat in een oogopslag het inwonersaantal van elke staat zien middels kleurcodering." + "<br>" +
      "Door over de staten te <i>hoveren</i>, wordt de naam van de staat en het precieze aantal inwoners in 2017 weergegeven." + "<br><br>" +
      "Maar, wat was dit aantal in de afgelopen jaren?" + "<br>" +
-     "Dat wordt in de barchart gerepresenteerd." + " Hier wordt de populatiegeschiedenis van 2010 tot 2016 interactief uitgebeeld." + "<br><br>" +
+     "Dat wordt in de barchart gepresenteerd." + " Hier wordt de populatiegeschiedenis van 2010 tot 2016 interactief uitgebeeld." + "<br><br>" +
      "Tevens is het mogelijk om via de" + "<strong>" + " 'Randomize state' " + "</strong>" + "button een willekeurige staat te kiezen." + "<br><br>" + "<i>Data source</i> · <a href=\"https://www.census.gov/data/datasets/2017/demo/popest/nation-total.html#ds\">census.gov</a>";
  }
 
