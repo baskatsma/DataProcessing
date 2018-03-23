@@ -11,12 +11,12 @@
 
 function makeMap(us, data) {
 
-    // Initialize D3 Projection
+    // Creates a projection
     var projection = d3.geoAlbersUsa()
         .translate([width / 2, height / 2])
         .scale([800]);
 
-    // Define path generator
+    // Initializes the path generator
     var path = d3.geoPath()
         .projection(projection);
 
@@ -90,12 +90,12 @@ function makeMap(us, data) {
 
 function makeLegend(minVal, maxVal) {
 
-    var w = 110, h = 200;
+    var legendWidth = 110, legendHeight = 200;
 
     var svgLegend = d3.select("svg")
         .append("svg")
-        .attr("width", w)
-        .attr("height", h)
+        .attr("width", legendWidth)
+        .attr("height", legendHeight)
         .attr("class", "legend");
 
     var legend = svgLegend.append("defs")
@@ -119,13 +119,13 @@ function makeLegend(minVal, maxVal) {
         .attr("stop-opacity", 1);
 
     svgLegend.append("rect")
-        .attr("width", w - 80)
-        .attr("height", h)
+        .attr("width", legendWidth - 80)
+        .attr("height", legendHeight)
         .style("fill", "url(#gradient)")
         .attr("transform", "translate(10,10)");
 
     var y = d3.scaleLinear()
-        .range([h, 0])
+        .range([legendHeight, 0])
         .domain([minVal, maxVal]);
 
     var yAxis = d3.axisRight(y);

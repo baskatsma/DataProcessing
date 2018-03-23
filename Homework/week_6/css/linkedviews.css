@@ -25,6 +25,7 @@ p {
     font-size: 11px;
 }
 
+/*  This div contains the storytelling text  */
 .pos-f-t {
     text-align: left !important;
     font-family: Helvetica !important;
@@ -34,14 +35,8 @@ p {
     font-family: Futura;
 }
 
-.col-4 {
-    margin-bottom: 30px;
-    text-align: center !important;
-}
-
-.container {
-    margin-top: 10px;
-    margin-bottom: 10px;
+#row2 {
+    margin-top: 40px;
 }
 
 .d3-tip {
@@ -69,6 +64,12 @@ p {
     text-align: center;
 }
 
+.yText {
+    position: relative;
+    font-size: 14px;
+    text-align: center;
+}
+
 /*  Add custom navigation bar icon and color  */
 .custom-toggler.navbar-toggler {
     border-color: teal;
@@ -85,10 +86,4 @@ path:hover {
 
 .selected {
     fill: #06aa61 !important;
-}
-
-.yText {
-    position: relative;
-    font-size: 14px;
-    text-align: center;
 }

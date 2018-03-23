@@ -51,7 +51,7 @@ var highColor = "teal";
 var mapTip = d3.tip()
     .attr("class", "d3-tip")
     .attr("id", "mapTooltip")
-    .offset([-5, 0]);
+    .offset([-10, 0]);
 
 // Initialize barchart tooltip
 var barTip = d3.tip()

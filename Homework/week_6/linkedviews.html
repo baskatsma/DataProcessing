@@ -2,6 +2,8 @@
 *
 *  linkedviews.html
 *
+*  Shows the population per state in a map, and the history in a barchart.
+*
 *  Name: Bas Katsma
 *  Student 10787690
 *  Homework - Week 6
@@ -51,22 +53,17 @@
           </button>
         </nav>
       </div>
-
-      <!-- Bootstrap grid to contain title and randomize button -->
+      
+      <!-- Bootstrap container to contain visualizations, title and button -->
       <div class="container">
-        <div class="row">
+        <div class="row" id="row1">
           <div class="col-1"></div>
           <div class="col-10">
             <h1>United States of America</h1>
             <button type="button" class="btn btn-outline-info" id="randomizeButton" onclick="randomState()">Randomize state</button>
           </div>
           <div class="col-1"></div>
-        </div>
-      </div>
-
-      <!-- Bootstrap grid to contain visualizations -->
-      <div class="container">
-        <div class="row">
+        <div class="row" id="row2">
           <div class="col-xs-6">
             <div class="map" id="mapDiv"></div>
           </div>

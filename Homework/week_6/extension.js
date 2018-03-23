@@ -1,6 +1,8 @@
 /*
  *  extension.js
  *
+ *  Additional functions to aid and/or modify the map/barchart/.html.
+ *
  *  Name: Bas Katsma
  *  Student 10787690
  *  Homework - Week 6
@@ -21,14 +23,14 @@
 
  function addTitle(chosenState) {
 
-     // Dynamically add the title
      document.getElementById("barchartTitle").innerHTML = chosenState.bold() + " population, " + "2010 to 2016";
  }
 
 function getPopulationValues(chosenState) {
 
-    // Send JSON values into separate arrays
     population = [];
+
+    // Loop through the JSON data and push the correct state population values
     for (var i = 0, len = jsonData.length; i < len; i++) {
         if (jsonData[i].name === chosenState) {
             population.push(Number(jsonData[i].pop2010)/1000000);
@@ -42,16 +44,16 @@ function getPopulationValues(chosenState) {
     }
 }
 
-// Get a random US state and update the barchart
 function randomState() {
 
-    // Select the button and create an .onclick function to update chosenState
+    // Select the button and create an onclick function
     var randomizeButton = document.getElementById("randomizeButton");
     randomizeButton.onclick = function() {
 
+        // Randomly pick state from the JSON data array
         var pickState = jsonData[Math.floor(Math.random() * jsonData.length)];
 
-        // Remove old highlight and update the barchart
+        // Remove old highlight and update the barchart with new chosenState
         d3.select(".selected").classed("selected", false);
         updateBarchart(pickState.name);
     }
