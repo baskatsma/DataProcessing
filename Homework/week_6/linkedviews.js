@@ -35,7 +35,7 @@ var dataArray = [];
 var population = [];
 
 // Set-up colors for map
-var lowColor = "#f9f9f9"
+var lowColor = "#f5f7f4"
 var highColor = "teal"
 
 // Initialize map tooltip
@@ -335,8 +335,12 @@ function addStorytelling() {
 
     var textBox = document.getElementById("storytellingText");
     textBox.innerHTML = "<br>" +
-    "Deze website laat de" + "<strong>" + " huidige populatie " + "</strong>" + "en de" + "<strong>" + " populatiegeschiedenis " + "</strong>" + "(2010 tot 2016) van alle 50 Amerikaanse staten zien middels een" + "<strong>" + " interactieve map en barchart" + "</strong>" + "." + "<br>" +
-    "De staten zijn op basis van hun inwonersaantal kleurgecodeerd." + "<br>" + "Indien er een staat wordt geselecteerd, laat de barchart de populatiegeschiedenis zien van de desbetreffende staat." + "<br>" + "Tevens is het mogelijk om via de" + "<strong>" + " 'Randomize state' " + "</strong>" + "button een willekeurige staat te kiezen." + "<br><br>" + "<i>Data source</i> · <a href=\"https://www.census.gov/data/datasets/2017/demo/popest/nation-total.html#ds\">census.gov</a>";
+    "Er worden hier twee verschillende visualisaties getoond: een" + "<strong>" + " interactieve kaart " + "</strong>" + "van de Verenigde Staten van Amerika en een" + "<strong>" + " interactieve barchart " + "</strong>" + "van een specifieke staat." + "<br>" +
+    "De geografische kaart laat in een oogopslag het inwonersaantal van elke staat zien middels kleurcodering." + "<br>" +
+    "Door over de staten te <i>hoveren</i>, wordt de naam van de staat en het precieze aantal inwoners in 2017 weergegeven." + "<br><br>" +
+    "Nu vraag je je misschien af: wat was dit aantal in de afgelopen jaren?" + "<br>" +
+    "Dat wordt in de barchart gerepresenteerd." + " Hier wordt de populatiegeschiedenis van 2010 tot 2016 interactief uitgebeeld." + "<br><br>" +
+    "Tevens is het mogelijk om via de" + "<strong>" + " 'Randomize state' " + "</strong>" + "button een willekeurige staat te kiezen." + "<br><br>" + "<i>Data source</i> · <a href=\"https://www.census.gov/data/datasets/2017/demo/popest/nation-total.html#ds\">census.gov</a>";
 }
 
 function addTitle(chosenState) {
