@@ -7,6 +7,8 @@
  *  Student 10787690
  *  Homework - Week 6
  *
+ *  Based on: https://bl.ocks.org/wboykinm/dbbe50d1023f90d4e241712395c27fb3
+ *
  */
 
 function makeMap(us, data) {
