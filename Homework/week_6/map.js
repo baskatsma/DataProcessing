@@ -31,7 +31,8 @@ function makeMap(us, data) {
     data.forEach(function(d) {
         d.pop2017 = Number(d.pop2017);
         dataValues.push(d.pop2017)
-        jsonData.push(d); });
+        jsonData.push(d);
+    });
 
     var minVal = d3.min(dataValues);
     var maxVal = d3.max(dataValues);
@@ -63,7 +64,8 @@ function makeMap(us, data) {
         .offset([-5, 0])
         .html(function(d) {
             var formatThousand = d3.format(",");
-            return "<strong>State:</strong> " + d.properties.name + "<br>" + "<strong>Population in 2017:</strong> " + formatThousand(d.properties.value2017); });
+            return "<strong>State:</strong> " + d.properties.name + "<br>" + "<strong>Population in 2017:</strong> " + formatThousand(d.properties.value2017);
+        });
 
     // Start the map tooltip
     svg.call(mapTip);
@@ -82,7 +84,8 @@ function makeMap(us, data) {
         .on("click", function(d) {
             d3.select(".selected").classed("selected", false);
             d3.select(this).classed("selected", true);
-            var chosenState = d.properties.name; updateBarchart(chosenState); });
+            var chosenState = d.properties.name; updateBarchart(chosenState);
+        });
 
     // Draw the map legend
     makeLegend(minVal, maxVal);

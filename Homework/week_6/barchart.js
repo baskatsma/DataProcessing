@@ -31,7 +31,8 @@ function makeBarchart(chosenState) {
         .offset([-10, 0])
         .html(function(d) {
             var formatDecimals = d3.format(".2f");
-            return formatDecimals(d).bold() + " million"; });
+            return formatDecimals(d).bold() + " million";
+        });
 
     // Start barchart tooltip
     svg2.call(barTip);
@@ -98,7 +99,8 @@ function updateBarchart(chosenState) {
         .offset([-10, 0])
         .html(function(d) {
             var formatDecimals = d3.format(".2f");
-            return formatDecimals(d).bold() + " million"; });
+            return formatDecimals(d).bold() + " million";
+        });
 
     // Start the tip
     svg2.call(barTip);
