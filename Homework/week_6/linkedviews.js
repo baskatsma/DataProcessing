@@ -97,11 +97,8 @@ function makeMap(us, data) {
       }
   }
 
-  console.log(us.features);
-
   // Create default barchart
-  var chosenState = "Alabama";
-  makeBarchart(chosenState);
+  makeBarchart("Alabama");
 
   // Update tooltip with data
   mapTip.html(function(d) {
