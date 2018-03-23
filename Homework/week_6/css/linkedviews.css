@@ -48,15 +48,14 @@ p {
     position: absolute;
     height: auto;
     padding: 10px;
-    font: 14px sans-serif;
-    font-family: Futura;
+    font: 14px Futura;
     background-color: white;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
-    -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
-    -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.4);
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.4);
     pointer-events: none;
 }
 
@@ -88,7 +87,6 @@ path:hover {
     fill: #06aa61 !important;
 }
 
-/*  Adjust barchart Y-axis label  */
 .yText {
     position: relative;
     font-size: 14px;
