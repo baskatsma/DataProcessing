@@ -28,6 +28,7 @@
 function getPopulationValues(chosenState) {
 
     // Send JSON values into separate arrays
+    population = [];
     for (var i = 0, len = jsonData.length; i < len; i++) {
         if (jsonData[i].name === chosenState) {
             population.push(Number(jsonData[i].pop2010)/1000000);

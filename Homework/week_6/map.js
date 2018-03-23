@@ -1,6 +1,8 @@
 /*
  *  map.js
  *
+ *  Creates interactive map and legend, and is linked with the barchart.
+ *
  *  Name: Bas Katsma
  *  Student 10787690
  *  Homework - Week 6
@@ -26,27 +28,25 @@ function makeMap(us, data) {
         .append("g")
             .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-    // Clean the data and push into arrays
-    dataValues = [];
+    // Push necessary data into arrays
     data.forEach(function(d) {
-        d.pop2017 = Number(d.pop2017);
-        dataValues.push(d.pop2017)
+        dataValues.push(Number(d.pop2017))
         jsonData.push(d);
     });
 
+    // Get min/max of data to color code map later
     var minVal = d3.min(dataValues);
     var maxVal = d3.max(dataValues);
     var ramp = d3.scaleLinear().domain([minVal,maxVal]).range([lowColor,highColor]);
 
+    // For each state, add population value to mapJSON file
     for (var i = 0, lenI = data.length; i < lenI; i++) {
         var dataState = data[i].name;
         var dataValue2017 = data[i].pop2017;
 
-        // Find the corresponding state inside the GeoJSON
         for (var j = 0, lenJ = us.features.length; j < lenJ; j++) {
             var jsonState = us.features[j].properties.name;
 
-            // Copy the data value into the JSON if the states match
             if (dataState == jsonState) {
                 us.features[j].properties.value2017 = dataValue2017;
                 break;
@@ -57,17 +57,12 @@ function makeMap(us, data) {
     // Create default barchart
     makeBarchart("Alabama");
 
-    // Initialize map tooltip
-    var mapTip = d3.tip()
-        .attr("class", "d3-tip")
-        .attr("id", "mapTooltip")
-        .offset([-5, 0])
-        .html(function(d) {
-            var formatThousand = d3.format(",");
-            return "<strong>State:</strong> " + d.properties.name + "<br>" + "<strong>Population in 2017:</strong> " + formatThousand(d.properties.value2017);
-        });
+    // Update map tooltip and call it
+    mapTip.html(function(d) {
+        var formatThousand = d3.format(",");
+        return "<strong>State:</strong> " + d.properties.name + "<br>" + "<strong>Population in 2017:</strong> " + formatThousand(d.properties.value2017);
+    });
 
-    // Start the map tooltip
     svg.call(mapTip);
 
     // Bind the data to the SVG and create one path per GeoJSON feature
@@ -81,6 +76,8 @@ function makeMap(us, data) {
         .style("fill", function(d) { return ramp(d.properties.value2017) })
         .on("mouseover", mapTip.show)
         .on("mouseout", mapTip.hide)
+
+        // Update barchart with clicked state data and highlight the state
         .on("click", function(d) {
             d3.select(".selected").classed("selected", false);
             d3.select(this).classed("selected", true);
@@ -93,16 +90,15 @@ function makeMap(us, data) {
 
 function makeLegend(minVal, maxVal) {
 
-    // Define legend dimensions
     var w = 110, h = 200;
 
-    var key = d3.select("svg")
+    var svgLegend = d3.select("svg")
         .append("svg")
         .attr("width", w)
         .attr("height", h)
         .attr("class", "legend");
 
-    var legend = key.append("defs")
+    var legend = svgLegend.append("defs")
         .append("svg:linearGradient")
         .attr("id", "gradient")
         .attr("x1", "100%")
@@ -111,6 +107,7 @@ function makeLegend(minVal, maxVal) {
         .attr("y2", "100%")
         .attr("spreadMethod", "pad");
 
+    // Add gradient
     legend.append("stop")
         .attr("offset", "0%")
         .attr("stop-color", highColor)
@@ -121,7 +118,7 @@ function makeLegend(minVal, maxVal) {
         .attr("stop-color", lowColor)
         .attr("stop-opacity", 1);
 
-    key.append("rect")
+    svgLegend.append("rect")
         .attr("width", w - 80)
         .attr("height", h)
         .style("fill", "url(#gradient)")
@@ -133,7 +130,7 @@ function makeLegend(minVal, maxVal) {
 
     var yAxis = d3.axisRight(y);
 
-    key.append("g")
+    svgLegend.append("g")
         .attr("class", "y axis")
         .attr("transform", "translate(41,10)")
         .call(yAxis)

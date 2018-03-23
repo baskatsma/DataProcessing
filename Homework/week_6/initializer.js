@@ -1,6 +1,8 @@
 /*
  *  initializer.js
  *
+ *  Loads JSON files, creates global variables to use/store data, and calls makeMap
+ *
  *  Name: Bas Katsma
  *  Student 10787690
  *  Homework - Week 6
@@ -22,6 +24,13 @@
     });
  });
 
+ function mainCode(error, us, data) {
+
+     // Initialize the map with the successfully loaded data
+     if (error) throw error;
+     makeMap(us, data);
+ }
+
 // Define width, height and margins
 var margin = {top: 10, bottom: 20, left: 175, right: 200},
     height = 450 - margin.top - margin.bottom,
@@ -38,9 +47,14 @@ var population = [];
 var lowColor = "#f5f7f4";
 var highColor = "teal";
 
-function mainCode(error, us, data) {
+// Initialize map tooltip
+var mapTip = d3.tip()
+    .attr("class", "d3-tip")
+    .attr("id", "mapTooltip")
+    .offset([-5, 0]);
 
-    // Initialize the map with the successfully loaded data
-    if (error) throw error;
-    makeMap(us, data);
-}
+// Initialize barchart tooltip
+var barTip = d3.tip()
+    .attr("class", "d3-tip")
+    .attr("id", "barTooltip")
+    .offset([-10, 0]);

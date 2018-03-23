@@ -1,6 +1,8 @@
 /*
  *  barchart.js
  *
+ *  Creates barchart and updates it based on the chosen state.
+ *
  *  Name: Bas Katsma
  *  Student 10787690
  *  Homework - Week 6
@@ -9,35 +11,27 @@
 
 function makeBarchart(chosenState) {
 
-    // Dynamically add the title
-    addTitle(chosenState);
-
-    // Append measurements to the barchart
+    // Append dimensions to the barchart
     var svg2 = d3.select(".barchart")
         .append("svg")
-          .attr("width", width * downscale / 10 + margin.left + margin.right)
-          .attr("height", height * downscale + margin.top + margin.bottom)
+            .attr("width", width * downscale / 10 + margin.left + margin.right)
+            .attr("height", height * downscale + margin.top + margin.bottom)
         .append("g")
-          .attr("transform", "translate(" + margin.left * 0.35 + "," + margin.top + ")");
+            .attr("transform", "translate(" + margin.left * 0.35 + "," + margin.top + ")");
 
-    // Convert JSON population strings to numbers
-    population = [];
+    // Update title and get new population values
+    addTitle(chosenState);
     getPopulationValues(chosenState);
 
-    // Add barchart tooltip
-    var barTip = d3.tip()
-        .attr("class", "d3-tip")
-        .attr("id", "barTooltip")
-        .offset([-10, 0])
-        .html(function(d) {
-            var formatDecimals = d3.format(".2f");
-            return formatDecimals(d).bold() + " million";
-        });
+    // Update barchart tooltip and call it
+    barTip.html(function(d) {
+        var formatDecimals = d3.format(".2f");
+        return formatDecimals(d).bold() + " million";
+    });
 
-    // Start barchart tooltip
     svg2.call(barTip);
 
-    // Define X and Y, and its range
+    // Define X and Y, and its domain and range
     var x = d3.scaleBand()
         .range([0, width * downscale])
         .domain(years)
@@ -50,6 +44,7 @@ function makeBarchart(chosenState) {
     var xAxis = d3.axisBottom(x);
     var yAxis = d3.axisLeft(y);
 
+    // Append both axes and set Y-label text
     svg2.append("g")
         .attr("class", "yAxis")
         .call(yAxis
@@ -68,7 +63,7 @@ function makeBarchart(chosenState) {
         .attr("text-anchor", "end")
         .text("Population (in millions)");
 
-    // Add bars with linked data to the chart
+    // Use population data to add bars to the chart
     svg2.selectAll(".bar")
         .data(population)
         .enter().append("rect")
@@ -84,45 +79,41 @@ function makeBarchart(chosenState) {
 
 function updateBarchart(chosenState) {
 
-    addTitle(chosenState);
-
+    // Select the barchart
     var svg2 = d3.select(".barchart").select("svg").select("g");
 
-    // Convert JSON population strings to numbers
-    population = [];
+    // Update title and population values
+    addTitle(chosenState);
     getPopulationValues(chosenState);
 
-    // Add barchart tooltip
-    var barTip = d3.tip()
-        .attr("class", "d3-tip")
-        .attr("id", "barTooltip")
-        .offset([-10, 0])
-        .html(function(d) {
-            var formatDecimals = d3.format(".2f");
-            return formatDecimals(d).bold() + " million";
-        });
+    // Update barchart tooltip and call it
+    barTip.html(function(d) {
+        var formatDecimals = d3.format(".2f");
+        return formatDecimals(d).bold() + " million";
+    });
 
-    // Start the tip
     svg2.call(barTip);
 
-    // Set the range and domain for y
+    // Update Y with new population data and re-call Y-axis
     var y = d3.scaleLinear()
         .domain([0, d3.max(population)])
         .range([height * downscale, 0]);
 
-    // Create and draw y-axis on desired position and set label
     var yAxis = d3.axisLeft(y);
 
+    // Append and animate the Y-axis
     d3.select(".yAxis")
         .transition()
         .duration(1200)
         .call(yAxis)
 
+    // Update the bars with the new population values
     var bars = svg2.selectAll(".bar")
         .data(population)
         .on("mouseover", barTip.show)
         .on("mouseout", barTip.hide);
 
+    // Append new values and animate the bars
     bars
         .transition().duration(1000)
         .attr("y", function(d) { return y(d); })
