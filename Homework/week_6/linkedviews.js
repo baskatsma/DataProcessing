@@ -330,6 +330,15 @@ function randomState() {
     }
 }
 
+
+function addStorytelling() {
+
+    var textBox = document.getElementById("storytellingText");
+    textBox.innerHTML = "<br>" +
+    "Deze website laat de" + "<strong>" + " huidige populatie " + "</strong>" + "en de" + "<strong>" + " populatiegeschiedenis " + "</strong>" + "(2010 tot 2016) van alle 50 Amerikaanse staten zien middels een" + "<strong>" + " interactieve map en barchart" + "</strong>" + "." + "<br>" +
+    "De staten zijn op basis van hun inwonersaantal kleurgecodeerd." + "<br>" + "Indien er een staat wordt geselecteerd, laat de barchart de populatiegeschiedenis zien van de desbetreffende staat." + "<br>" + "Tevens is het mogelijk om via de" + "<strong>" + " 'Randomize state' " + "</strong>" + "button een willekeurige staat te kiezen." + "<br><br>" + "<i>Data source</i> · <a href=\"https://www.census.gov/data/datasets/2017/demo/popest/nation-total.html#ds\">census.gov</a>";
+}
+
 function addTitle(chosenState) {
 
     // Dynamically add the title

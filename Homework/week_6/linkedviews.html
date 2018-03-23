@@ -34,29 +34,19 @@
 
   <body>
 
-    <div class="pos-f-t">
-      <div class="collapse" id="navbarToggleExternalContent">
-        <div class="bg-light p-4">
-          <h4 class="text-black">Storytelling</h4>
-          <span class="text-secondary">Toggleable via the navbar brand.</span>
-        </div>
-      </div>
-      <nav class="navbar navbar-dark bg-light">
-        <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      </nav>
-    </div>
-<!--
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="https://baskatsma.github.io/DataProcessing/Homework/week_6/linkedviews.html">Week 6 · Linked Views</a>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-item nav-link" href="https://www.census.gov/data/datasets/2017/demo/popest/nation-total.html#ds">Data source</a>
+      <div class="pos-f-t">
+        <div class="collapse" id="navbarToggleExternalContent">
+          <div class="bg-light p-4">
+            <h3 class="text-black">Het verhaal</h3>
+            <span class="text-secondary" id="storytellingText"></span>
           </div>
-          <button class="btn btn-outline-secondary" type="button">Main button</button>
         </div>
-      </nav> -->
+        <nav class="navbar bg-light">
+          <button class="navbar-toggler custom-toggler" type="button" onclick="addStorytelling()" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </nav>
+      </div>
 
       <h1>United States of America</h1>
 
@@ -74,15 +64,6 @@
             <div class="barchart" id="barchartDiv"></div>
           </div>
         </div>
-        <!-- <div class="row">
-          <div class="col-3">
-          </div>
-          <div class="col-6">
-            Variable width content Variable width contentVariable width contentVariable width contentVariable width contentVariable width contentVariable width contentVariable width contentVariable width content
-          </div>
-          <div class="col-3">
-          </div>
-        </div> -->
       </div>
 
   </body>
