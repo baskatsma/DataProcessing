@@ -15,25 +15,29 @@
       <meta charset="utf-8">
       <title>Week 6 - Linked Views by Bas Katsma (10787690)</title>
 
-      <!--
-      *
-      * Include Bootstrap 4
-      *
-      -->
+      <!-- Include Bootstrap 4.0 -->
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-      <link rel="stylesheet" type="text/css" href="css/linkedviews.css">
+
+      <!-- Include d3 scripts and extensions -->
       <script src="https://d3js.org/d3.v4.min.js" charset="utf-8"></script>
       <script src="https://d3js.org/queue.v1.min.js" charset="utf-8"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
-      <script src="linkedviews.js" type="text/javascript"></script>
+
+      <!-- Include own CSS and scripts -->
+      <link rel="stylesheet" type="text/css" href="css/linkedviews.css">
+      <script src="initializer.js" type="text/javascript"></script>
+      <script src="barchart.js" type="text/javascript"></script>
+      <script src="extension.js" type="text/javascript"></script>
+      <script src="map.js" type="text/javascript"></script>
 
   </head>
 
   <body>
 
+      <!-- Navigation bar with hamburger menu -->
       <div class="pos-f-t">
         <div class="collapse" id="navbarToggleExternalContent">
           <div class="bg-light p-4">
@@ -48,12 +52,13 @@
         </nav>
       </div>
 
+      <!-- Title and randomize button -->
       <h1>United States of America</h1>
-
       <div class="container">
         <button type="button" class="btn btn-outline-info" id="randomizeButton" onclick="randomState()">Randomize state</button>
       </div>
 
+      <!-- Bootstrap grid to contain visualizations -->
       <div class="container">
         <div class="row">
           <div class="col-xs-6">
