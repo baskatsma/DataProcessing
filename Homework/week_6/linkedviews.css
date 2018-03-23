@@ -84,7 +84,7 @@ p {
 }
 
 .selected {
-    fill: green !important;
+    fill: #06aa61 !important;
 }
 
 path:hover {
