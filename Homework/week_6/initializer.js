@@ -16,13 +16,13 @@
       .defer(d3.json, "data/dataUSA.json")
       .await(mainCode);
 
-    // Then, add an event listener for the randomize button
+    // Add an event listener for the randomize button
     document.addEventListener("readystatechange", function() {
         randomState();
     });
  });
 
-// Initialize width, height and margins
+// Define width, height and margins
 var margin = {top: 10, bottom: 20, left: 175, right: 200},
     height = 450 - margin.top - margin.bottom,
     width = 825 - margin.left - margin.right;
@@ -31,10 +31,10 @@ var downscale = 0.7;
 // Create arrays to store data
 var years = ["2010", "2011", "2012", "2013", "2014", "2015", "2016"];
 var jsonData = [];
-var dataArray = [];
+var dataValues = [];
 var population = [];
 
-// Set-up colors for map
+// Define map colors
 var lowColor = "#f5f7f4";
 var highColor = "teal";
 
