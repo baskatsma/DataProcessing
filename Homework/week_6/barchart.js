@@ -100,15 +100,15 @@ function updateBarchart(chosenState) {
           return formatDecimals(d).bold() + " million";
       });
 
-    // start the tip
+    // Start the tip
     svg2.call(barTip);
 
-    // set the range and domain for y
+    // Set the range and domain for y
     var y = d3.scaleLinear()
       .domain([0, d3.max(population)])
       .range([height * downscale, 0]);
 
-    // create and draw y-axis on desired position and set label
+    // Create and draw y-axis on desired position and set label
     var yAxis = d3.axisLeft(y);
 
     d3.select(".yAxis")

@@ -52,10 +52,16 @@
         </nav>
       </div>
 
-      <!-- Title and randomize button -->
-      <h1>United States of America</h1>
+      <!-- Bootstrap grid to contain title and randomize button -->
       <div class="container">
-        <button type="button" class="btn btn-outline-info" id="randomizeButton" onclick="randomState()">Randomize state</button>
+        <div class="row">
+          <div class="col-4"></div>
+          <div class="col-4">
+            <h1>United States of America</h1>
+            <button type="button" class="btn btn-outline-info" id="randomizeButton" onclick="randomState()">Randomize state</button>
+          </div>
+          <div class="col-4"></div>
+        </div>
       </div>
 
       <!-- Bootstrap grid to contain visualizations -->

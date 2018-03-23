@@ -7,13 +7,17 @@
  *
  */
 
-
 body {
     text-align: center;
 }
 
 .pos-f-t {
     text-align: left !important;
+}
+
+.col-4 {
+    margin-bottom: 30px;
+    text-align: center !important;
 }
 
 h1 {
@@ -36,7 +40,7 @@ p {
 
 .container {
     margin-top: 10px;
-    margin-bottom: 80px;
+    margin-bottom: 10px;
 }
 
 .d3-mapTip {
@@ -75,6 +79,7 @@ p {
     pointer-events: none;
 }
 
+/*  Add custom navigation bar icon and color  */
 .custom-toggler.navbar-toggler {
     border-color: teal;
 }
