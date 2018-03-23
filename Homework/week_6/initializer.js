@@ -12,9 +12,9 @@
 
     // Load US map and population data
     d3.queue()
-      .defer(d3.json, "data/us.json")
-      .defer(d3.json, "data/dataUSA.json")
-      .await(mainCode);
+        .defer(d3.json, "data/us.json")
+        .defer(d3.json, "data/dataUSA.json")
+        .await(mainCode);
 
     // Add an event listener for the randomize button
     document.addEventListener("readystatechange", function() {
@@ -25,8 +25,8 @@
 // Define width, height and margins
 var margin = {top: 10, bottom: 20, left: 175, right: 200},
     height = 450 - margin.top - margin.bottom,
-    width = 825 - margin.left - margin.right;
-var downscale = 0.7;
+    width = 825 - margin.left - margin.right,
+    downscale = 0.7;
 
 // Create arrays to store data
 var years = ["2010", "2011", "2012", "2013", "2014", "2015", "2016"];
